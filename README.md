@@ -36,7 +36,7 @@ This proof will be sent on-chain to the risk module, which will verify the proof
 
 ### Policy Acquisition
 
-```rust
+```noir
 /// Proofs the user can acquire a policy with a given risk bucket.
 ///
 /// # Arguments
@@ -64,7 +64,7 @@ fn main(user_location: Field,
 
 ### Policy Claim
 
-```rust
+```noir
 /// Proofs that the user was affected by a storm.
 ///
 /// # Arguments
