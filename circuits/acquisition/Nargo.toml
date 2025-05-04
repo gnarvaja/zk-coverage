@@ -1,0 +1,6 @@
+[package]
+name = "acquisition"
+type = "bin"
+authors = [""]
+
+[dependencies]
