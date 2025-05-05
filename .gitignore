@@ -1,5 +1,4 @@
 **/target/
-Prover.toml
 contracts/src/verifiers/
 **/lib
 .gitmodules

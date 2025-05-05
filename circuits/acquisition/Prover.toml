@@ -1,0 +1,8 @@
+hash_path = ["0x28dbf3483dc04aa194b3468d6a289933b548d6b7ba2b0bad80073c831f89cd59"]
+leaf_index = "0"
+price_merkle_root = "0x2bc185d580970d363707fc41b1dced510b1b510a32c5b61a5b5202e42fccebcd"
+risk_bucket = "1"
+risk_limit_area_l2 = "0x82a807fffffffff"
+salt = "2025"
+user_location_hash = "0x2bf7e4809be8dfcbd285caae1ed85de71cd24c7f3af22a52a5a8870da7b4a726"
+user_location_l12 = "0x8ca8000000001ff"
