@@ -1,2 +1,6 @@
 **/target/
 Prover.toml
+# Guillo's python virtual env
+venv/
+# Some files I generated, just to avoid moving them to other folder
+????-AL*.json

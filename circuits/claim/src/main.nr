@@ -18,7 +18,25 @@ fn compute_merkle_root<let N: u32>(leaf: Field, index: Field, hash_path: [Field;
 fn l12_to_l6(x: u64) -> u64 {
     let resolution_mask = 45035996273704960;
     let digits_mask = 134217727;
-    (x ^ resolution_mask) | digits_mask 
+    (x ^ resolution_mask) | digits_mask
+}
+
+fn l12_to_l2(x: u64) -> u64 {
+    let resolution_mask = 63050394783186944;
+    let digits_mask = 549755813887;
+    (x ^ resolution_mask) | digits_mask
+}
+
+fn l11_to_l6(x: u64) -> u64 {
+    let resolution_mask = 45035996273704960;
+    let digits_mask = 134217727;
+    (x ^ resolution_mask) | digits_mask
+}
+
+fn l11_to_l2(x: u64) -> u64 {
+    let resolution_mask = 63050394783186944;
+    let digits_mask = 549755813887;
+    (x ^ resolution_mask) | digits_mask
 }
 
 fn main(user_location_l12: Field,
@@ -36,8 +54,8 @@ fn main(user_location_l12: Field,
     let user_location_l6 = l12_to_l6(user_location_l12 as u64) as Field;
     let leaf = std::hash::pedersen_hash([user_location_l6, severity]);
     let merkle_root = compute_merkle_root(
-        leaf, 
-        leaf_index, 
+        leaf,
+        leaf_index,
         hash_path
     );
     assert(merkle_root == affected_merkle_root);
@@ -62,8 +80,8 @@ fn calc_merkle_root() {
     println(leaf_one);
     println(leaf_two);
     let root = compute_merkle_root(
-        leaf_one, 
-        0x0000000000000000, 
+        leaf_one,
+        0x0000000000000000,
         [leaf_two]
     );
     println(root);
@@ -83,4 +101,17 @@ fn calc_hash() {
     let salt = 2025;
     let location_hash = std::hash::pedersen_hash([h3_l12_a, salt]);
     println(location_hash);
+}
+
+#[test]
+fn test_find_parent() {
+    let h3_l12 = 0x8c44a112845a7ff;
+    let h3_l11 = 0x8b44a112845afff;
+    let h3_l6 = 0x8644a112fffffff;
+    let h3_l2 = 0x8244a7fffffffff;
+    // assert(find_parent(h3_l12, 11) == h3_l11);
+    assert(l12_to_l2(h3_l12) == h3_l2);
+    assert(l11_to_l2(h3_l11) == h3_l2);
+    assert(l12_to_l6(h3_l12) == h3_l6);
+    assert(l11_to_l6(h3_l11) == h3_l2);
 }

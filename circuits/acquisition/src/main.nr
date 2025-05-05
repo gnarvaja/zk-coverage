@@ -1,59 +1,70 @@
-// Code from noir standard library (https://github.com/noir-lang/noir/blob/v1.0.0-beta.3/noir_stdlib/src/merkle.nr)
-// Reimplemented here because it is going to be removed from stdlib
-fn compute_merkle_root<let N: u32>(leaf: Field, index: Field, hash_path: [Field; N]) -> Field {
-    let index_bits: [u1; N] = index.to_le_bits();
-    let mut current = leaf;
-    for i in 0..N {
-        let path_bit = index_bits[i] as bool;
-        let (hash_left, hash_right) = if path_bit {
-            (hash_path[i], current)
-        } else {
-            (current, hash_path[i])
-        };
-        current = std::hash::pedersen_hash([hash_left, hash_right]);
-    }
-    current
+use binary_merkle_root::binary_merkle_root;
+use std::hash::poseidon::bn254::hash_2 as poseidon2;
+
+global MAX_DEPTH : u32 = 8;
+
+// Check https://observablehq.com/@nrabinowitz/h3-index-bit-layout?collection=@nrabinowitz/h3
+// 52 = 3 * 15 + 7
+// RESET_RESOLUTION will be all ones but bits 8 to 11 that will be zero
+global RESET_RESOLUTION : u64 = !(15 << 52);
+// Generated with [int("000" * i + "111" * (15 - i), 2) for i in range(15)]
+global DIGITS_MASK : [H3Index; 15] = [
+    35184372088831,
+    4398046511103,
+    549755813887,
+    68719476735,
+    8589934591,
+    1073741823,
+    134217727,
+    16777215,
+    2097151,
+    262143,
+    32767,
+    4095,
+    511,
+    63,
+    7,
+];
+
+
+type H3Index = u64;
+
+fn set_resolution(h3_index: H3Index, level: u64) -> H3Index {
+    let ret : u64 = (h3_index & RESET_RESOLUTION) + (level << 52);
+    ret
 }
 
-fn l12_to_l2(x: u64) -> u64 {
-    let resolution_mask = 63050394783186944;
-    let digits_mask = 549755813887;
-    (x ^ resolution_mask) | digits_mask 
-}
-
-fn l12_to_l6(x: u64) -> u64 {
-    let resolution_mask = 45035996273704960;
-    let digits_mask = 134217727;
-    (x ^ resolution_mask) | digits_mask 
+fn find_parent(h3_index: H3Index, level: u64) -> H3Index {
+    let ret: H3Index = set_resolution(h3_index, level) | DIGITS_MASK[level];
+    ret
 }
 
 // TODO Update args to be consistent with readme
-fn main(user_location_l12: Field,
+fn main(user_location_l12: H3Index,
         salt: Field,
         user_location_hash: pub Field,
+        // Merkle Tree related parameters
         price_merkle_root: pub Field,
+        merkle_proof_length: u32,
+        merkle_proof_indices: [u1; MAX_DEPTH],
+        merkle_proof_siblings: [Field; MAX_DEPTH],
         risk_bucket: pub Field,
-        leaf_index: Field,
-        hash_path: [Field; 1],
-        risk_limit_area_l2: pub Field
+        risk_limit_area_l2: pub H3Index
 ) {
     // Assert user knows preimage of location_hash
-    let location_hash = std::hash::pedersen_hash([user_location_l12, salt]);
+    let location_hash = std::hash::pedersen_hash([user_location_l12 as Field, salt]);
     assert(location_hash == user_location_hash);
 
     // Assert location is inside the risk limit area
-    let user_location_l2 = l12_to_l2(user_location_l12 as u64) as Field;
+    let user_location_l2 = find_parent(user_location_l12, 2);
     assert(user_location_l2 == risk_limit_area_l2);
 
     // Assert location membership in hurricane merkle tree
     // TODO Change this to support arbitrary h3 levels
-    let user_location_l6 = l12_to_l6(user_location_l12 as u64) as Field;
+    let user_location_l6 = find_parent(user_location_l12, 6) as Field;
     let leaf = std::hash::pedersen_hash([user_location_l6, risk_bucket]);
-    let merkle_root = compute_merkle_root(
-        leaf, 
-        leaf_index, 
-        hash_path
-    );
+    let merkle_root = binary_merkle_root(poseidon2, leaf, merkle_proof_length, merkle_proof_indices, merkle_proof_siblings);
+
     assert(merkle_root == price_merkle_root);
 }
 
@@ -75,9 +86,11 @@ fn calc_merkle_root() {
     let leaf_two = std::hash::pedersen_hash([h3_l6_b, 2]);
     println(leaf_one);
     println(leaf_two);
-    let root = compute_merkle_root(
-        leaf_one, 
-        0x0000000000000000, 
+    let root = binary_merkle_root(
+        poseidon2,
+        leaf_one,
+        1,
+        [1],
         [leaf_two]
     );
     println(root);
@@ -89,4 +102,16 @@ fn calc_hash() {
     let salt = 2025;
     let location_hash = std::hash::pedersen_hash([h3_l12_a, salt]);
     println(location_hash);
+}
+
+#[test]
+fn test_find_parent() {
+    let h3_l12 = 0x8c44a112845a7ff;
+    let h3_l11 = 0x8b44a112845afff;
+    let h3_l6 = 0x8644a112fffffff;
+    let h3_l2 = 0x8244a7fffffffff;
+    assert(find_parent(h3_l12, 11) == h3_l11);
+    assert(find_parent(h3_l11, 11) == h3_l11);
+    assert(find_parent(h3_l12, 6) == h3_l6);
+    assert(find_parent(h3_l12, 2) == h3_l2);
 }
