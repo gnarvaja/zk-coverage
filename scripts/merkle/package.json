@@ -1,0 +1,12 @@
+{
+  "name": "merkle-tree-script",
+  "version": "1.0.0",
+  "author": "",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "@zk-kit/lean-imt": "^2.2.3",
+    "h3-js": "^4.2.1",
+    "poseidon-lite": "^0.3.0"
+  }
+}
