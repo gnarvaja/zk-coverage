@@ -4,3 +4,4 @@ Prover.toml
 venv/
 # Some files I generated, just to avoid moving them to other folder
 ????-AL*.json
+node_modules/
