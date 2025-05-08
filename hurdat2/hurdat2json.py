@@ -89,16 +89,35 @@ def read_storm(hurdat2_filename, storm_id):
             return parse_storm([row] + [next(hurdat2) for _ in range(record_count)])
 
 
+def read_storms(hurdat2_filename, years):
+    """Returns an iterator of storms for given years"""
+    hurdat2 = csv.reader(open(hurdat2_filename))
+
+    while True:
+        try:
+            row = next(hurdat2)
+        except StopIteration:
+            break
+        record_count = int(row[2])
+        storm_id = row[0]
+        year = int(storm_id[-4:])
+        if year not in years:
+            # skip the records
+            [next(hurdat2) for _ in range(record_count)]
+        else:
+            yield parse_storm([row] + [next(hurdat2) for _ in range(record_count)])
+
+
 def parse_storm(rows):
     """Parses a set of rows of a HURDAT2 file where the first one is the header"""
     row = rows[0]
     assert len(row) == 4, "Not a header row"
 
     storm_id = row[0]
-    year = storm_id[-4:]
+    year = int(storm_id[-4:])
     storm_name = row[1].strip()
     storm = dict(
-        year=int(year),
+        year=year,
         id=storm_id,
         name=storm_name,
         record_count=int(row[2]),
