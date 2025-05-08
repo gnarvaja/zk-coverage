@@ -1,0 +1,833 @@
+{
+  "type": "affected_areas",
+  "storm": {
+    "year": 2020,
+    "id": "AL192020",
+    "name": "SALLY",
+    "record_count": 28,
+    "records": [
+      {
+        "date_time": "2020-09-11T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TD",
+          "description": "Tropical cyclone of tropical depression intensity (< 34 knots)"
+        },
+        "lat": 25.4,
+        "lng": -78.6,
+        "max_sustained_wind": 30,
+        "min_pressure": 1007,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-12T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TD",
+          "description": "Tropical cyclone of tropical depression intensity (< 34 knots)"
+        },
+        "lat": 25.6,
+        "lng": -79.4,
+        "max_sustained_wind": 30,
+        "min_pressure": 1004,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-12T06:00:00+00:00",
+        "record_type": {
+          "type": "L",
+          "description": "Landfall"
+        },
+        "system_status": {
+          "status": "TD",
+          "description": "Tropical cyclone of tropical depression intensity (< 34 knots)"
+        },
+        "lat": 25.6,
+        "lng": -80.2,
+        "max_sustained_wind": 30,
+        "min_pressure": 1003,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-12T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 25.5,
+        "lng": -80.8,
+        "max_sustained_wind": 35,
+        "min_pressure": 1003,
+        "ne_34kt_wind_radii": 60,
+        "se_34kt_wind_radii": 60,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-12T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 25.6,
+        "lng": -81.6,
+        "max_sustained_wind": 35,
+        "min_pressure": 1003,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 70,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-13T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 26.0,
+        "lng": -82.5,
+        "max_sustained_wind": 35,
+        "min_pressure": 1003,
+        "ne_34kt_wind_radii": 30,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-13T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 26.7,
+        "lng": -83.5,
+        "max_sustained_wind": 45,
+        "min_pressure": 1001,
+        "ne_34kt_wind_radii": 50,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 20,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-13T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 27.2,
+        "lng": -84.5,
+        "max_sustained_wind": 50,
+        "min_pressure": 996,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 90,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 30,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-13T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 27.6,
+        "lng": -85.4,
+        "max_sustained_wind": 50,
+        "min_pressure": 996,
+        "ne_34kt_wind_radii": 80,
+        "se_34kt_wind_radii": 100,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-14T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 27.9,
+        "lng": -86.0,
+        "max_sustained_wind": 50,
+        "min_pressure": 996,
+        "ne_34kt_wind_radii": 90,
+        "se_34kt_wind_radii": 100,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 70,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-14T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 28.2,
+        "lng": -86.5,
+        "max_sustained_wind": 55,
+        "min_pressure": 996,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 20,
+        "sw_34kt_wind_radii": 100,
+        "ne_50kt_wind_radii": 40,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-14T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 28.4,
+        "lng": -86.9,
+        "max_sustained_wind": 65,
+        "min_pressure": 991,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 20,
+        "sw_34kt_wind_radii": 100,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-14T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 28.6,
+        "lng": -87.3,
+        "max_sustained_wind": 75,
+        "min_pressure": 986,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 90,
+        "ne_50kt_wind_radii": 60,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 30,
+        "se_64kt_wind_radii": 15,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 15,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-15T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 28.7,
+        "lng": -87.7,
+        "max_sustained_wind": 75,
+        "min_pressure": 986,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 90,
+        "ne_50kt_wind_radii": 70,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 35,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 15,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-15T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 28.8,
+        "lng": -88.0,
+        "max_sustained_wind": 70,
+        "min_pressure": 984,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 40,
+        "sw_34kt_wind_radii": 90,
+        "ne_50kt_wind_radii": 70,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 40,
+        "se_64kt_wind_radii": 25,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 20,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-15T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 29.0,
+        "lng": -88.1,
+        "max_sustained_wind": 70,
+        "min_pressure": 982,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 50,
+        "sw_34kt_wind_radii": 90,
+        "ne_50kt_wind_radii": 70,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 40,
+        "se_64kt_wind_radii": 25,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 25,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-15T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 29.3,
+        "lng": -88.1,
+        "max_sustained_wind": 70,
+        "min_pressure": 981,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 60,
+        "sw_34kt_wind_radii": 80,
+        "ne_50kt_wind_radii": 70,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 40,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 25,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-16T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 29.6,
+        "lng": -88.0,
+        "max_sustained_wind": 75,
+        "min_pressure": 975,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 70,
+        "sw_34kt_wind_radii": 80,
+        "ne_50kt_wind_radii": 70,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 50,
+        "ne_64kt_wind_radii": 35,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 20,
+        "sw_64kt_wind_radii": 25,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-16T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 29.9,
+        "lng": -87.9,
+        "max_sustained_wind": 95,
+        "min_pressure": 967,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 80,
+        "sw_34kt_wind_radii": 80,
+        "ne_50kt_wind_radii": 70,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 50,
+        "ne_64kt_wind_radii": 35,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 20,
+        "sw_64kt_wind_radii": 25,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-16T09:45:00+00:00",
+        "record_type": {
+          "type": "L",
+          "description": "Landfall"
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 30.3,
+        "lng": -87.7,
+        "max_sustained_wind": 95,
+        "min_pressure": 965,
+        "ne_34kt_wind_radii": 90,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 80,
+        "sw_34kt_wind_radii": 70,
+        "ne_50kt_wind_radii": 70,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 50,
+        "ne_64kt_wind_radii": 35,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 20,
+        "sw_64kt_wind_radii": 25,
+        "max_wind_radius": 15
+      },
+      {
+        "date_time": "2020-09-16T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 30.5,
+        "lng": -87.6,
+        "max_sustained_wind": 85,
+        "min_pressure": 967,
+        "ne_34kt_wind_radii": 80,
+        "se_34kt_wind_radii": 130,
+        "nw_34kt_wind_radii": 80,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 60,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 30,
+        "se_64kt_wind_radii": 25,
+        "nw_64kt_wind_radii": 20,
+        "sw_64kt_wind_radii": 20,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-16T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 31.1,
+        "lng": -87.2,
+        "max_sustained_wind": 60,
+        "min_pressure": 982,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 150,
+        "nw_34kt_wind_radii": 80,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 40,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-17T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 31.6,
+        "lng": -86.7,
+        "max_sustained_wind": 35,
+        "min_pressure": 994,
+        "ne_34kt_wind_radii": 60,
+        "se_34kt_wind_radii": 90,
+        "nw_34kt_wind_radii": 80,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-17T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TD",
+          "description": "Tropical cyclone of tropical depression intensity (< 34 knots)"
+        },
+        "lat": 32.1,
+        "lng": -86.1,
+        "max_sustained_wind": 30,
+        "min_pressure": 1000,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-17T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 32.6,
+        "lng": -85.2,
+        "max_sustained_wind": 30,
+        "min_pressure": 1003,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-17T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 33.2,
+        "lng": -83.8,
+        "max_sustained_wind": 30,
+        "min_pressure": 1004,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-18T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 33.7,
+        "lng": -82.3,
+        "max_sustained_wind": 30,
+        "min_pressure": 1004,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-09-18T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 34.1,
+        "lng": -80.8,
+        "max_sustained_wind": 30,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      }
+    ]
+  },
+  "areas": [
+    [
+      "83440dfffffffff",
+      0.2
+    ],
+    [
+      "83440bfffffffff",
+      0.4
+    ],
+    [
+      "834452fffffffff",
+      0.4
+    ],
+    [
+      "834408fffffffff",
+      0.6
+    ],
+    [
+      "834472fffffffff",
+      0.6
+    ],
+    [
+      "834456fffffffff",
+      0.6
+    ],
+    [
+      "834450fffffffff",
+      0.6
+    ],
+    [
+      "834409fffffffff",
+      0.8
+    ],
+    [
+      "834454fffffffff",
+      0.8
+    ]
+  ]
+}

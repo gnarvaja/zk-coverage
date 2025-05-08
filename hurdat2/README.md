@@ -26,7 +26,8 @@ HURDAT2_FILE=./hurdat2-1851-2024-040425.txt
 DISTANCE=50
 RESOLUTION=6
 WIND_SPEED=64
-OUTPUT_DIR=hurdat2/outputs
+# OUTPUT_DIR=hurdat2/outputs
+OUTPUT_DIR=frontend/public/storms
 # Storms since 2020
 STORMS=`egrep "^AL[0-9][0-9]202[0-4].*" hurdat2-1851-2024-040425.txt | cut -f1 -d,`
 
@@ -48,7 +49,8 @@ HURDAT2_FILE=./hurdat2-1851-2024-040425.txt
 DISTANCE=50
 RESOLUTION=3
 WIND_SPEED=64
-OUTPUT_DIR=hurdat2/outputs
+# OUTPUT_DIR=hurdat2/outputs
+OUTPUT_DIR=frontend/public/priceList
 
 python3 -m hurdat2.compute_affected_cells --hurdat2 $HURDAT2_FILE \
   --resolution $RESOLUTION --radius $DISTANCE --min-wind $WIND_SPEED \

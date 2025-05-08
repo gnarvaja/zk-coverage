@@ -503,7 +503,7 @@ def affected_areas_command(args):
         json.dump(
             {
                 "type": "affected_areas",
-                "storm": args.storm,
+                "storm": storm_data,
                 "areas": [
                     (h3_index, round(severity / MAX_SEVERITY, 2))
                     for h3_index, severity in h3_indexes_compacted.items()

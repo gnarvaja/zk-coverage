@@ -1,0 +1,1561 @@
+{
+  "type": "affected_areas",
+  "storm": {
+    "year": 2023,
+    "id": "AL102023",
+    "name": "IDALIA",
+    "record_count": 54,
+    "records": [
+      {
+        "date_time": "2023-08-26T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TD",
+          "description": "Tropical cyclone of tropical depression intensity (< 34 knots)"
+        },
+        "lat": 20.8,
+        "lng": -86.1,
+        "max_sustained_wind": 25,
+        "min_pressure": 1006,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 90
+      },
+      {
+        "date_time": "2023-08-26T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TD",
+          "description": "Tropical cyclone of tropical depression intensity (< 34 knots)"
+        },
+        "lat": 21.3,
+        "lng": -86.2,
+        "max_sustained_wind": 25,
+        "min_pressure": 1006,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 70
+      },
+      {
+        "date_time": "2023-08-27T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TD",
+          "description": "Tropical cyclone of tropical depression intensity (< 34 knots)"
+        },
+        "lat": 21.1,
+        "lng": -86.4,
+        "max_sustained_wind": 30,
+        "min_pressure": 1004,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 40
+      },
+      {
+        "date_time": "2023-08-27T06:00:00+00:00",
+        "record_type": {
+          "type": "L",
+          "description": "Landfall"
+        },
+        "system_status": {
+          "status": "TD",
+          "description": "Tropical cyclone of tropical depression intensity (< 34 knots)"
+        },
+        "lat": 20.5,
+        "lng": -86.8,
+        "max_sustained_wind": 30,
+        "min_pressure": 1002,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2023-08-27T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 19.9,
+        "lng": -86.3,
+        "max_sustained_wind": 35,
+        "min_pressure": 999,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 60,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2023-08-27T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 19.9,
+        "lng": -85.8,
+        "max_sustained_wind": 40,
+        "min_pressure": 996,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 60,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2023-08-28T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 19.8,
+        "lng": -85.4,
+        "max_sustained_wind": 45,
+        "min_pressure": 992,
+        "ne_34kt_wind_radii": 40,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 20,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2023-08-28T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 19.9,
+        "lng": -85.2,
+        "max_sustained_wind": 55,
+        "min_pressure": 989,
+        "ne_34kt_wind_radii": 60,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 20,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 20,
+        "se_50kt_wind_radii": 20,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2023-08-28T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 20.6,
+        "lng": -85.2,
+        "max_sustained_wind": 55,
+        "min_pressure": 989,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 100,
+        "nw_34kt_wind_radii": 40,
+        "sw_34kt_wind_radii": 30,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2023-08-28T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 21.2,
+        "lng": -85.2,
+        "max_sustained_wind": 60,
+        "min_pressure": 986,
+        "ne_34kt_wind_radii": 80,
+        "se_34kt_wind_radii": 120,
+        "nw_34kt_wind_radii": 50,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 20,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2023-08-29T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 21.8,
+        "lng": -85.1,
+        "max_sustained_wind": 60,
+        "min_pressure": 984,
+        "ne_34kt_wind_radii": 90,
+        "se_34kt_wind_radii": 130,
+        "nw_34kt_wind_radii": 50,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 20,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2023-08-29T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 22.6,
+        "lng": -85.0,
+        "max_sustained_wind": 65,
+        "min_pressure": 981,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 140,
+        "nw_34kt_wind_radii": 50,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 40,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 20,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 15,
+        "se_64kt_wind_radii": 15,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 15
+      },
+      {
+        "date_time": "2023-08-29T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 23.8,
+        "lng": -84.8,
+        "max_sustained_wind": 70,
+        "min_pressure": 978,
+        "ne_34kt_wind_radii": 120,
+        "se_34kt_wind_radii": 140,
+        "nw_34kt_wind_radii": 50,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 20,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 15,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 10,
+        "max_wind_radius": 15
+      },
+      {
+        "date_time": "2023-08-29T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 25.3,
+        "lng": -84.8,
+        "max_sustained_wind": 80,
+        "min_pressure": 973,
+        "ne_34kt_wind_radii": 120,
+        "se_34kt_wind_radii": 140,
+        "nw_34kt_wind_radii": 50,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 20,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 15,
+        "nw_64kt_wind_radii": 10,
+        "sw_64kt_wind_radii": 10,
+        "max_wind_radius": 15
+      },
+      {
+        "date_time": "2023-08-30T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 26.9,
+        "lng": -84.7,
+        "max_sustained_wind": 90,
+        "min_pressure": 965,
+        "ne_34kt_wind_radii": 120,
+        "se_34kt_wind_radii": 140,
+        "nw_34kt_wind_radii": 50,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 20,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 15,
+        "nw_64kt_wind_radii": 10,
+        "sw_64kt_wind_radii": 10,
+        "max_wind_radius": 10
+      },
+      {
+        "date_time": "2023-08-30T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 28.3,
+        "lng": -84.5,
+        "max_sustained_wind": 105,
+        "min_pressure": 945,
+        "ne_34kt_wind_radii": 120,
+        "se_34kt_wind_radii": 150,
+        "nw_34kt_wind_radii": 60,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 60,
+        "se_50kt_wind_radii": 50,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 15,
+        "sw_64kt_wind_radii": 10,
+        "max_wind_radius": 10
+      },
+      {
+        "date_time": "2023-08-30T09:00:00+00:00",
+        "record_type": {
+          "type": "I",
+          "description": "An intensity peak in terms of both pressure and wind"
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 29.1,
+        "lng": -84.1,
+        "max_sustained_wind": 115,
+        "min_pressure": 942,
+        "ne_34kt_wind_radii": 130,
+        "se_34kt_wind_radii": 150,
+        "nw_34kt_wind_radii": 70,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 60,
+        "se_50kt_wind_radii": 50,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 15,
+        "sw_64kt_wind_radii": 10,
+        "max_wind_radius": 10
+      },
+      {
+        "date_time": "2023-08-30T11:45:00+00:00",
+        "record_type": {
+          "type": "L",
+          "description": "Landfall"
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 29.9,
+        "lng": -83.6,
+        "max_sustained_wind": 100,
+        "min_pressure": 950,
+        "ne_34kt_wind_radii": 130,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 50,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 60,
+        "se_50kt_wind_radii": 50,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 15,
+        "sw_64kt_wind_radii": 10,
+        "max_wind_radius": 10
+      },
+      {
+        "date_time": "2023-08-30T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 30.0,
+        "lng": -83.5,
+        "max_sustained_wind": 100,
+        "min_pressure": 954,
+        "ne_34kt_wind_radii": 140,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 50,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 50,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 15,
+        "sw_64kt_wind_radii": 10,
+        "max_wind_radius": 10
+      },
+      {
+        "date_time": "2023-08-30T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 31.5,
+        "lng": -82.5,
+        "max_sustained_wind": 60,
+        "min_pressure": 981,
+        "ne_34kt_wind_radii": 140,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 60,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 40,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2023-08-31T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 32.7,
+        "lng": -80.9,
+        "max_sustained_wind": 50,
+        "min_pressure": 985,
+        "ne_34kt_wind_radii": 140,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 50,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 40,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 40
+      },
+      {
+        "date_time": "2023-08-31T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 33.5,
+        "lng": -78.9,
+        "max_sustained_wind": 50,
+        "min_pressure": 990,
+        "ne_34kt_wind_radii": 160,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 70,
+        "sw_34kt_wind_radii": 40,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 50,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 40
+      },
+      {
+        "date_time": "2023-08-31T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 33.7,
+        "lng": -77.0,
+        "max_sustained_wind": 55,
+        "min_pressure": 990,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 160,
+        "sw_34kt_wind_radii": 100,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 40,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 40
+      },
+      {
+        "date_time": "2023-08-31T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 33.6,
+        "lng": -74.6,
+        "max_sustained_wind": 55,
+        "min_pressure": 993,
+        "ne_34kt_wind_radii": 200,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 160,
+        "sw_34kt_wind_radii": 180,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 60,
+        "sw_50kt_wind_radii": 80,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 40
+      },
+      {
+        "date_time": "2023-09-01T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 33.4,
+        "lng": -72.3,
+        "max_sustained_wind": 55,
+        "min_pressure": 996,
+        "ne_34kt_wind_radii": 200,
+        "se_34kt_wind_radii": 160,
+        "nw_34kt_wind_radii": 180,
+        "sw_34kt_wind_radii": 200,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 60,
+        "sw_50kt_wind_radii": 100,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 60
+      },
+      {
+        "date_time": "2023-09-01T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 32.7,
+        "lng": -70.5,
+        "max_sustained_wind": 50,
+        "min_pressure": 997,
+        "ne_34kt_wind_radii": 200,
+        "se_34kt_wind_radii": 160,
+        "nw_34kt_wind_radii": 180,
+        "sw_34kt_wind_radii": 200,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 80,
+        "sw_50kt_wind_radii": 100,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 80
+      },
+      {
+        "date_time": "2023-09-01T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 32.3,
+        "lng": -68.8,
+        "max_sustained_wind": 50,
+        "min_pressure": 998,
+        "ne_34kt_wind_radii": 200,
+        "se_34kt_wind_radii": 150,
+        "nw_34kt_wind_radii": 180,
+        "sw_34kt_wind_radii": 200,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 120,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 100
+      },
+      {
+        "date_time": "2023-09-01T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 32.1,
+        "lng": -67.1,
+        "max_sustained_wind": 50,
+        "min_pressure": 999,
+        "ne_34kt_wind_radii": 210,
+        "se_34kt_wind_radii": 120,
+        "nw_34kt_wind_radii": 180,
+        "sw_34kt_wind_radii": 190,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 90,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 100
+      },
+      {
+        "date_time": "2023-09-02T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 31.9,
+        "lng": -65.7,
+        "max_sustained_wind": 50,
+        "min_pressure": 999,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 150,
+        "nw_34kt_wind_radii": 180,
+        "sw_34kt_wind_radii": 190,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 90,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 100
+      },
+      {
+        "date_time": "2023-09-02T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 31.8,
+        "lng": -64.7,
+        "max_sustained_wind": 50,
+        "min_pressure": 999,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 140,
+        "nw_34kt_wind_radii": 160,
+        "sw_34kt_wind_radii": 190,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 90,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 80
+      },
+      {
+        "date_time": "2023-09-02T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 31.8,
+        "lng": -63.9,
+        "max_sustained_wind": 50,
+        "min_pressure": 998,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 120,
+        "sw_34kt_wind_radii": 180,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 90,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 90
+      },
+      {
+        "date_time": "2023-09-02T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 31.8,
+        "lng": -63.1,
+        "max_sustained_wind": 50,
+        "min_pressure": 997,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 120,
+        "sw_34kt_wind_radii": 170,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 80,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 80
+      },
+      {
+        "date_time": "2023-09-03T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 32.0,
+        "lng": -62.2,
+        "max_sustained_wind": 50,
+        "min_pressure": 996,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 120,
+        "sw_34kt_wind_radii": 170,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 80,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 80
+      },
+      {
+        "date_time": "2023-09-03T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 32.5,
+        "lng": -61.3,
+        "max_sustained_wind": 50,
+        "min_pressure": 994,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 120,
+        "sw_34kt_wind_radii": 170,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 80,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 80
+      },
+      {
+        "date_time": "2023-09-03T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 33.4,
+        "lng": -60.5,
+        "max_sustained_wind": 50,
+        "min_pressure": 992,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 120,
+        "sw_34kt_wind_radii": 170,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 80,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 80
+      },
+      {
+        "date_time": "2023-09-03T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 34.9,
+        "lng": -59.7,
+        "max_sustained_wind": 55,
+        "min_pressure": 990,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 120,
+        "sw_34kt_wind_radii": 170,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 80,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 80
+      },
+      {
+        "date_time": "2023-09-04T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 36.2,
+        "lng": -58.9,
+        "max_sustained_wind": 60,
+        "min_pressure": 988,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 120,
+        "sw_34kt_wind_radii": 170,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 80,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 80
+      },
+      {
+        "date_time": "2023-09-04T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 37.6,
+        "lng": -58.0,
+        "max_sustained_wind": 60,
+        "min_pressure": 985,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 120,
+        "sw_34kt_wind_radii": 170,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 80,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 80
+      },
+      {
+        "date_time": "2023-09-04T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 39.2,
+        "lng": -57.5,
+        "max_sustained_wind": 55,
+        "min_pressure": 985,
+        "ne_34kt_wind_radii": 210,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 180,
+        "sw_34kt_wind_radii": 240,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 90,
+        "sw_50kt_wind_radii": 80,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 90
+      },
+      {
+        "date_time": "2023-09-04T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 40.5,
+        "lng": -57.9,
+        "max_sustained_wind": 55,
+        "min_pressure": 986,
+        "ne_34kt_wind_radii": 210,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 180,
+        "sw_34kt_wind_radii": 240,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 90,
+        "sw_50kt_wind_radii": 80,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 80
+      },
+      {
+        "date_time": "2023-09-05T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 41.1,
+        "lng": -58.7,
+        "max_sustained_wind": 50,
+        "min_pressure": 986,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 220,
+        "nw_34kt_wind_radii": 180,
+        "sw_34kt_wind_radii": 180,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 70,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 50
+      },
+      {
+        "date_time": "2023-09-05T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 41.6,
+        "lng": -59.1,
+        "max_sustained_wind": 50,
+        "min_pressure": 986,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 220,
+        "nw_34kt_wind_radii": 180,
+        "sw_34kt_wind_radii": 180,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 70,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 50
+      },
+      {
+        "date_time": "2023-09-05T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 42.2,
+        "lng": -59.3,
+        "max_sustained_wind": 45,
+        "min_pressure": 986,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 200,
+        "sw_34kt_wind_radii": 80,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 120
+      },
+      {
+        "date_time": "2023-09-05T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 42.6,
+        "lng": -59.8,
+        "max_sustained_wind": 40,
+        "min_pressure": 987,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 200,
+        "sw_34kt_wind_radii": 80,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 120
+      },
+      {
+        "date_time": "2023-09-06T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 42.6,
+        "lng": -60.5,
+        "max_sustained_wind": 35,
+        "min_pressure": 988,
+        "ne_34kt_wind_radii": 50,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 180,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 120
+      },
+      {
+        "date_time": "2023-09-06T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 42.6,
+        "lng": -61.4,
+        "max_sustained_wind": 35,
+        "min_pressure": 991,
+        "ne_34kt_wind_radii": 50,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 180,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 120
+      },
+      {
+        "date_time": "2023-09-06T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 42.6,
+        "lng": -62.0,
+        "max_sustained_wind": 35,
+        "min_pressure": 992,
+        "ne_34kt_wind_radii": 50,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 180,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 120
+      },
+      {
+        "date_time": "2023-09-06T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 42.6,
+        "lng": -62.8,
+        "max_sustained_wind": 35,
+        "min_pressure": 994,
+        "ne_34kt_wind_radii": 50,
+        "se_34kt_wind_radii": 180,
+        "nw_34kt_wind_radii": 180,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 120
+      },
+      {
+        "date_time": "2023-09-07T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 42.9,
+        "lng": -62.9,
+        "max_sustained_wind": 30,
+        "min_pressure": 996,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 120
+      },
+      {
+        "date_time": "2023-09-07T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 43.0,
+        "lng": -62.1,
+        "max_sustained_wind": 30,
+        "min_pressure": 998,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 90
+      },
+      {
+        "date_time": "2023-09-07T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 43.2,
+        "lng": -61.1,
+        "max_sustained_wind": 30,
+        "min_pressure": 1000,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 40
+      },
+      {
+        "date_time": "2023-09-07T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 43.6,
+        "lng": -60.1,
+        "max_sustained_wind": 30,
+        "min_pressure": 1001,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 40
+      },
+      {
+        "date_time": "2023-09-08T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 44.3,
+        "lng": -59.3,
+        "max_sustained_wind": 30,
+        "min_pressure": 1002,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 40
+      },
+      {
+        "date_time": "2023-09-08T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 45.2,
+        "lng": -58.3,
+        "max_sustained_wind": 30,
+        "min_pressure": 1003,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 40
+      }
+    ]
+  },
+  "areas": [
+    [
+      "834418fffffffff",
+      0.4
+    ],
+    [
+      "8344e4fffffffff",
+      0.4
+    ],
+    [
+      "83441dfffffffff",
+      0.6
+    ],
+    [
+      "83440afffffffff",
+      0.6
+    ],
+    [
+      "83441bfffffffff",
+      0.6
+    ],
+    [
+      "8344e2fffffffff",
+      0.6
+    ],
+    [
+      "8344e6fffffffff",
+      0.8
+    ],
+    [
+      "8344f5fffffffff",
+      0.8
+    ],
+    [
+      "834419fffffffff",
+      1.0
+    ]
+  ]
+}
