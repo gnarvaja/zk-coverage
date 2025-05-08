@@ -2,5 +2,6 @@
 Prover.toml
 # Guillo's python virtual env
 venv/
-# Some files I generated, just to avoid moving them to other folder
-????-AL*.json
+hurdat2/__pycache__/*
+hurdat2-*.txt
+hurdat2/outputs/*
