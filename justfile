@@ -49,6 +49,7 @@ test-circuits: test-claim test-acquisition
 
 install:
     (cd contracts && \
+    forge install foundry-rs/forge-std --no-commit && \
     forge install OpenZeppelin/openzeppelin-contracts@v4.9.4 --no-commit && \
     forge install OpenZeppelin/openzeppelin-contracts-upgradeable@v4.9.4 --no-commit && \
     forge install ensuro/ensuro --no-commit)
