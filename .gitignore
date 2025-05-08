@@ -6,3 +6,5 @@ node_modules/
 hurdat2/__pycache__/*
 hurdat2-*.txt
 hurdat2/outputs/*
+frontend/.firebase
+frontend/dist
