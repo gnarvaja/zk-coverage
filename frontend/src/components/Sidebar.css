@@ -8,8 +8,15 @@
   flex-direction: column;
 }
 
-.create-policy-button {
+.sidebar-actions {
   margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar-button {
+  width: 100%;
   background-color: #4299e1;
   color: white;
   padding: 0.75rem;
@@ -18,10 +25,27 @@
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.2s;
+  text-align: center;
 }
 
-.create-policy-button:hover {
+.sidebar-button:hover {
   background-color: #3182ce;
+}
+
+.upload-button {
+  background-color: #48bb78;
+}
+
+.upload-button:hover {
+  background-color: #38a169;
+}
+
+.download-button {
+  background-color: #805ad5;
+}
+
+.download-button:hover {
+  background-color: #6b46c1;
 }
 
 .sidebar-title {

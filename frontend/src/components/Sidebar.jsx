@@ -1,6 +1,6 @@
 import './Sidebar.css';
 
-const Sidebar = ({ policies, selectedPolicy, onSelectPolicy, onCreatePolicy }) => {
+const Sidebar = ({ policies, selectedPolicy, onSelectPolicy, onCreatePolicy, onFileUpload, onDownload }) => {
   return (
     <div className="sidebar">
       <h2 className="sidebar-title">Policies</h2>
@@ -15,9 +15,23 @@ const Sidebar = ({ policies, selectedPolicy, onSelectPolicy, onCreatePolicy }) =
           </div>
         ))}
       </div>
-      <button className="create-policy-button" onClick={onCreatePolicy}>
-        Create Policy
-      </button>
+      <div className="sidebar-actions">
+        <button className="sidebar-button create-policy-button" onClick={onCreatePolicy}>
+          Create Policy
+        </button>
+        <label className="sidebar-button upload-button">
+          Upload Policy JSON
+          <input
+            type="file"
+            accept=".json"
+            onChange={onFileUpload}
+            style={{ display: 'none' }}
+          />
+        </label>
+        <button className="sidebar-button download-button" onClick={onDownload}>
+          Download Policies
+        </button>
+      </div>
     </div>
   );
 };

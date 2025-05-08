@@ -9,7 +9,8 @@ import { poseidon2 } from "poseidon-lite"
 import { cellToParent } from "h3-js"
 import { UltraHonkBackend } from "@aztec/bb.js";
 import { Noir } from "@noir-lang/noir_js";
-import circuit from "../../circuits/claim/target/claim.json";
+import claimCircuit from "../../circuits/claim/target/claim.json";
+import acquisitionCircuit from "../../circuits/acquisition/target/acquisition.json";
 import initNoirC from "@noir-lang/noirc_abi";
 import initACVM from "@noir-lang/acvm_js";
 import acvm from "@noir-lang/acvm_js/web/acvm_js_bg.wasm?url";
@@ -144,8 +145,8 @@ function App() {
       console.log(merkleSiblings)
       //console.log(bigIntArraytoStringArray(merkleSiblings))
 
-		  const noir = new Noir(circuit);
-		  const backend = new UltraHonkBackend(circuit.bytecode);
+		  const noir = new Noir(claimCircuit);
+		  const backend = new UltraHonkBackend(claimCircuit.bytecode);
       //const { witness } = await noir.execute({ "x" : merkleRoot.toString()})
       const { witness } = await noir.execute({
          "user_location_l12": user_location_l12.toString(),
@@ -165,6 +166,29 @@ function App() {
     } finally {
       setIsGeneratingProof(false)
     }
+  }
+
+  const handleDownload = () => {
+    if (policies.length === 0) {
+      setError('No policies to download')
+      return
+    }
+
+    const dataToDownload = {
+      policies: policies
+    }
+
+    console.log(dataToDownload)
+
+    const blob = new Blob([JSON.stringify(dataToDownload, null, 2)], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = 'policies.json'
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+    URL.revokeObjectURL(url)
   }
 
   const handleFileUpload = (event) => {
@@ -209,23 +233,12 @@ function App() {
         selectedPolicy={selectedPolicy}
         onSelectPolicy={setSelectedPolicy}
         onCreatePolicy={handleCreatePolicy}
+        onFileUpload={handleFileUpload}
+        onDownload={handleDownload}
       />
       <div className="main-content">
         <WalletButton />
-        <h1>Policy Claimer</h1>
-        
-        <div className="upload-section">
-          <label htmlFor="file-upload" className="upload-button">
-            Upload Policy JSON
-            <input
-              id="file-upload"
-              type="file"
-              accept=".json"
-              onChange={handleFileUpload}
-              style={{ display: 'none' }}
-            />
-          </label>
-        </div>
+        <h1>ZK Coverage</h1>
 
         {error && (
           <div className="error-message">
