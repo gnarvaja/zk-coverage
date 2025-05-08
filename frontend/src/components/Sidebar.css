@@ -1,0 +1,39 @@
+.sidebar {
+  width: 250px;
+  background-color: #f8fafc;
+  border-right: 1px solid #e2e8f0;
+  height: 100%;
+  padding: 1rem;
+}
+
+.sidebar-title {
+  color: #2d3748;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.policy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.policy-item {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #4a5568;
+}
+
+.policy-item:hover {
+  background-color: #edf2f7;
+}
+
+.policy-item.selected {
+  background-color: #e2e8f0;
+  color: #2d3748;
+  font-weight: 500;
+}

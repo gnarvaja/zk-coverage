@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { WalletButton } from './components/WalletButton'
+import Sidebar from './components/Sidebar'
 
 import { LeanIMT } from "@zk-kit/lean-imt"
 import { poseidon2 } from "poseidon-lite"
@@ -94,7 +95,8 @@ const validatePolicyData = (data) => {
 }
 
 function App() {
-  const [policyData, setPolicyData] = useState(null)
+  const [policies, setPolicies] = useState([])
+  const [selectedPolicy, setSelectedPolicy] = useState(null)
   const [error, setError] = useState(null)
   const [isGeneratingProof, setIsGeneratingProof] = useState(false)
 
@@ -146,18 +148,28 @@ function App() {
     reader.onload = (e) => {
       try {
         const jsonData = JSON.parse(e.target.result)
-        const validation = validatePolicyData(jsonData)
         
-        if (validation.isValid) {
-          setPolicyData(validation.data)
-          setError(null)
-        } else {
-          setError(validation.error)
-          setPolicyData(null)
+        // Check if the JSON has a policies array
+        if (!jsonData.policies || !Array.isArray(jsonData.policies)) {
+          throw new Error('Invalid JSON format: missing policies array')
         }
+
+        // Validate each policy
+        const validatedPolicies = jsonData.policies.map(policy => {
+          const validation = validatePolicyData(policy)
+          if (!validation.isValid) {
+            throw new Error(`Invalid policy ${policy.name}: ${validation.error}`)
+          }
+          return validation.data
+        })
+
+        setPolicies(validatedPolicies)
+        setSelectedPolicy(validatedPolicies[0])
+        setError(null)
       } catch (err) {
-        setError('Invalid JSON file')
-        setPolicyData(null)
+        setError(err.message)
+        setPolicies([])
+        setSelectedPolicy(null)
       }
     }
     reader.readAsText(file)
@@ -165,58 +177,65 @@ function App() {
 
   return (
     <div className="container">
-      <WalletButton />
-      <h1>Policy Claimer</h1>
-      
-      <div className="upload-section">
-        <label htmlFor="file-upload" className="upload-button">
-          Upload Policy JSON
-          <input
-            id="file-upload"
-            type="file"
-            accept=".json"
-            onChange={handleFileUpload}
-            style={{ display: 'none' }}
-          />
-        </label>
-      </div>
-
-      {error && (
-        <div className="error-message">
-          {error}
+      <Sidebar 
+        policies={policies}
+        selectedPolicy={selectedPolicy}
+        onSelectPolicy={setSelectedPolicy}
+      />
+      <div className="main-content">
+        <WalletButton />
+        <h1>Policy Claimer</h1>
+        
+        <div className="upload-section">
+          <label htmlFor="file-upload" className="upload-button">
+            Upload Policy JSON
+            <input
+              id="file-upload"
+              type="file"
+              accept=".json"
+              onChange={handleFileUpload}
+              style={{ display: 'none' }}
+            />
+          </label>
         </div>
-      )}
 
-      {policyData && (
-        <div className="policy-data">
-          <h2>{policyData.name}</h2>
-          <div className="data-section">
-            <h3>Location</h3>
-            <p>Latitude: {policyData.location.latitude}</p>
-            <p>Longitude: {policyData.location.longitude}</p>
+        {error && (
+          <div className="error-message">
+            {error}
           </div>
-          <div className="data-section">
-            <h3>H3 Index</h3>
-            <p>Index: {policyData.h3Index.h3Index}</p>
-            <p>Resolution: {policyData.h3Index.resolution}</p>
-          </div>
-          <div className="data-section">
-            <p>Salt: {policyData.salt}</p>
-          </div>
-          
-          {policyData.proof && (
-            <div className="proof-section">
-              <button
-                className="generate-proof-button"
-                onClick={() => generateProof(policyData)}
-                disabled={isGeneratingProof}
-              >
-                {isGeneratingProof ? 'Generating...' : 'Generate Proof'}
-              </button>
+        )}
+
+        {selectedPolicy && (
+          <div className="policy-data">
+            <h2>{selectedPolicy.name}</h2>
+            <div className="data-section">
+              <h3>Location</h3>
+              <p>Latitude: {selectedPolicy.location.latitude}</p>
+              <p>Longitude: {selectedPolicy.location.longitude}</p>
             </div>
-          )}
-        </div>
-      )}
+            <div className="data-section">
+              <h3>H3 Index</h3>
+              <p>Index: {selectedPolicy.h3Index.h3Index}</p>
+              <p>Resolution: {selectedPolicy.h3Index.resolution}</p>
+            </div>
+            <div className="data-section">
+              <p>Salt: {selectedPolicy.salt}</p>
+            </div>
+            
+            {selectedPolicy.proof && (
+              <div className="proof-section">
+                <button
+                  className="generate-proof-button"
+                  onClick={() => generateProof(selectedPolicy)}
+                  disabled={isGeneratingProof}
+                >
+                  {isGeneratingProof ? 'Generating...' : 'Generate Proof'}
+                </button>
+              </div>
+            )}
+          </div>
+        )}
+      </div>
     </div>
   )
 }
