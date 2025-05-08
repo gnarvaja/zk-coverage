@@ -100,7 +100,8 @@ function App() {
   const [policies, setPolicies] = useState([])
   const [selectedPolicy, setSelectedPolicy] = useState(null)
   const [error, setError] = useState(null)
-  const [isGeneratingProof, setIsGeneratingProof] = useState(false)
+  const [isGeneratingClaimProof, setIsGeneratingClaimProof] = useState(false)
+  const [isGeneratingAcquisitionProof, setIsGeneratingAcquisitionProof] = useState(false)
   const [isCreatingPolicy, setIsCreatingPolicy] = useState(false)
 
   const handleCreatePolicy = () => {
@@ -128,9 +129,9 @@ function App() {
     }
   }
 
-  const generateProof = async (data) => {
+  const generateClaimProof = async (data) => {
     try {
-      setIsGeneratingProof(true)
+      setIsGeneratingClaimProof(true)
       const user_location_l12 = data.h3Index.h3Index
       console.log(user_location_l12)
       const salt = data.salt
@@ -162,9 +163,47 @@ function App() {
       const proof = await backend.generateProof(witness);
       console.log('Generated proof:', proof);
     } catch (err) {
-      setError('Failed to generate proof: ' + err.message)
+      setError('Failed to generate claim proof: ' + err.message)
     } finally {
-      setIsGeneratingProof(false)
+      setIsGeneratingClaimProof(false)
+    }
+  }
+
+  const generateAcquisitionProof = async (data) => {
+    try {
+      setIsGeneratingAcquisitionProof(true)
+      const user_location_l12 = data.h3Index.h3Index
+      console.log(user_location_l12)
+      const salt = data.salt
+      console.log(salt)
+      const locationHash = data.locationHash
+      console.log(locationHash)
+      const merkleRoot = data.proof.root
+      console.log(merkleRoot)
+      const merkleIndices = [0, 0, 0, 0, 0, 0, 0, 0] //TODO generate this per input
+      console.log(merkleIndices)
+      const merkleSiblings = data.proof.siblings
+      console.log(merkleSiblings)
+
+		  const noir = new Noir(acquisitionCircuit);
+		  const backend = new UltraHonkBackend(acquisitionCircuit.bytecode);
+      const { witness } = await noir.execute({
+         "user_location_l12": user_location_l12.toString(),
+         "salt": salt,
+         "commited_location_hash": locationHash.toString(),
+         "affected_merkle_root": merkleRoot.toString(),
+         "merkle_proof_depth": 1,
+         "merkle_proof_indices": bigIntArraytoStringArray(merkleIndices),
+         "merkle_proof_siblings": bigIntArraytoStringArray(merkleSiblings),
+         "severity": 1
+      });
+      console.log('Generated acquisition witness:', witness);
+      const proof = await backend.generateProof(witness);
+      console.log('Generated acquisition proof:', proof);
+    } catch (err) {
+      setError('Failed to generate acquisition proof: ' + err.message)
+    } finally {
+      setIsGeneratingAcquisitionProof(false)
     }
   }
 
@@ -271,11 +310,18 @@ function App() {
             {selectedPolicy.proof && (
               <div className="proof-section">
                 <button
-                  className="generate-proof-button"
-                  onClick={() => generateProof(selectedPolicy)}
-                  disabled={isGeneratingProof}
+                  className="generate-acquisition-proof-button"
+                  onClick={() => generateAcquisitionProof(selectedPolicy)}
+                  disabled={isGeneratingAcquisitionProof}
                 >
-                  {isGeneratingProof ? 'Generating...' : 'Generate Proof'}
+                  {isGeneratingAcquisitionProof ? 'Generating...' : 'Generate Acquisition Proof'}
+                </button>
+                <button
+                  className="generate-claim-proof-button"
+                  onClick={() => generateClaimProof(selectedPolicy)}
+                  disabled={isGeneratingClaimProof}
+                >
+                  {isGeneratingClaimProof ? 'Generating...' : 'Generate Claim Proof'}
                 </button>
               </div>
             )}

@@ -75,9 +75,10 @@ h1 {
   margin-top: 1.5rem;
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }
 
-.generate-proof-button {
+.generate-claim-proof-button {
   background-color: #48bb78;
   color: white;
   padding: 0.75rem 1.5rem;
@@ -86,6 +87,28 @@ h1 {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+
+.generate-acquisition-proof-button {
+  background-color: #4299e1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.generate-acquisition-proof-button:hover {
+  background-color: #3182ce;
+  transform: translateY(-1px);
+}
+
+.generate-acquisition-proof-button:disabled {
+  background-color: #90cdf4;
+  cursor: not-allowed;
+  transform: none;
 }
 
 .generate-proof-button:hover {
