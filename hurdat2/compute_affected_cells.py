@@ -195,12 +195,15 @@ def is_in_us(lat, lng):
     if h3_level2 in us_hexagons:
         return True
     # Compute the distance to the closest us_hexagons
-    level2_neighbors = h3.grid_ring(h3_level2, k=1)
-    for neightbor in level2_neighbors:
-        hex_center = h3.cell_to_latlng(neightbor)
-        distance = h3.great_circle_distance((lat, lng), hex_center, unit="km")
-        if distance <= EDGE_LENGTH[2]:
-            return True
+    min_distance = min(
+        [
+            h3.great_circle_distance((lat, lng), h3.cell_to_latlng(us_hexa), unit="km")
+            for us_hexa in h3.grid_ring(h3_level2, k=1)
+            if us_hexa in us_hexagons
+        ]
+    )
+    if min_distance <= EDGE_LENGTH[2] * 2:
+        return True
     return False
 
 
@@ -227,10 +230,7 @@ def find_impacted_indexes(storm_data, radius_km, resolution, min_wind):
 
         # Add the new found indexes or the ones that have greater severity
         for h3_index, distance_severity in h3_indexes.items():
-            if (
-                h3_index not in impacted_h3_indexes
-                or distance_severity > impacted_h3_indexes[h3_index]
-            ):
+            if h3_index not in impacted_h3_indexes or distance_severity > impacted_h3_indexes[h3_index]:
                 impacted_h3_indexes[h3_index] = distance_severity
 
     logger.info(f"Total Indexes: {len(impacted_h3_indexes)}")
@@ -247,9 +247,7 @@ def compact_impacted_indexes(h3_indexes):
         ),
         key=severity_key,
     ):
-        compacted_cells = h3.compact_cells(
-            [h3_index for _, h3_index in h3_indexes_for_severity]
-        )
+        compacted_cells = h3.compact_cells([h3_index for _, h3_index in h3_indexes_for_severity])
         for h3_index in compacted_cells:
             h3_indexes_compacted[h3_index] = severity
     return h3_indexes_compacted
@@ -260,8 +258,9 @@ severity_palette = {
     2: "#6EC6FF",  # Soft Blue (Low-Moderate severity)
     3: "#FFD966",  # Yellow (Moderate severity)
     4: "#FFA500",  # Orange (High severity)
-    5: "#FF5252"   # Red (Highest severity)
+    5: "#FF5252",  # Red (Highest severity)
 }
+
 
 def display_h3_indexes(map, h3_indexes):
     """
@@ -319,7 +318,7 @@ def display_storm_path(map, records):
     # Create a color scale for wind speed
     colormap = linear.YlOrRd_09.scale(
         min([point["max_sustained_wind"] for point in records]),
-        max([point["max_sustained_wind"] for point in records])
+        max([point["max_sustained_wind"] for point in records]),
     )
     colormap.caption = "Wind Speed (knots)"
 
@@ -329,7 +328,7 @@ def display_storm_path(map, records):
         locations=[[point["lat"], point["lng"]] for point in records],
         color="white",
         weight=2,
-        opacity=0.7
+        opacity=0.7,
     ).add_to(map)
 
     # Add markers for each point with wind speed
@@ -343,18 +342,15 @@ def display_storm_path(map, records):
             popup=f"Wind: {point["max_sustained_wind"]} knots",
         ).add_to(map)
 
+
 if __name__ == "__main__":
     import sys
 
     storm_data = hurdat2json.read_storm(sys.argv[1], sys.argv[2])
-    h3_indexes = find_impacted_indexes(
-        storm_data, float(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5])
-    )
+    h3_indexes = find_impacted_indexes(storm_data, float(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5]))
     if h3_indexes:
         h3_indexes_compacted = compact_impacted_indexes(h3_indexes)
-        logger.info(
-            f"Original H3 indexes {len(h3_indexes)} vs Compacted {len(h3_indexes_compacted)}"
-        )
+        logger.info(f"Original H3 indexes {len(h3_indexes)} vs Compacted {len(h3_indexes_compacted)}")
 
         center_lat, center_lng = compute_centroid(h3_indexes_compacted.keys())
         map = folium.Map(location=[center_lat, center_lng], zoom_start=8)

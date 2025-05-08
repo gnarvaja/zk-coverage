@@ -65,7 +65,11 @@ def hurdat2_to_json(hurdat2_filename, output_pattern):
             break
         record_count = int(row[2])
         storm = parse_storm([row] + [next(hurdat2) for _ in range(record_count)])
-        json.dump(storm, open(output_pattern.format(year=storm["year"], storm_id=storm["id"]), "w"), indent=2)
+        json.dump(
+            storm,
+            open(output_pattern.format(year=storm["year"], storm_id=storm["id"]), "w"),
+            indent=2,
+        )
 
 
 def read_storm(hurdat2_filename, storm_id):
@@ -93,10 +97,18 @@ def parse_storm(rows):
     storm_id = row[0]
     year = storm_id[-4:]
     storm_name = row[1].strip()
-    storm = dict(year=int(year), id=storm_id, name=storm_name, record_count=int(row[2]), records=[])
+    storm = dict(
+        year=int(year),
+        id=storm_id,
+        name=storm_name,
+        record_count=int(row[2]),
+        records=[],
+    )
     for row in rows[1:]:
         record = dict(
-            date_time=datetime.datetime.strptime(f"{row[0]} {row[1]}", "%Y%m%d %H%M").replace(tzinfo=UTC).isoformat(),
+            date_time=datetime.datetime.strptime(f"{row[0]} {row[1]}", "%Y%m%d %H%M")
+            .replace(tzinfo=UTC)
+            .isoformat(),
             record_type=parse_record_type(row[2]),
             system_status=parse_system_status(row[3]),
             lat=parse_lat(row[4]),
