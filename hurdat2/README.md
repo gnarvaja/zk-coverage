@@ -33,7 +33,9 @@ STORMS=`egrep "^AL[0-9][0-9]202[0-4].*" hurdat2-1851-2024-040425.txt | cut -f1 -
 for STORM_ID in $STORMS; do
   python3 -m hurdat2.compute_affected_cells --hurdat2 $HURDAT2_FILE \
     --resolution $RESOLUTION --radius $DISTANCE --min-wind $WIND_SPEED \
-    affected_areas --storm $STORM_ID --map-output $OUTPUT_DIR/${STORM_ID}.html
+    affected_areas --storm $STORM_ID \
+                   --map-output $OUTPUT_DIR/${STORM_ID}.html \
+                   --json-output $OUTPUT_DIR/${STORM_ID}.json
 done
 
 python3 -m http.server -d $OUTPUT_DIR
@@ -50,7 +52,9 @@ OUTPUT_DIR=hurdat2/outputs
 
 python3 -m hurdat2.compute_affected_cells --hurdat2 $HURDAT2_FILE \
   --resolution $RESOLUTION --radius $DISTANCE --min-wind $WIND_SPEED \
-  price_list --year-from 1924 --year-to 2023 --map-output $OUTPUT_DIR/pricelist.html
+  price_list --year-from 1924 --year-to 2023 \
+             --map-output $OUTPUT_DIR/pricelist.html \
+             --json-output $OUTPUT_DIR/pricelist.json
 
 python3 -m http.server -d $OUTPUT_DIR
 ```

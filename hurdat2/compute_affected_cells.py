@@ -1,13 +1,15 @@
 import sys
 import argparse
+import logging
+import json
+from functools import partial
+from itertools import groupby
+
 import h3
 import numpy as np
-import logging
 import folium
 from branca.colormap import linear
 import numpy as np
-from functools import partial
-from itertools import groupby
 
 from . import hurdat2json
 
@@ -434,6 +436,8 @@ def parse_args(args):
 
     affected_areas.add_argument("--map-output", type=str, help="Output for the HTML map")
 
+    affected_areas.add_argument("--json-output", type=str, help="Output in JSON")
+
     price_list = subparsers.add_parser("price_list")
 
     price_list.add_argument(
@@ -458,6 +462,7 @@ def parse_args(args):
     )
 
     price_list.add_argument("--map-output", type=str, help="Output for the HTML map")
+    price_list.add_argument("--json-output", type=str, help="Output in JSON")
 
     return parser.parse_args(args)
 
@@ -487,11 +492,26 @@ def affected_areas_command(args):
     h3_indexes_compacted = compact_impacted_indexes(h3_indexes)
     logger.info(f"Original H3 indexes {len(h3_indexes)} vs Compacted {len(h3_indexes_compacted)}")
 
-    center_lat, center_lng = compute_centroid(h3_indexes_compacted.keys())
-    map = folium.Map(location=[center_lat, center_lng], zoom_start=8)
-    display_h3_indexes(map, h3_indexes_compacted)
-    display_storm_path(map, storm_data["records"])
-    map.save(args.map_output)
+    if args.map_output:
+        center_lat, center_lng = compute_centroid(h3_indexes_compacted.keys())
+        map = folium.Map(location=[center_lat, center_lng], zoom_start=8)
+        display_h3_indexes(map, h3_indexes_compacted)
+        display_storm_path(map, storm_data["records"])
+        map.save(args.map_output)
+
+    if args.json_output:
+        json.dump(
+            {
+                "type": "affected_areas",
+                "storm": args.storm,
+                "areas": [
+                    (h3_index, round(severity / MAX_SEVERITY, 2))
+                    for h3_index, severity in h3_indexes_compacted.items()
+                ],
+            },
+            open(args.json_output, "w"),
+            indent=2,
+        )
 
 
 def price_list_command(args):
@@ -520,28 +540,41 @@ def price_list_command(args):
     h3_indexes_compacted = compact_impacted_indexes(h3_indexes)
 
     logger.info(f"Original H3 indexes {len(h3_indexes)} vs Compacted {len(h3_indexes_compacted)}")
-    center_lat, center_lng = compute_centroid(h3_indexes_compacted.keys())
-    map = folium.Map(location=[center_lat, center_lng], zoom_start=8)
 
-    colormap = linear.YlOrRd_09.scale(
-        min(h3_indexes_compacted.values()),
-        max(h3_indexes_compacted.values()),
-    )
-    colormap.caption = "Loss Prob"
-    display_h3_indexes(
-        map,
-        h3_indexes_compacted,
-        properties_fn=lambda h3_data: {"loss_prob": h3_data},
-        style_fn=lambda feature: {
-            "fillColor": colormap(feature["properties"]["loss_prob"]),
-            "color": colormap(feature["properties"]["loss_prob"]),
-            "weight": 1,
-            "fillOpacity": 0.4,
-        },
-        tooltip_fn=lambda h3_index, h3_data: f"H3 Res: {h3.get_resolution(h3_index)} / LossProb: {h3_data * 100:.1f}%",
-        popup_fn=lambda h3_index, h3_data: f"<b>H3 Index:</b> {h3_index}<br><b>Resolution:</b> {h3.get_resolution(h3_index)}  <b>LossProb:</b> {h3_data * 100:.1f}% ",
-    )
-    map.save(args.map_output)
+    if args.map_output:
+        center_lat, center_lng = compute_centroid(h3_indexes_compacted.keys())
+        map = folium.Map(location=[center_lat, center_lng], zoom_start=8)
+
+        colormap = linear.YlOrRd_09.scale(
+            min(h3_indexes_compacted.values()),
+            max(h3_indexes_compacted.values()),
+        )
+        colormap.caption = "Loss Prob"
+        display_h3_indexes(
+            map,
+            h3_indexes_compacted,
+            properties_fn=lambda h3_data: {"loss_prob": h3_data},
+            style_fn=lambda feature: {
+                "fillColor": colormap(feature["properties"]["loss_prob"]),
+                "color": colormap(feature["properties"]["loss_prob"]),
+                "weight": 1,
+                "fillOpacity": 0.4,
+            },
+            tooltip_fn=lambda h3_index, h3_data: f"H3 Res: {h3.get_resolution(h3_index)} / LossProb: {h3_data * 100:.1f}%",
+            popup_fn=lambda h3_index, h3_data: f"<b>H3 Index:</b> {h3_index}<br><b>Resolution:</b> {h3.get_resolution(h3_index)}  <b>LossProb:</b> {h3_data * 100:.1f}% ",
+        )
+        map.save(args.map_output)
+    if args.json_output:
+        json.dump(
+            {
+                "type": "price_list",
+                "year_from": args.year_from,
+                "year_to": args.year_to,
+                "areas": [(h3_index, loss_prob) for h3_index, loss_prob in h3_indexes_compacted.items()],
+            },
+            open(args.json_output, "w"),
+            indent=2,
+        )
 
 
 def main(args):
