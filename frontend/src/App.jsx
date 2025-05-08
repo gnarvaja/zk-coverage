@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { WalletButton } from './components/WalletButton'
 import Sidebar from './components/Sidebar'
+import PolicyForm from './components/PolicyForm'
 
 import { LeanIMT } from "@zk-kit/lean-imt"
 import { poseidon2 } from "poseidon-lite"
@@ -99,6 +100,32 @@ function App() {
   const [selectedPolicy, setSelectedPolicy] = useState(null)
   const [error, setError] = useState(null)
   const [isGeneratingProof, setIsGeneratingProof] = useState(false)
+  const [isCreatingPolicy, setIsCreatingPolicy] = useState(false)
+
+  const handleCreatePolicy = () => {
+    setSelectedPolicy(null)
+    setIsCreatingPolicy(true)
+  }
+
+  const handleCancelCreate = () => {
+    setIsCreatingPolicy(false)
+    if (policies.length > 0) {
+      setSelectedPolicy(policies[0])
+    }
+  }
+
+  const handleSubmitPolicy = (newPolicy) => {
+    const validation = validatePolicyData(newPolicy)
+    if (validation.isValid) {
+      const updatedPolicies = [...policies, validation.data]
+      setPolicies(updatedPolicies)
+      setSelectedPolicy(validation.data)
+      setIsCreatingPolicy(false)
+      setError(null)
+    } else {
+      setError(validation.error)
+    }
+  }
 
   const generateProof = async (data) => {
     try {
@@ -181,6 +208,7 @@ function App() {
         policies={policies}
         selectedPolicy={selectedPolicy}
         onSelectPolicy={setSelectedPolicy}
+        onCreatePolicy={handleCreatePolicy}
       />
       <div className="main-content">
         <WalletButton />
@@ -205,7 +233,12 @@ function App() {
           </div>
         )}
 
-        {selectedPolicy && (
+        {isCreatingPolicy ? (
+          <PolicyForm 
+            onSubmit={handleSubmitPolicy}
+            onCancel={handleCancelCreate}
+          />
+        ) : selectedPolicy && (
           <div className="policy-data">
             <h2>{selectedPolicy.name}</h2>
             <div className="data-section">

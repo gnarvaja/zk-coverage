@@ -1,6 +1,6 @@
 import './Sidebar.css';
 
-const Sidebar = ({ policies, selectedPolicy, onSelectPolicy }) => {
+const Sidebar = ({ policies, selectedPolicy, onSelectPolicy, onCreatePolicy }) => {
   return (
     <div className="sidebar">
       <h2 className="sidebar-title">Policies</h2>
@@ -15,6 +15,9 @@ const Sidebar = ({ policies, selectedPolicy, onSelectPolicy }) => {
           </div>
         ))}
       </div>
+      <button className="create-policy-button" onClick={onCreatePolicy}>
+        Create Policy
+      </button>
     </div>
   );
 };
