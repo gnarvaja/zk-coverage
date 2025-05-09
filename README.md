@@ -34,61 +34,19 @@ To claim the policy, the user will have to submit a zk-proof that attests:
 
 This proof will be sent on-chain to the risk module, which will verify the proof and trigger the policy, releasing the payout.
 
-## ZK-proofs signatures
+## ZK circuits
 
 ### Policy Acquisition
 
-```noir
-/// Proofs the user can acquire a policy with a given risk bucket.
-///
-/// # Arguments
-///
-/// * `user_location` - The location of the user's property that will be protected, encoded as a level 12 H3 index
-/// * `salt` - A secret salt chosen by the user to hide his location
-/// * `user_location_hash` - hash(user_location, salt) that will be public and stored in the policy.
-/// * `price_list_merkle_root` - Merkle root of the price list that was published
-/// * `price_area` - H3 index of a price area included in the price list
-/// * `risk_bucket` - The risk bucket that corresponds to the selected price area
-/// * `merkle_path` - Merkle path for the pair (price_area, risk_bucket) that is member of the price_list_merkle_root
-/// * `risk_limit_area` - Level 2 H3 index that will be used for risk allocation limits.
-fn main(user_location: Field,
-        salt: Field,
-        pub user_location_hash: Field,
-        pub price_list_merkle_root: Field,
-        price_area: Field,
-        pub risk_bucket: Field,
-        merkle_path: [Field; 10],
-        pub risk_limit_area: Field
-) {
-    ...
-}
-```
+![image](https://github.com/user-attachments/assets/26588c3a-222c-4704-b3d3-faa57165ee09)
+
+https://github.com/gnarvaja/zk-coverage/blob/main/circuits/acquisition/src/main.nr
 
 ### Policy Claim
 
-```noir
-/// Proofs that the user was affected by a storm.
-///
-/// # Arguments
-///
-/// * `user_location` - The location of the user's property that will be protected, encoded as a level 12 H3 index
-/// * `salt` - A secret salt chosen by the user to hide his location
-/// * `user_location_hash` - hash(user_location, salt) that will be public and stored in the policy.
-/// * `affected_list_merkle_root` - Merkle root of the price list that was published
-/// * `affected_area` - H3 index of an affected area included in the affected list
-/// * `severity` - The severity corresponding to the affected_area
-/// * `merkle_path` - Merkle path for the pair (affected_area, severity) that is member of the affected_list_merkle_root
-fn main(user_location: Field,
-        salt: Field,
-        pub user_location_hash: Field,
-        pub affected_list_merkle_root: Field,
-        affected_area: Field,
-        pub severity: Field,
-        merkle_path: [Field; 10]
-) {
-    ...
-}
-```
+![image](https://github.com/user-attachments/assets/16f0b048-41fa-49ad-ba67-4af1e12f1274)
+
+https://github.com/gnarvaja/zk-coverage/blob/main/circuits/claim/src/main.nr
 
 ## Components
 
@@ -100,6 +58,8 @@ This will be a smart contract that will be integrated with the [Ensuro protocol]
 
 This will be an off-chain process (probably in Python) that will analyze the historical storm data (from [HURDAT2](https://www.nhc.noaa.gov/data/#hurdat)) and it will assign price buckets to the different covered locations. The list will be published off-chain, and the Merkle root of that list will be stored on-chain (on the ZK-Coverage Smart contract).
 
+See https://github.com/gnarvaja/zk-coverage/tree/main/hurdat2#readme
+
 ### Front-end - Policy acquisition
 
 This will be the user-facing component where the user will select the address of their home, which will be encoded as an H3 level 12 location.
@@ -108,9 +68,13 @@ Then, using the price list, it will compute the premium to be paid for a given a
 
 If the user confirms, it will generate the zk-proof that will be submitted to the ZK-Coverage smart contract that will create the policy.
 
+https://zkcoverage.web.app/
+
 ### Affected areas generation
 
 This will be an off-chain process (probably in Python) that will analyze the storm data (from [HURDAT2](https://www.nhc.noaa.gov/data/#hurdat)) and for each storm in the coverage period, it will generate the list of affected areas and assign a severity to each of them. The list will be published off-chain, and the Merkle root of that list will be stored on-chain (on the ZK-Coverage Smart contract).
+
+See https://github.com/gnarvaja/zk-coverage/tree/main/hurdat2#readme
 
 ### Front-end - Policy claim
 
@@ -128,7 +92,6 @@ https://zkcoverage.web.app/
 
 Smart contracts deployed:
 
-- ZkCoverage: https://sepolia.etherscan.io/address/0x7d78fb87a9a4cc1e45a1c95e7feeca39b25d2c9f#code
-- AcquisitionVerifier: https://sepolia.etherscan.io/address/0x50e4aB637F1a3Fa944A0e014fc34A10cC24a1bB4
-- ClaimVerifier: https://sepolia.etherscan.io/address/0xcb0485bd2adE1E7CF45fF57e90271eBD19683167
-
+- ZkCoverage: https://sepolia.etherscan.io/address/0x1f75B3Af686776C80D7f0c03885F19849c260EcC#code
+- AcquisitionVerifier: https://sepolia.etherscan.io/address/0xE1Db291F80633b65cA0bB1c8A347F635bbef5B9c
+- ClaimVerifier: https://sepolia.etherscan.io/address/0x3a9eA402798f42896ECB0dBdf249ff558bF253f0
