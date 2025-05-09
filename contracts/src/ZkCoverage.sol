@@ -19,7 +19,7 @@ contract ZkCoverage is AccessControl {
     IVerifier public acquisitionVerifier;
     IVerifier public claimVerifier;
     TrustfulRiskModule public riskModule;
-    uint96 internal internalId;
+    mapping(bytes32 => uint256) internal policies;
 
     struct SignedMT {
         bytes32 merkleRoot;
@@ -32,8 +32,10 @@ contract ZkCoverage is AccessControl {
     error InvalidProof();
     error PriceExpired();
     error ClaimNotValid();
+    error HashAlreadyUsed();
+    error NotYourPolicy();
 
-    event PolicyAcquired(uint256 indexed policyId, uint64 indexed riskArea);
+    event PolicyAcquired(bytes32 indexed userLocationHash, uint256 indexed policyId, uint64 riskArea);
     event PolicyClaimed(uint256 indexed policyId, uint256 severity);
     event ClaimVerifierChanged(IVerifier oldVerifier, IVerifier newVerifier);
     event AcquisitionVerifierChanged(IVerifier oldVerifier, IVerifier newVerifier);
@@ -55,6 +57,9 @@ contract ZkCoverage is AccessControl {
         address onBehalfOf,
         bytes calldata proof
     ) external {
+        // This check might be redundant, since we are already using the userLocationHash as internalId,
+        // but I leave it anyway
+        require(policies[userLocationHash] == 0, HashAlreadyUsed());
         require(
             _checkAcquisitionProof(userLocationHash, priceList.merkleRoot, lossProb, riskArea, proof), InvalidProof()
         );
@@ -63,9 +68,10 @@ contract ZkCoverage is AccessControl {
         // Check price list signature
         _checkRole(PRICER_ROLE, _recoverSigner(priceList));
 
-        uint256 policyId =
-            riskModule.newPolicy(insuredValue, type(uint256).max, lossProb, expiration, onBehalfOf, ++internalId);
-        emit PolicyAcquired(policyId, riskArea);
+        policies[userLocationHash] =
+            riskModule.newPolicy(insuredValue, type(uint256).max, lossProb, expiration, onBehalfOf,
+                                 uint96(uint256(userLocationHash)));
+        emit PolicyAcquired(userLocationHash, policies[userLocationHash], riskArea);
     }
 
     function _checkAcquisitionProof(
@@ -96,6 +102,7 @@ contract ZkCoverage is AccessControl {
         SignedMT memory storm,
         bytes calldata proof
     ) external {
+        require(policies[userLocationHash] == policyData.id, NotYourPolicy());
         require(_checkClaimProof(userLocationHash, storm.merkleRoot, severity, proof), InvalidProof());
         // Check claim is active (policy was created before valid claim date and claim period not expired)
         require(policyData.start < storm.validFrom && block.timestamp <= storm.validTo, ClaimNotValid());
