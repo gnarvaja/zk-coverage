@@ -56,7 +56,7 @@ fn find_parent(h3_index: H3Index, level: u64) -> H3Index {
 /// * `merkle_proof_indices` - The indices of the Merkle proof
 /// * `merkle_proof_siblings` - The siblings of the Merkle proof
 /// * `price_area_level` - The level of the matching price area
-/// * `risk_bucket` - The risk corresponding to the use location, used to generate the leaf of the Merkle tree hash(user_location_l6, risk_bucket)
+/// * `risk_bucket` - The risk corresponding to the use location, used to generate the leaf of the Merkle tree hash(ancestor_area, risk_bucket)
 /// * `risk_limit_area_l2` - Level 2 H3 index that will be used for risk allocation limits.
 fn main(
     user_location_l12: H3Index,
@@ -82,8 +82,8 @@ fn main(
 
     // Assert membership in price merkle tree
     assert(price_area_level < USER_RESOLUTION);  // Check is a parent area
-    let user_location_l6 = find_parent(user_location_l12, price_area_level as u64) as Field;
-    let leaf = poseidon2([user_location_l6, risk_bucket]);
+    let ancestor_area = find_parent(user_location_l12, price_area_level as u64) as Field;
+    let leaf = poseidon2([ancestor_area, risk_bucket]);
     let merkle_root = binary_merkle_root(
         poseidon2,
         leaf,

@@ -2,6 +2,7 @@ use binary_merkle_root::binary_merkle_root;
 use std::hash::poseidon::bn254::hash_2 as poseidon2;
 
 global MAX_DEPTH: u32 = 12;
+global USER_RESOLUTION: u8 = 12;
 
 // Check https://observablehq.com/@nrabinowitz/h3-index-bit-layout?collection=@nrabinowitz/h3
 // 52 = 3 * 15 + 7
@@ -49,7 +50,7 @@ fn find_parent(h3_index: H3Index, level: u64) -> H3Index {
 /// * `merkle_proof_depth` - The depth of the Merkle proof
 /// * `merkle_proof_indices` - The indices of the Merkle proof
 /// * `merkle_proof_siblings` - The siblings of the Merkle proof
-/// * `severity` - The severity corresponding to the affected_area,  used to generate the leaf of the Merkle tree hash(user_location_l6, severity)
+/// * `severity` - The severity corresponding to the affected_area,  used to generate the leaf of the Merkle tree hash(ancestor_area, severity)
 fn main(
     user_location_l12: H3Index,
     salt: Field,
@@ -67,8 +68,9 @@ fn main(
     assert(location_hash == commited_location_hash);
 
     // Assert membership in affected merkle tree
-    let user_location_l6 = find_parent(user_location_l12, affected_area_level as u64) as Field;
-    let leaf = poseidon2([user_location_l6, severity]);
+    assert(affected_area_level < USER_RESOLUTION);  // Check is a parent area
+    let ancestor_area = find_parent(user_location_l12, affected_area_level as u64) as Field;
+    let leaf = poseidon2([ancestor_area, severity]);
     let merkle_root = binary_merkle_root(
         poseidon2,
         leaf,
