@@ -2,7 +2,7 @@
 
 _Project created in the context of the [Noir Hackathon 2025](https://www.noirhack.com/)_
 
-ZK-coverage is a privacy-preserving product that offers *parametric coverage* against hurricanes or tropical storms.
+ZK-coverage is a privacy-preserving product that offers _parametric coverage_ against hurricanes or tropical storms.
 
 The product uses [H3](https://h3geo.org/) Indexes (at different levels) to encode the user's location, the pricing areas, and the regions affected by the hurricanes.
 
@@ -12,12 +12,13 @@ When a hurricane happens, we will compute the affected areas with a predefined a
 
 ## How does it work?
 
-First, we will have a _price list_ that includes a list of pairs (h3-index, risk bucket) for the coverage area. 
+First, we will have a _price list_ that includes a list of pairs (h3-index, risk bucket) for the coverage area.
 The risk bucket defines the parameters that affect the price of the policy for a given amount covered. See https://docs.ensuro.co/ensuro-docs/smart-contracts/policy#premium-split for an explanation of the different parameters and how they affect the premium paid.
 
 Then the user goes to the website, selects the location of his home (or any other location he wants to protect), which will be encoded as a high-precision h3 index (level 11 or 12).
 
 Checking the price list, he will know the price of the coverage for a given exposure amount and duration. To acquire the coverage, he will send a zk-proof that attests:
+
 1. His location is within a given risk bucket
 2. His location is within a given H3 level 2 index
 3. The hash of his location combined with a salt (also secret) is H.
@@ -27,8 +28,9 @@ With the zk-proof and these outputs, he will acquire a Policy on-chain that will
 Then, for every storm event (we will fetch the data from HURDAT2), we will compute the affected regions as a list of pairs (h3 index, severity), where the severity maps to a percentage of the total policy exposure that will be paid out to a user in that location. The Merkle root of this list will be published on-chain.
 
 To claim the policy, the user will have to submit a zk-proof that attests:
+
 1. His location is within (h3 child) an affected area that has a given severity.
-2.  The hash of his location combined with a salt (also secret) is H.
+2. The hash of his location combined with a salt (also secret) is H.
 
 This proof will be sent on-chain to the risk module, which will verify the proof and trigger the policy, releasing the payout.
 
@@ -96,15 +98,15 @@ This will be a smart contract that will be integrated with the [Ensuro protocol]
 
 ### Price list generation
 
-This will be an off-chain process (probably in Python) that will analyze the historical storm data (from [HURDAT2](https://www.nhc.noaa.gov/data/#hurdat)) and it will assign price buckets to the different covered locations. The list will be published off-chain, and the Merkle root of that list will be stored on-chain (on the ZK-Coverage Smart contract). 
+This will be an off-chain process (probably in Python) that will analyze the historical storm data (from [HURDAT2](https://www.nhc.noaa.gov/data/#hurdat)) and it will assign price buckets to the different covered locations. The list will be published off-chain, and the Merkle root of that list will be stored on-chain (on the ZK-Coverage Smart contract).
 
 ### Front-end - Policy acquisition
 
-This will be the user-facing component where the user will select the address of their home, which will be encoded as an H3 level 12 location. 
+This will be the user-facing component where the user will select the address of their home, which will be encoded as an H3 level 12 location.
 
 Then, using the price list, it will compute the premium to be paid for a given amount of coverage.
 
-If the user confirms, it will generate the zk-proof that will be submitted to the ZK-Coverage smart contract that will create the policy. 
+If the user confirms, it will generate the zk-proof that will be submitted to the ZK-Coverage smart contract that will create the policy.
 
 ### Affected areas generation
 
@@ -112,6 +114,21 @@ This will be an off-chain process (probably in Python) that will analyze the sto
 
 ### Front-end - Policy claim
 
-Here, the user will introduce their location and will see the storm that affected this location and the payout he is entitled to claim. 
+Here, the user will introduce their location and will see the storm that affected this location and the payout he is entitled to claim.
 
 By entering the salt, he will be able to generate the zk-proof that will be submitted to the ZK-coverage smart contract that, after verifying the proof, will trigger the policy and release the payout.
+
+## Deployments
+
+### Live Demo
+
+https://zkcoverage.web.app/
+
+### Sepolia
+
+Smart contracts deployed:
+
+- ZkCoverage: https://sepolia.etherscan.io/address/0x7d78fb87a9a4cc1e45a1c95e7feeca39b25d2c9f#code
+- AcquisitionVerifier: https://sepolia.etherscan.io/address/0x50e4aB637F1a3Fa944A0e014fc34A10cC24a1bB4
+- ClaimVerifier: https://sepolia.etherscan.io/address/0xcb0485bd2adE1E7CF45fF57e90271eBD19683167
+
