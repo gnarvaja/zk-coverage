@@ -32,87 +32,19 @@
       0.004
     ],
     [
-      "8344c0fffffffff",
+      "8348b1fffffffff",
       0.005
     ],
     [
-      "8344c1fffffffff",
+      "8348b4fffffffff",
       0.005
     ],
     [
-      "8344c2fffffffff",
+      "8348b6fffffffff",
       0.005
     ],
     [
-      "8344c3fffffffff",
-      0.005
-    ],
-    [
-      "8344c5fffffffff",
-      0.005
-    ],
-    [
-      "832a88fffffffff",
-      0.005
-    ],
-    [
-      "832a8afffffffff",
-      0.005
-    ],
-    [
-      "832a8bfffffffff",
-      0.005
-    ],
-    [
-      "832a8cfffffffff",
-      0.005
-    ],
-    [
-      "832a8efffffffff",
-      0.005
-    ],
-    [
-      "834458fffffffff",
-      0.005
-    ],
-    [
-      "834459fffffffff",
-      0.005
-    ],
-    [
-      "83445afffffffff",
-      0.005
-    ],
-    [
-      "83445bfffffffff",
-      0.005
-    ],
-    [
-      "83445dfffffffff",
-      0.005
-    ],
-    [
-      "834469fffffffff",
-      0.005
-    ],
-    [
-      "83446bfffffffff",
-      0.005
-    ],
-    [
-      "832b1afffffffff",
-      0.005
-    ],
-    [
-      "832b1efffffffff",
-      0.005
-    ],
-    [
-      "832a34fffffffff",
-      0.005
-    ],
-    [
-      "832a35fffffffff",
+      "832a01fffffffff",
       0.005
     ],
     [
@@ -140,6 +72,110 @@
       0.005
     ],
     [
+      "832a12fffffffff",
+      0.005
+    ],
+    [
+      "832a16fffffffff",
+      0.005
+    ],
+    [
+      "832b02fffffffff",
+      0.005
+    ],
+    [
+      "832b04fffffffff",
+      0.005
+    ],
+    [
+      "832b06fffffffff",
+      0.005
+    ],
+    [
+      "832a88fffffffff",
+      0.005
+    ],
+    [
+      "832a8afffffffff",
+      0.005
+    ],
+    [
+      "832a8bfffffffff",
+      0.005
+    ],
+    [
+      "832a8cfffffffff",
+      0.005
+    ],
+    [
+      "832a8efffffffff",
+      0.005
+    ],
+    [
+      "8344c0fffffffff",
+      0.005
+    ],
+    [
+      "8344c1fffffffff",
+      0.005
+    ],
+    [
+      "8344c2fffffffff",
+      0.005
+    ],
+    [
+      "8344c3fffffffff",
+      0.005
+    ],
+    [
+      "8344c5fffffffff",
+      0.005
+    ],
+    [
+      "832b1afffffffff",
+      0.005
+    ],
+    [
+      "832b1efffffffff",
+      0.005
+    ],
+    [
+      "834469fffffffff",
+      0.005
+    ],
+    [
+      "83446bfffffffff",
+      0.005
+    ],
+    [
+      "834898fffffffff",
+      0.005
+    ],
+    [
+      "834899fffffffff",
+      0.005
+    ],
+    [
+      "83489afffffffff",
+      0.005
+    ],
+    [
+      "83489bfffffffff",
+      0.005
+    ],
+    [
+      "83489dfffffffff",
+      0.005
+    ],
+    [
+      "832a34fffffffff",
+      0.005
+    ],
+    [
+      "832a35fffffffff",
+      0.005
+    ],
+    [
       "832aa0fffffffff",
       0.005
     ],
@@ -164,15 +200,39 @@
       0.005
     ],
     [
-      "8348b1fffffffff",
+      "834443fffffffff",
       0.005
     ],
     [
-      "8348b4fffffffff",
+      "834458fffffffff",
       0.005
     ],
     [
-      "8348b6fffffffff",
+      "834459fffffffff",
+      0.005
+    ],
+    [
+      "83445afffffffff",
+      0.005
+    ],
+    [
+      "83445bfffffffff",
+      0.005
+    ],
+    [
+      "83445dfffffffff",
+      0.005
+    ],
+    [
+      "834881fffffffff",
+      0.005
+    ],
+    [
+      "834884fffffffff",
+      0.005
+    ],
+    [
+      "834885fffffffff",
       0.005
     ],
     [
@@ -189,66 +249,6 @@
     ],
     [
       "832aacfffffffff",
-      0.005
-    ],
-    [
-      "832a01fffffffff",
-      0.005
-    ],
-    [
-      "834898fffffffff",
-      0.005
-    ],
-    [
-      "834899fffffffff",
-      0.005
-    ],
-    [
-      "83489afffffffff",
-      0.005
-    ],
-    [
-      "83489bfffffffff",
-      0.005
-    ],
-    [
-      "83489dfffffffff",
-      0.005
-    ],
-    [
-      "832a12fffffffff",
-      0.005
-    ],
-    [
-      "832a16fffffffff",
-      0.005
-    ],
-    [
-      "834881fffffffff",
-      0.005
-    ],
-    [
-      "834884fffffffff",
-      0.005
-    ],
-    [
-      "834885fffffffff",
-      0.005
-    ],
-    [
-      "834443fffffffff",
-      0.005
-    ],
-    [
-      "832b02fffffffff",
-      0.005
-    ],
-    [
-      "832b04fffffffff",
-      0.005
-    ],
-    [
-      "832b06fffffffff",
       0.005
     ],
     [
@@ -556,6 +556,18 @@
       0.005
     ],
     [
+      "8348b5fffffffff",
+      0.006
+    ],
+    [
+      "832a05fffffffff",
+      0.006
+    ],
+    [
+      "832b0dfffffffff",
+      0.006
+    ],
+    [
       "832a36fffffffff",
       0.006
     ],
@@ -564,15 +576,7 @@
       0.006
     ],
     [
-      "8348b5fffffffff",
-      0.006
-    ],
-    [
-      "832aaefffffffff",
-      0.006
-    ],
-    [
-      "832a05fffffffff",
+      "834441fffffffff",
       0.006
     ],
     [
@@ -580,11 +584,7 @@
       0.006
     ],
     [
-      "832b0dfffffffff",
-      0.006
-    ],
-    [
-      "834441fffffffff",
+      "832aaefffffffff",
       0.006
     ],
     [
@@ -600,7 +600,15 @@
       0.006
     ],
     [
-      "83445cfffffffff",
+      "8344defffffffff",
+      0.008
+    ],
+    [
+      "832b05fffffffff",
+      0.008
+    ],
+    [
+      "83489cfffffffff",
       0.008
     ],
     [
@@ -608,11 +616,7 @@
       0.008
     ],
     [
-      "8344defffffffff",
-      0.008
-    ],
-    [
-      "83489cfffffffff",
+      "83445cfffffffff",
       0.008
     ],
     [
@@ -624,19 +628,11 @@
       0.008
     ],
     [
-      "832b05fffffffff",
-      0.008
-    ],
-    [
       "832b56fffffffff",
       0.008
     ],
     [
-      "8344e3fffffffff",
-      0.01
-    ],
-    [
-      "8344c6fffffffff",
+      "832b00fffffffff",
       0.01
     ],
     [
@@ -644,7 +640,7 @@
       0.01
     ],
     [
-      "83445efffffffff",
+      "8344c6fffffffff",
       0.01
     ],
     [
@@ -656,19 +652,19 @@
       0.01
     ],
     [
-      "832b00fffffffff",
+      "8344e3fffffffff",
       0.01
     ],
     [
-      "834468fffffffff",
-      0.012
-    ],
-    [
-      "832a30fffffffff",
-      0.012
+      "83445efffffffff",
+      0.01
     ],
     [
       "832a13fffffffff",
+      0.012
+    ],
+    [
+      "834468fffffffff",
       0.012
     ],
     [
@@ -676,8 +672,16 @@
       0.012
     ],
     [
+      "832a30fffffffff",
+      0.012
+    ],
+    [
       "834495fffffffff",
       0.012
+    ],
+    [
+      "832a26fffffffff",
+      0.014
     ],
     [
       "8344f1fffffffff",
@@ -688,19 +692,15 @@
       0.014
     ],
     [
-      "832a26fffffffff",
-      0.014
+      "832b09fffffffff",
+      0.016
     ],
     [
-      "8344e1fffffffff",
+      "832a21fffffffff",
       0.016
     ],
     [
       "832a89fffffffff",
-      0.016
-    ],
-    [
-      "834464fffffffff",
       0.016
     ],
     [
@@ -712,15 +712,15 @@
       0.016
     ],
     [
+      "8344e1fffffffff",
+      0.016
+    ],
+    [
+      "834464fffffffff",
+      0.016
+    ],
+    [
       "832aadfffffffff",
-      0.016
-    ],
-    [
-      "832a21fffffffff",
-      0.016
-    ],
-    [
-      "832b09fffffffff",
       0.016
     ],
     [
@@ -730,6 +730,10 @@
     [
       "832ae6fffffffff",
       0.016
+    ],
+    [
+      "832b03fffffffff",
+      0.018
     ],
     [
       "83446dfffffffff",
@@ -744,19 +748,15 @@
       0.018
     ],
     [
-      "832b03fffffffff",
-      0.018
-    ],
-    [
       "834402fffffffff",
       0.018
     ],
     [
-      "834474fffffffff",
+      "8344c4fffffffff",
       0.02
     ],
     [
-      "8344c4fffffffff",
+      "834474fffffffff",
       0.02
     ],
     [
@@ -764,11 +764,7 @@
       0.02
     ],
     [
-      "83446afffffffff",
-      0.022
-    ],
-    [
-      "832a31fffffffff",
+      "832b01fffffffff",
       0.022
     ],
     [
@@ -776,7 +772,11 @@
       0.022
     ],
     [
-      "832b01fffffffff",
+      "83446afffffffff",
+      0.022
+    ],
+    [
+      "832a31fffffffff",
       0.022
     ],
     [
@@ -800,11 +800,11 @@
       0.026
     ],
     [
-      "8344d1fffffffff",
+      "832a22fffffffff",
       0.026
     ],
     [
-      "832a22fffffffff",
+      "8344d1fffffffff",
       0.026
     ],
     [
@@ -814,6 +814,10 @@
     [
       "834451fffffffff",
       0.028
+    ],
+    [
+      "832af6fffffffff",
+      0.03
     ],
     [
       "832b1dfffffffff",
@@ -828,11 +832,7 @@
       0.03
     ],
     [
-      "832af6fffffffff",
-      0.03
-    ],
-    [
-      "8344f3fffffffff",
+      "832b0cfffffffff",
       0.032
     ],
     [
@@ -840,7 +840,7 @@
       0.032
     ],
     [
-      "832b0cfffffffff",
+      "8344f3fffffffff",
       0.032
     ],
     [
@@ -868,6 +868,10 @@
       0.036
     ],
     [
+      "832af2fffffffff",
+      0.038
+    ],
+    [
       "8344e2fffffffff",
       0.038
     ],
@@ -876,19 +880,15 @@
       0.038
     ],
     [
-      "83448afffffffff",
-      0.038
-    ],
-    [
-      "832af2fffffffff",
-      0.038
-    ],
-    [
       "832a19fffffffff",
       0.038
     ],
     [
-      "832ac5fffffffff",
+      "83448afffffffff",
+      0.038
+    ],
+    [
+      "832b08fffffffff",
       0.04
     ],
     [
@@ -896,15 +896,15 @@
       0.04
     ],
     [
-      "832b08fffffffff",
+      "832ac5fffffffff",
       0.04
     ],
     [
-      "8344f5fffffffff",
+      "832a02fffffffff",
       0.042
     ],
     [
-      "832a02fffffffff",
+      "8344f5fffffffff",
       0.042
     ],
     [
@@ -912,15 +912,7 @@
       0.044
     ],
     [
-      "8344f0fffffffff",
-      0.046
-    ],
-    [
       "832a03fffffffff",
-      0.046
-    ],
-    [
-      "8344d3fffffffff",
       0.046
     ],
     [
@@ -928,12 +920,12 @@
       0.046
     ],
     [
-      "8344e6fffffffff",
-      0.048
+      "8344d3fffffffff",
+      0.046
     ],
     [
-      "834895fffffffff",
-      0.048
+      "8344f0fffffffff",
+      0.046
     ],
     [
       "832a11fffffffff",
@@ -944,6 +936,22 @@
       0.048
     ],
     [
+      "834895fffffffff",
+      0.048
+    ],
+    [
+      "8344e6fffffffff",
+      0.048
+    ],
+    [
+      "832a06fffffffff",
+      0.05
+    ],
+    [
+      "834891fffffffff",
+      0.05
+    ],
+    [
       "8344e0fffffffff",
       0.05
     ],
@@ -952,19 +960,11 @@
       0.05
     ],
     [
-      "834891fffffffff",
-      0.05
-    ],
-    [
-      "832a06fffffffff",
-      0.05
-    ],
-    [
       "83449dfffffffff",
       0.05
     ],
     [
-      "8344d5fffffffff",
+      "832b0efffffffff",
       0.052
     ],
     [
@@ -972,7 +972,7 @@
       0.052
     ],
     [
-      "832b0efffffffff",
+      "8344d5fffffffff",
       0.052
     ],
     [
@@ -984,11 +984,11 @@
       0.054
     ],
     [
-      "832b19fffffffff",
+      "8348b3fffffffff",
       0.056
     ],
     [
-      "8348b3fffffffff",
+      "832b19fffffffff",
       0.056
     ],
     [
@@ -1000,15 +1000,15 @@
       0.056
     ],
     [
-      "834466fffffffff",
-      0.058
-    ],
-    [
       "83441bfffffffff",
       0.058
     ],
     [
       "832b0afffffffff",
+      0.058
+    ],
+    [
+      "834466fffffffff",
       0.058
     ],
     [
@@ -1044,6 +1044,14 @@
       0.064
     ],
     [
+      "832a00fffffffff",
+      0.066
+    ],
+    [
+      "834894fffffffff",
+      0.066
+    ],
+    [
       "8344f6fffffffff",
       0.066
     ],
@@ -1052,23 +1060,15 @@
       0.066
     ],
     [
-      "834894fffffffff",
-      0.066
-    ],
-    [
-      "832a00fffffffff",
-      0.066
-    ],
-    [
       "83441cfffffffff",
       0.068
     ],
     [
-      "832ac1fffffffff",
+      "832b0bfffffffff",
       0.07
     ],
     [
-      "832b0bfffffffff",
+      "832ac1fffffffff",
       0.07
     ],
     [
@@ -1076,16 +1076,12 @@
       0.072
     ],
     [
-      "83448cfffffffff",
-      0.074
-    ],
-    [
       "832a1cfffffffff",
       0.074
     ],
     [
-      "834476fffffffff",
-      0.076
+      "83448cfffffffff",
+      0.074
     ],
     [
       "8344a9fffffffff",
@@ -1100,6 +1096,10 @@
       0.076
     ],
     [
+      "834476fffffffff",
+      0.076
+    ],
+    [
       "834455fffffffff",
       0.078
     ],
@@ -1108,15 +1108,11 @@
       0.08
     ],
     [
-      "83440dfffffffff",
-      0.08
-    ],
-    [
       "8344f2fffffffff",
       0.08
     ],
     [
-      "834488fffffffff",
+      "83440dfffffffff",
       0.08
     ],
     [
@@ -1124,15 +1120,19 @@
       0.08
     ],
     [
-      "834481fffffffff",
-      0.084
+      "834488fffffffff",
+      0.08
     ],
     [
       "834419fffffffff",
       0.084
     ],
     [
-      "834482fffffffff",
+      "834481fffffffff",
+      0.084
+    ],
+    [
+      "832ad0fffffffff",
       0.086
     ],
     [
@@ -1140,7 +1140,7 @@
       0.086
     ],
     [
-      "832ad0fffffffff",
+      "834482fffffffff",
       0.086
     ],
     [
@@ -1156,6 +1156,14 @@
       0.09
     ],
     [
+      "83441efffffffff",
+      0.092
+    ],
+    [
+      "8344d4fffffffff",
+      0.092
+    ],
+    [
       "8344e4fffffffff",
       0.092
     ],
@@ -1168,16 +1176,12 @@
       0.092
     ],
     [
-      "83441efffffffff",
-      0.092
-    ],
-    [
-      "8344d4fffffffff",
-      0.092
-    ],
-    [
       "834446fffffffff",
       0.092
+    ],
+    [
+      "8344d0fffffffff",
+      0.094
     ],
     [
       "834460fffffffff",
@@ -1185,10 +1189,6 @@
     ],
     [
       "83448dfffffffff",
-      0.094
-    ],
-    [
-      "8344d0fffffffff",
       0.094
     ],
     [
@@ -1220,19 +1220,19 @@
       0.1
     ],
     [
-      "83448bfffffffff",
-      0.1
-    ],
-    [
       "832a18fffffffff",
       0.1
     ],
     [
-      "834890fffffffff",
-      0.102
+      "83448bfffffffff",
+      0.1
     ],
     [
       "832af4fffffffff",
+      0.102
+    ],
+    [
+      "834890fffffffff",
       0.102
     ],
     [
@@ -1252,19 +1252,19 @@
       0.106
     ],
     [
-      "834416fffffffff",
-      0.108
-    ],
-    [
       "832af5fffffffff",
       0.108
     ],
     [
-      "834462fffffffff",
-      0.11
+      "834416fffffffff",
+      0.108
     ],
     [
       "8344a2fffffffff",
+      0.11
+    ],
+    [
+      "834462fffffffff",
       0.11
     ],
     [
@@ -1312,10 +1312,6 @@
       0.124
     ],
     [
-      "834480fffffffff",
-      0.126
-    ],
-    [
       "8344a0fffffffff",
       0.126
     ],
@@ -1324,23 +1320,27 @@
       0.126
     ],
     [
-      "834472fffffffff",
-      0.128
+      "834480fffffffff",
+      0.126
     ],
     [
       "832ad3fffffffff",
       0.128
     ],
     [
-      "832ac4fffffffff",
-      0.13
+      "834472fffffffff",
+      0.128
     ],
     [
       "832af3fffffffff",
       0.13
     ],
     [
-      "834485fffffffff",
+      "832ac4fffffffff",
+      0.13
+    ],
+    [
+      "832addfffffffff",
       0.134
     ],
     [
@@ -1348,15 +1348,15 @@
       0.134
     ],
     [
-      "832addfffffffff",
+      "834485fffffffff",
       0.134
     ],
     [
-      "834471fffffffff",
+      "832af1fffffffff",
       0.14
     ],
     [
-      "832af1fffffffff",
+      "834471fffffffff",
       0.14
     ],
     [
@@ -1400,11 +1400,11 @@
       0.166
     ],
     [
-      "834412fffffffff",
+      "832ad5fffffffff",
       0.166
     ],
     [
-      "832ad5fffffffff",
+      "834412fffffffff",
       0.166
     ],
     [

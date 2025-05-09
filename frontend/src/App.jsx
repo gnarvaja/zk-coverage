@@ -393,6 +393,7 @@ function App() {
 
         {isCreatingPolicy ? (
           <PolicyForm 
+            priceAreas={priceAreas}
             onSubmit={handleSubmitPolicy}
             onCancel={handleCancelCreate}
           />

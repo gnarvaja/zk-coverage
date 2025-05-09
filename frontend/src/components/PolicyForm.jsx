@@ -1,8 +1,10 @@
 import { useState, useRef } from "react";
 import { useLoadScript } from "@react-google-maps/api";
 import { Autocomplete } from "@react-google-maps/api";
-import { latLngToCell } from "h3-js";
+import { latLngToCell, cellToParent } from "h3-js";
 import "./PolicyForm.css";
+import { formatLossProb, computePremium } from "../utils";
+import { findIndex } from "lodash-es";
 
 function AddressInput({ onSelect }) {
   const { isLoaded } = useLoadScript({
@@ -68,15 +70,32 @@ function AddressInput({ onSelect }) {
   );
 }
 
-const PolicyForm = ({ onSubmit, onCancel }) => {
+function findPriceArea(priceAreas, h3Index) {
+  const h3Parents = [...Array(11).keys()].map((i) =>
+    cellToParent(h3Index, 12 - i - 1),
+  );
+  const priceIndex = findIndex(
+    priceAreas.price,
+    (priceH3) => h3Parents.indexOf(priceH3) >= 0,
+  );
+  if (priceIndex < 0) return null;
+  return {
+    priceArea: priceAreas.price[priceIndex],
+    lossProb: priceAreas.risk[priceIndex],
+  };
+}
+
+const PolicyForm = ({ onSubmit, onCancel, priceAreas }) => {
   const [formData, setFormData] = useState({
     name: "",
     salt: "",
+    insuredAmount: "1000",
     location: {
       latitude: "",
       longitude: "",
       h3Index: "",
     },
+    priceArea: undefined,
   });
 
   const handleSubmit = (e) => {
@@ -104,17 +123,21 @@ const PolicyForm = ({ onSubmit, onCancel }) => {
   const handleAddressSelect = (location) => {
     console.log("Selected address:", location.address);
     console.log("Coordinates:", location.coordinates);
+    const h3Index = latLngToCell(
+      location.coordinates.lat,
+      location.coordinates.lng,
+      12,
+    );
+    const priceArea =
+      priceAreas === null ? undefined : findPriceArea(priceAreas, h3Index);
     setFormData((prev) => ({
       ...prev,
       location: {
         latitude: location.coordinates.lat,
         longitude: location.coordinates.lng,
-        h3Index: latLngToCell(
-          location.coordinates.lat,
-          location.coordinates.lng,
-          12,
-        ),
+        h3Index,
       },
+      priceArea,
     }));
   };
 
@@ -158,6 +181,21 @@ const PolicyForm = ({ onSubmit, onCancel }) => {
               </a>{" "}
               <br />
               H3: {formData.location.h3Index}
+              <br />
+              {formData.priceArea !== null &&
+                `PriceArea: ${formData.priceArea.priceArea} / LossProb: ${formatLossProb(formData.priceArea.lossProb)}`}
+            </label>
+          </div>
+        )}
+        {formData.insuredAmount && formData.priceArea?.lossProb && (
+          <div className="form-group">
+            <label>
+              Premium:{" "}
+              {computePremium(
+                parseInt(formData.insuredAmount),
+                formData.priceArea.lossProb,
+                365,
+              )}
             </label>
           </div>
         )}
@@ -169,6 +207,20 @@ const PolicyForm = ({ onSubmit, onCancel }) => {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="insuredAmount">Insured Amount:</label>
+          <input
+            type="number"
+            id="insuredAmount"
+            name="insuredAmount"
+            value={formData.insuredAmount}
+            onChange={handleChange}
+            step="100"
+            min="500"
+            max="5000"
             required
           />
         </div>
