@@ -59,6 +59,7 @@ fn main(
     merkle_proof_depth: u32,
     merkle_proof_indices: [u1; MAX_DEPTH],
     merkle_proof_siblings: [Field; MAX_DEPTH],
+    affected_area_level: pub u8,
     severity: pub Field,
 ) {
     // Assert user knows preimage of location_hash
@@ -66,7 +67,7 @@ fn main(
     assert(location_hash == commited_location_hash);
 
     // Assert membership in affected merkle tree
-    let user_location_l6 = find_parent(user_location_l12, 6) as Field;
+    let user_location_l6 = find_parent(user_location_l12, affected_area_level as u64) as Field;
     let leaf = poseidon2([user_location_l6, severity]);
     let merkle_root = binary_merkle_root(
         poseidon2,
@@ -102,6 +103,7 @@ fn test_tree_index0_depth1_valid() {
             0,
             0,
         ],
+        6,
         2,
     )
 }
@@ -130,6 +132,7 @@ fn test_tree_index0_depth8_valid() {
             0,
             0,
         ],
+        6,
         2,
     )
 }
@@ -158,6 +161,7 @@ fn test_tree_index3_depth8_valid() {
             0,
             0,
         ],
+        6,
         2,
     )
 }
@@ -187,6 +191,7 @@ fn test_tree_depth0_invalid_index() {
             0,
             0,
         ],
+        6,
         2,
     )
 }
@@ -216,6 +221,7 @@ fn test_tree_invalid_proof() {
             0,
             0,
         ],
+        6,
         2,
     )
 }
@@ -245,6 +251,7 @@ fn test_main_invalid_hash() {
             0,
             0,
         ],
+        6,
         2,
     )
 }
@@ -273,6 +280,7 @@ fn test_tree_index1_depth1_valid() {
             0,
             0,
         ],
+        6,
         2,
     )
 }
@@ -301,6 +309,7 @@ fn test_tree_index1_depth8_valid() {
             0,
             0,
         ],
+        6,
         2,
     )
 }
