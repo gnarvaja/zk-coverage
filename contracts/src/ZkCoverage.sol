@@ -13,6 +13,7 @@ contract ZkCoverage is AccessControl {
     bytes32 public constant PRICER_ROLE = keccak256("PRICER_ROLE");
     // Users that can sign Claim Areas Lists
     bytes32 public constant CLAIM_AREAS_ROLE = keccak256("CLAIM_AREAS_ROLE");
+    bytes32 public constant VERIFIER_ADMIN_ROLE = keccak256("VERIFIER_ADMIN_ROLE");
     uint256 internal constant WAD = 1e18;
 
     IVerifier public acquisitionVerifier;
@@ -34,6 +35,8 @@ contract ZkCoverage is AccessControl {
 
     event PolicyAcquired(uint256 indexed policyId, uint64 indexed riskArea);
     event PolicyClaimed(uint256 indexed policyId, uint256 severity);
+    event ClaimVerifierChanged(IVerifier oldVerifier, IVerifier newVerifier);
+    event AcquisitionVerifierChanged(IVerifier oldVerifier, IVerifier newVerifier);
 
     constructor(address _riskModule, address _acquisitionVerifier, address _claimVerifier) {
         riskModule = TrustfulRiskModule(_riskModule);
@@ -115,5 +118,27 @@ contract ZkCoverage is AccessControl {
         publicInputs[1] = stormMerkleRoot;
         publicInputs[2] = bytes32(severity);
         return claimVerifier.verify(proof, publicInputs);
+    }
+
+    function setClaimVerifier(IVerifier newVerifier) external onlyRole(VERIFIER_ADMIN_ROLE) {
+        // Perhaps for a production and fully decentralized setup these method should be removed, to keep it
+        // immutable, but for the hackathon it can solve some issues
+        _setClaimVerifier(newVerifier);
+    }
+
+    function setAcquisitonVerifier(IVerifier newVerifier) external onlyRole(VERIFIER_ADMIN_ROLE) {
+        // Perhaps for a production and fully decentralized setup these method should be removed, to keep it
+        // immutable, but for the hackathon it can solve some issues
+        _setAcquisitionVerifier(newVerifier);
+    }
+
+    function _setClaimVerifier(IVerifier newVerifier) internal {
+        emit ClaimVerifierChanged(claimVerifier, newVerifier);
+        claimVerifier = newVerifier;
+    }
+
+    function _setAcquisitionVerifier(IVerifier newVerifier) internal {
+        emit AcquisitionVerifierChanged(acquisitionVerifier, newVerifier);
+        acquisitionVerifier = newVerifier;
     }
 }
