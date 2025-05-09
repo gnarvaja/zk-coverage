@@ -6,7 +6,7 @@ import PolicyForm from './components/PolicyForm'
 import { useWaitForTransactionReceipt, useWriteContract } from 'wagmi'
 import { useSendTransaction } from 'wagmi'
 import { parseEther } from 'viem'
-import { loadStormAreas, loadPriceAreas } from './utils'
+import { loadStormAreas, loadPriceAreas, toHex  } from './utils'
 import { ZKCOVERAGE_ADDRESS } from './config/config'
 
 import { LeanIMT } from "@zk-kit/lean-imt"
@@ -73,14 +73,14 @@ const validatePolicyData = (data, stormAreas, priceAreas) => {
       throw new Error('Invalid or missing policy name')
     }
 
-    if (!data.location || 
-        typeof data.location.latitude !== 'number' || 
+    if (!data.location ||
+        typeof data.location.latitude !== 'number' ||
         typeof data.location.longitude !== 'number') {
       throw new Error('Invalid or missing location data')
     }
 
-    if (!data.h3Index || 
-        typeof data.h3Index.h3Index !== 'string' || 
+    if (!data.h3Index ||
+        typeof data.h3Index.h3Index !== 'string' ||
         typeof data.h3Index.resolution !== 'number') {
       throw new Error('Invalid or missing H3 index data')
     }
@@ -107,7 +107,7 @@ const validatePolicyData = (data, stormAreas, priceAreas) => {
     const affectedAreas = h3ArraytoHexArray(stormAreas.affected)
     const parent_l6 = cellToParent(data.h3Index.h3Index.substring(2), 6)
     const index = stormAreas.affected.indexOf(parent_l6)
-    
+
     // If area is affected, generate the claim proof
     if (index !== -1) {
       const proof = generateMerkleProof(index, affectedAreas, stormAreas.severity, 256)
@@ -302,9 +302,9 @@ function App() {
       });
       console.log('Generated acquisition witness:', witness);
       const proof = await backend.generateProof(witness);
-      console.log('Generated acquisition proof:', proof.proof.toHex().toString());
+      console.log('Generated acquisition proof:', toHex(proof.proof));
       //TODO: Convert proof to right encoding and update below
-      setAquisitionProof(proof.proof.toHex().toString())
+      setAquisitionProof(toHex(proof.proof))
     } catch (err) {
       setError('Failed to generate acquisition proof: ' + err.message)
     } finally {
@@ -343,7 +343,7 @@ function App() {
     reader.onload = (e) => {
       try {
         const jsonData = JSON.parse(e.target.result)
-        
+
         // Check if the JSON has a policies array
         if (!jsonData.policies || !Array.isArray(jsonData.policies)) {
           throw new Error('Invalid JSON format: missing policies array')
@@ -372,7 +372,7 @@ function App() {
 
   return (
     <div className="container">
-      <Sidebar 
+      <Sidebar
         policies={policies}
         selectedPolicy={selectedPolicy}
         onSelectPolicy={setSelectedPolicy}
@@ -391,7 +391,7 @@ function App() {
         )}
 
         {isCreatingPolicy ? (
-          <PolicyForm 
+          <PolicyForm
             priceAreas={priceAreas}
             onSubmit={handleSubmitPolicy}
             onCancel={handleCancelCreate}
@@ -412,7 +412,7 @@ function App() {
             <div className="data-section">
               <p>Salt: {selectedPolicy.salt}</p>
             </div>
-            
+
               <div className="proof-section">
                 {!AcquisitionProof ? (
                   <button
@@ -446,7 +446,7 @@ function App() {
                 </button>)}
 
               </div>
-              
+
               {AcquisitionProof && (
                 <div className="proof-details">
                   <h3>Acquisition Proof Details</h3>

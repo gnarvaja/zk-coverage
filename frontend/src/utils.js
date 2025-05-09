@@ -95,3 +95,12 @@ export const loadPriceAreas = async () => {
     };
   }
 };
+
+export const uint8ArrayToHex = (uint8Array) =>
+  Array.from(uint8Array)
+    .map((byte) => byte.toString(16).padStart(2, "0"))
+    .join("");
+
+export const toHex = (uintArray) => {
+  return uint8ArrayToHex(uintArray);
+};
