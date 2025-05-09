@@ -5,12 +5,12 @@ function floatToWad(floatValue) {
   return BigInt(Math.round(floatValue * 10000)) * 10n ** 14n;
 }
 
-export function lossProbToFloat(lossProbAsWad) {
-  return parseInt(lossProbAsWad / 10n ** 12n) / 10e6;
+export function wadToFloat(lossProbAsWad) {
+  return parseInt(lossProbAsWad / 10n ** 12n) / 1e8;
 }
 
 export function formatLossProb(lossProbAsWad) {
-  return (lossProbToFloat(lossProbAsWad) * 100).toFixed(2) + " %";
+  return (wadToFloat(lossProbAsWad) * 100).toFixed(2) + " %";
 }
 
 export function computePremium(insuredAmount, lossProb, durationInDays) {
@@ -23,7 +23,7 @@ export function computePremium(insuredAmount, lossProb, durationInDays) {
     srRoc: 0.1,
     jrRoc: 0.3,
   };
-  const purePremium = lossProbToFloat(lossProb) * rmParams.moc * insuredAmount;
+  const purePremium = wadToFloat(lossProb) * rmParams.moc * insuredAmount;
   const jrScr = Math.max(0, insuredAmount * rmParams.jrCollRatio - purePremium);
   const srScr = Math.max(
     0,
