@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+NUM_PUBLIC_INPUTS=$1
+INPUT=$2
+OUTPUT=$3
+PROOF_HEX=$(cat $INPUT | od -An -v -t x1 | tr -d $' \n' | sed 's/^.\{8\}//')
+HEX_PUBLIC_INPUTS=${PROOF_HEX:0:$((32 * $NUM_PUBLIC_INPUTS * 2))}
+SPLIT_HEX_PUBLIC_INPUTS=$(sed -e 's/.\{64\}/"0x&",/g' <<<$HEX_PUBLIC_INPUTS)
+
+PROOF_WITHOUT_PUBLIC_INPUTS="${PROOF_HEX:$((NUM_PUBLIC_INPUTS * 32 * 2))}"
+
+echo $PROOF_WITHOUT_PUBLIC_INPUTS $OUTPUT > $OUTPUT
