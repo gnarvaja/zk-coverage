@@ -67,7 +67,7 @@ fn main(
     merkle_proof_depth: u32,
     merkle_proof_indices: [u1; MAX_DEPTH],
     merkle_proof_siblings: [Field; MAX_DEPTH],
-    price_area_level: pub u8,
+    price_area_level: u8,
     risk_bucket: pub Field,
     risk_limit_area_l2: pub H3Index,
 ) {
