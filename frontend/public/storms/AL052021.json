@@ -1,0 +1,2253 @@
+{
+  "type": "affected_areas",
+  "storm": {
+    "year": 2021,
+    "id": "AL052021",
+    "name": "ELSA",
+    "record_count": 43,
+    "records": [
+      {
+        "date_time": "2021-06-30T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TD",
+          "description": "Tropical cyclone of tropical depression intensity (< 34 knots)"
+        },
+        "lat": 9.4,
+        "lng": -42.8,
+        "max_sustained_wind": 30,
+        "min_pressure": 1008,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 60
+      },
+      {
+        "date_time": "2021-07-01T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 9.3,
+        "lng": -45.3,
+        "max_sustained_wind": 35,
+        "min_pressure": 1007,
+        "ne_34kt_wind_radii": 90,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 60
+      },
+      {
+        "date_time": "2021-07-01T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 9.4,
+        "lng": -47.7,
+        "max_sustained_wind": 35,
+        "min_pressure": 1006,
+        "ne_34kt_wind_radii": 90,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 90,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 50
+      },
+      {
+        "date_time": "2021-07-01T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 9.9,
+        "lng": -50.2,
+        "max_sustained_wind": 40,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 90,
+        "se_34kt_wind_radii": 70,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 90,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 50
+      },
+      {
+        "date_time": "2021-07-01T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 10.7,
+        "lng": -52.6,
+        "max_sustained_wind": 45,
+        "min_pressure": 1004,
+        "ne_34kt_wind_radii": 90,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 90,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 50
+      },
+      {
+        "date_time": "2021-07-02T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 11.5,
+        "lng": -55.0,
+        "max_sustained_wind": 50,
+        "min_pressure": 1002,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 90,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 100,
+        "ne_50kt_wind_radii": 40,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 40
+      },
+      {
+        "date_time": "2021-07-02T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 12.3,
+        "lng": -57.3,
+        "max_sustained_wind": 55,
+        "min_pressure": 1000,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 100,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 110,
+        "ne_50kt_wind_radii": 40,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 30
+      },
+      {
+        "date_time": "2021-07-02T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 13.0,
+        "lng": -59.8,
+        "max_sustained_wind": 65,
+        "min_pressure": 995,
+        "ne_34kt_wind_radii": 120,
+        "se_34kt_wind_radii": 100,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 110,
+        "ne_50kt_wind_radii": 40,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 20,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-02T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 13.8,
+        "lng": -62.4,
+        "max_sustained_wind": 75,
+        "min_pressure": 991,
+        "ne_34kt_wind_radii": 120,
+        "se_34kt_wind_radii": 100,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 110,
+        "ne_50kt_wind_radii": 40,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 20,
+        "max_wind_radius": 15
+      },
+      {
+        "date_time": "2021-07-03T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 14.7,
+        "lng": -65.1,
+        "max_sustained_wind": 70,
+        "min_pressure": 995,
+        "ne_34kt_wind_radii": 120,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 120,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 20,
+        "max_wind_radius": 15
+      },
+      {
+        "date_time": "2021-07-03T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 15.7,
+        "lng": -67.9,
+        "max_sustained_wind": 65,
+        "min_pressure": 998,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 100,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 110,
+        "ne_50kt_wind_radii": 60,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 20,
+        "max_wind_radius": 15
+      },
+      {
+        "date_time": "2021-07-03T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 16.6,
+        "lng": -70.3,
+        "max_sustained_wind": 60,
+        "min_pressure": 1000,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 90,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 100,
+        "ne_50kt_wind_radii": 60,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 15
+      },
+      {
+        "date_time": "2021-07-03T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 17.2,
+        "lng": -72.5,
+        "max_sustained_wind": 60,
+        "min_pressure": 1002,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 100,
+        "ne_50kt_wind_radii": 60,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-04T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 17.6,
+        "lng": -74.4,
+        "max_sustained_wind": 55,
+        "min_pressure": 1004,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 90,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 100,
+        "ne_50kt_wind_radii": 60,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-04T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 18.0,
+        "lng": -75.5,
+        "max_sustained_wind": 55,
+        "min_pressure": 1006,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 70,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 100,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-04T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 18.5,
+        "lng": -76.5,
+        "max_sustained_wind": 50,
+        "min_pressure": 1007,
+        "ne_34kt_wind_radii": 90,
+        "se_34kt_wind_radii": 60,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 90,
+        "ne_50kt_wind_radii": 40,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 40,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-04T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 19.3,
+        "lng": -77.6,
+        "max_sustained_wind": 50,
+        "min_pressure": 1007,
+        "ne_34kt_wind_radii": 80,
+        "se_34kt_wind_radii": 60,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 80,
+        "ne_50kt_wind_radii": 40,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-05T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 20.1,
+        "lng": -78.6,
+        "max_sustained_wind": 55,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 60,
+        "nw_34kt_wind_radii": 20,
+        "sw_34kt_wind_radii": 70,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 20,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-05T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 20.7,
+        "lng": -79.6,
+        "max_sustained_wind": 55,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 60,
+        "se_34kt_wind_radii": 60,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 20,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-05T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 21.3,
+        "lng": -80.7,
+        "max_sustained_wind": 55,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 60,
+        "se_34kt_wind_radii": 60,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 20,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-05T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 22.1,
+        "lng": -81.5,
+        "max_sustained_wind": 55,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 60,
+        "se_34kt_wind_radii": 60,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-05T18:30:00+00:00",
+        "record_type": {
+          "type": "L",
+          "description": "Landfall"
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 22.2,
+        "lng": -81.6,
+        "max_sustained_wind": 55,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 60,
+        "se_34kt_wind_radii": 60,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-06T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 22.9,
+        "lng": -82.0,
+        "max_sustained_wind": 50,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 60,
+        "se_34kt_wind_radii": 50,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-06T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 23.7,
+        "lng": -82.4,
+        "max_sustained_wind": 50,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 60,
+        "se_34kt_wind_radii": 50,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-06T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 24.6,
+        "lng": -82.7,
+        "max_sustained_wind": 55,
+        "min_pressure": 1003,
+        "ne_34kt_wind_radii": 60,
+        "se_34kt_wind_radii": 60,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-06T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 25.5,
+        "lng": -82.9,
+        "max_sustained_wind": 60,
+        "min_pressure": 997,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 70,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-07T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 26.6,
+        "lng": -83.2,
+        "max_sustained_wind": 65,
+        "min_pressure": 996,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-07T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 27.8,
+        "lng": -83.5,
+        "max_sustained_wind": 55,
+        "min_pressure": 998,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 20
+      },
+      {
+        "date_time": "2021-07-07T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 29.1,
+        "lng": -83.6,
+        "max_sustained_wind": 55,
+        "min_pressure": 999,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 25
+      },
+      {
+        "date_time": "2021-07-07T14:30:00+00:00",
+        "record_type": {
+          "type": "L",
+          "description": "Landfall"
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 29.8,
+        "lng": -83.5,
+        "max_sustained_wind": 55,
+        "min_pressure": 1000,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 50,
+        "ne_50kt_wind_radii": 30,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 25
+      },
+      {
+        "date_time": "2021-07-07T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 30.3,
+        "lng": -83.4,
+        "max_sustained_wind": 45,
+        "min_pressure": 1002,
+        "ne_34kt_wind_radii": 60,
+        "se_34kt_wind_radii": 60,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 30,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 40
+      },
+      {
+        "date_time": "2021-07-08T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 31.5,
+        "lng": -82.7,
+        "max_sustained_wind": 45,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 100,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 60
+      },
+      {
+        "date_time": "2021-07-08T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 32.8,
+        "lng": -81.8,
+        "max_sustained_wind": 40,
+        "min_pressure": 1006,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 100,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 75
+      },
+      {
+        "date_time": "2021-07-08T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 34.2,
+        "lng": -80.5,
+        "max_sustained_wind": 40,
+        "min_pressure": 1006,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 120,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 90
+      },
+      {
+        "date_time": "2021-07-08T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 35.5,
+        "lng": -79.0,
+        "max_sustained_wind": 45,
+        "min_pressure": 1004,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 140,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 90
+      },
+      {
+        "date_time": "2021-07-09T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 36.8,
+        "lng": -77.4,
+        "max_sustained_wind": 45,
+        "min_pressure": 1003,
+        "ne_34kt_wind_radii": 0,
+        "se_34kt_wind_radii": 140,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 90
+      },
+      {
+        "date_time": "2021-07-09T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 38.4,
+        "lng": -75.5,
+        "max_sustained_wind": 50,
+        "min_pressure": 1001,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 140,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 80,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 75
+      },
+      {
+        "date_time": "2021-07-09T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 40.3,
+        "lng": -73.1,
+        "max_sustained_wind": 50,
+        "min_pressure": 999,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 140,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 80,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 70
+      },
+      {
+        "date_time": "2021-07-09T15:00:00+00:00",
+        "record_type": {
+          "type": "L",
+          "description": "Landfall"
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 40.9,
+        "lng": -72.3,
+        "max_sustained_wind": 50,
+        "min_pressure": 999,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 140,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 80,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 70
+      },
+      {
+        "date_time": "2021-07-09T16:30:00+00:00",
+        "record_type": {
+          "type": "L",
+          "description": "Landfall"
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 41.4,
+        "lng": -71.7,
+        "max_sustained_wind": 50,
+        "min_pressure": 999,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 140,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 80,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 70
+      },
+      {
+        "date_time": "2021-07-09T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 42.0,
+        "lng": -71.0,
+        "max_sustained_wind": 45,
+        "min_pressure": 999,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 120,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 70
+      },
+      {
+        "date_time": "2021-07-10T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 44.0,
+        "lng": -68.3,
+        "max_sustained_wind": 40,
+        "min_pressure": 997,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 120,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 70
+      },
+      {
+        "date_time": "2021-07-10T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 46.8,
+        "lng": -64.4,
+        "max_sustained_wind": 35,
+        "min_pressure": 999,
+        "ne_34kt_wind_radii": 70,
+        "se_34kt_wind_radii": 120,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 70
+      }
+    ]
+  },
+  "areas": [
+    [
+      "864411a57ffffff",
+      0.2
+    ],
+    [
+      "864411ae7ffffff",
+      0.2
+    ],
+    [
+      "864411057ffffff",
+      0.2
+    ],
+    [
+      "8644110e7ffffff",
+      0.2
+    ],
+    [
+      "8644110c7ffffff",
+      0.2
+    ],
+    [
+      "8644116c7ffffff",
+      0.2
+    ],
+    [
+      "86441e8c7ffffff",
+      0.2
+    ],
+    [
+      "86441e8cfffffff",
+      0.2
+    ],
+    [
+      "86441ebb7ffffff",
+      0.2
+    ],
+    [
+      "86441eba7ffffff",
+      0.2
+    ],
+    [
+      "86441eb2fffffff",
+      0.2
+    ],
+    [
+      "86441c4dfffffff",
+      0.2
+    ],
+    [
+      "86441c4cfffffff",
+      0.2
+    ],
+    [
+      "86441c7b7ffffff",
+      0.2
+    ],
+    [
+      "86441c45fffffff",
+      0.2
+    ],
+    [
+      "86441cc5fffffff",
+      0.2
+    ],
+    [
+      "864411a1fffffff",
+      0.2
+    ],
+    [
+      "864411aafffffff",
+      0.2
+    ],
+    [
+      "864411a87ffffff",
+      0.2
+    ],
+    [
+      "864411a97ffffff",
+      0.2
+    ],
+    [
+      "864411067ffffff",
+      0.2
+    ],
+    [
+      "864411077ffffff",
+      0.2
+    ],
+    [
+      "8644110f7ffffff",
+      0.2
+    ],
+    [
+      "8644110d7ffffff",
+      0.2
+    ],
+    [
+      "86441172fffffff",
+      0.2
+    ],
+    [
+      "86441170fffffff",
+      0.2
+    ],
+    [
+      "864411627ffffff",
+      0.2
+    ],
+    [
+      "864411607ffffff",
+      0.2
+    ],
+    [
+      "86441161fffffff",
+      0.2
+    ],
+    [
+      "8644116f7ffffff",
+      0.2
+    ],
+    [
+      "8644116dfffffff",
+      0.2
+    ],
+    [
+      "86441ed67ffffff",
+      0.2
+    ],
+    [
+      "86441ed6fffffff",
+      0.2
+    ],
+    [
+      "86441e8b7ffffff",
+      0.2
+    ],
+    [
+      "86441e887ffffff",
+      0.2
+    ],
+    [
+      "86441e88fffffff",
+      0.2
+    ],
+    [
+      "86441e8d7ffffff",
+      0.2
+    ],
+    [
+      "86441ebafffffff",
+      0.2
+    ],
+    [
+      "86441eb1fffffff",
+      0.2
+    ],
+    [
+      "86441eb0fffffff",
+      0.2
+    ],
+    [
+      "86441eb77ffffff",
+      0.2
+    ],
+    [
+      "86441c44fffffff",
+      0.2
+    ],
+    [
+      "86441c46fffffff",
+      0.2
+    ],
+    [
+      "86441c097ffffff",
+      0.2
+    ],
+    [
+      "86441c0b7ffffff",
+      0.2
+    ],
+    [
+      "86441c19fffffff",
+      0.2
+    ],
+    [
+      "86441c187ffffff",
+      0.2
+    ],
+    [
+      "86441c1a7ffffff",
+      0.2
+    ],
+    [
+      "86441cc47ffffff",
+      0.2
+    ],
+    [
+      "86441cc77ffffff",
+      0.2
+    ],
+    [
+      "86441cc2fffffff",
+      0.2
+    ],
+    [
+      "86441cc27ffffff",
+      0.2
+    ],
+    [
+      "86441cd1fffffff",
+      0.2
+    ],
+    [
+      "86441cd17ffffff",
+      0.2
+    ],
+    [
+      "864411a4fffffff",
+      0.2
+    ],
+    [
+      "864411a47ffffff",
+      0.2
+    ],
+    [
+      "864411707ffffff",
+      0.2
+    ],
+    [
+      "86441171fffffff",
+      0.2
+    ],
+    [
+      "864411637ffffff",
+      0.2
+    ],
+    [
+      "864411617ffffff",
+      0.2
+    ],
+    [
+      "86441ed4fffffff",
+      0.2
+    ],
+    [
+      "86441cd57ffffff",
+      0.2
+    ],
+    [
+      "86441cd0fffffff",
+      0.2
+    ],
+    [
+      "86441cd07ffffff",
+      0.2
+    ],
+    [
+      "864411acfffffff",
+      0.4
+    ],
+    [
+      "864411adfffffff",
+      0.4
+    ],
+    [
+      "8644113a7ffffff",
+      0.4
+    ],
+    [
+      "8644113b7ffffff",
+      0.4
+    ],
+    [
+      "864411397ffffff",
+      0.4
+    ],
+    [
+      "86441165fffffff",
+      0.4
+    ],
+    [
+      "86441e9a7ffffff",
+      0.4
+    ],
+    [
+      "86441e807ffffff",
+      0.4
+    ],
+    [
+      "86441e80fffffff",
+      0.4
+    ],
+    [
+      "86441e857ffffff",
+      0.4
+    ],
+    [
+      "86441e847ffffff",
+      0.4
+    ],
+    [
+      "86441e86fffffff",
+      0.4
+    ],
+    [
+      "86441c49fffffff",
+      0.4
+    ],
+    [
+      "86441c48fffffff",
+      0.4
+    ],
+    [
+      "86441c4f7ffffff",
+      0.4
+    ],
+    [
+      "86441c4e7ffffff",
+      0.4
+    ],
+    [
+      "86441c40fffffff",
+      0.4
+    ],
+    [
+      "86441c42fffffff",
+      0.4
+    ],
+    [
+      "86441ccdfffffff",
+      0.4
+    ],
+    [
+      "86441ccc7ffffff",
+      0.4
+    ],
+    [
+      "86441cd97ffffff",
+      0.4
+    ],
+    [
+      "864411aefffffff",
+      0.4
+    ],
+    [
+      "864411ac7ffffff",
+      0.4
+    ],
+    [
+      "864411ad7ffffff",
+      0.4
+    ],
+    [
+      "864411327ffffff",
+      0.4
+    ],
+    [
+      "864411337ffffff",
+      0.4
+    ],
+    [
+      "86441104fffffff",
+      0.4
+    ],
+    [
+      "86441105fffffff",
+      0.4
+    ],
+    [
+      "8644110efffffff",
+      0.4
+    ],
+    [
+      "8644110cfffffff",
+      0.4
+    ],
+    [
+      "864411767ffffff",
+      0.4
+    ],
+    [
+      "864411747ffffff",
+      0.4
+    ],
+    [
+      "86441175fffffff",
+      0.4
+    ],
+    [
+      "864411677ffffff",
+      0.4
+    ],
+    [
+      "864411657ffffff",
+      0.4
+    ],
+    [
+      "8644116efffffff",
+      0.4
+    ],
+    [
+      "86441e9b7ffffff",
+      0.4
+    ],
+    [
+      "86441e987ffffff",
+      0.4
+    ],
+    [
+      "86441e98fffffff",
+      0.4
+    ],
+    [
+      "86441e817ffffff",
+      0.4
+    ],
+    [
+      "86441e81fffffff",
+      0.4
+    ],
+    [
+      "86441e8e7ffffff",
+      0.4
+    ],
+    [
+      "86441e8efffffff",
+      0.4
+    ],
+    [
+      "86441e85fffffff",
+      0.4
+    ],
+    [
+      "86441e84fffffff",
+      0.4
+    ],
+    [
+      "86441eb37ffffff",
+      0.4
+    ],
+    [
+      "86441eb27ffffff",
+      0.4
+    ],
+    [
+      "86441c4d7ffffff",
+      0.4
+    ],
+    [
+      "86441c4c7ffffff",
+      0.4
+    ],
+    [
+      "86441c4efffffff",
+      0.4
+    ],
+    [
+      "86441c457ffffff",
+      0.4
+    ],
+    [
+      "86441c477ffffff",
+      0.4
+    ],
+    [
+      "86441c55fffffff",
+      0.4
+    ],
+    [
+      "86441c547ffffff",
+      0.4
+    ],
+    [
+      "86441c567ffffff",
+      0.4
+    ],
+    [
+      "86441cccfffffff",
+      0.4
+    ],
+    [
+      "86441ccefffffff",
+      0.4
+    ],
+    [
+      "86441cce7ffffff",
+      0.4
+    ],
+    [
+      "86441cc1fffffff",
+      0.4
+    ],
+    [
+      "86441cc17ffffff",
+      0.4
+    ],
+    [
+      "86441cd8fffffff",
+      0.4
+    ],
+    [
+      "86441cd87ffffff",
+      0.4
+    ],
+    [
+      "86441cdb7ffffff",
+      0.4
+    ],
+    [
+      "864411af7ffffff",
+      0.4
+    ],
+    [
+      "864411a8fffffff",
+      0.4
+    ],
+    [
+      "864411a9fffffff",
+      0.4
+    ],
+    [
+      "86441106fffffff",
+      0.4
+    ],
+    [
+      "864411047ffffff",
+      0.4
+    ],
+    [
+      "8644110dfffffff",
+      0.4
+    ],
+    [
+      "864411777ffffff",
+      0.4
+    ],
+    [
+      "864411757ffffff",
+      0.4
+    ],
+    [
+      "86441162fffffff",
+      0.4
+    ],
+    [
+      "86441160fffffff",
+      0.4
+    ],
+    [
+      "8644116e7ffffff",
+      0.4
+    ],
+    [
+      "8644116cfffffff",
+      0.4
+    ],
+    [
+      "86441e997ffffff",
+      0.4
+    ],
+    [
+      "86441e99fffffff",
+      0.4
+    ],
+    [
+      "86441e8a7ffffff",
+      0.4
+    ],
+    [
+      "86441e8afffffff",
+      0.4
+    ],
+    [
+      "86441e8f7ffffff",
+      0.4
+    ],
+    [
+      "86441eb17ffffff",
+      0.4
+    ],
+    [
+      "86441eb07ffffff",
+      0.4
+    ],
+    [
+      "86441c447ffffff",
+      0.4
+    ],
+    [
+      "86441c467ffffff",
+      0.4
+    ],
+    [
+      "86441c54fffffff",
+      0.4
+    ],
+    [
+      "86441c56fffffff",
+      0.4
+    ],
+    [
+      "86441c197ffffff",
+      0.4
+    ],
+    [
+      "86441c1b7ffffff",
+      0.4
+    ],
+    [
+      "86441cc57ffffff",
+      0.4
+    ],
+    [
+      "86441cc0fffffff",
+      0.4
+    ],
+    [
+      "86441cc07ffffff",
+      0.4
+    ],
+    [
+      "86441cc37ffffff",
+      0.4
+    ],
+    [
+      "86441cdafffffff",
+      0.4
+    ],
+    [
+      "86441cda7ffffff",
+      0.4
+    ],
+    [
+      "864411a5fffffff",
+      0.4
+    ],
+    [
+      "86441e947ffffff",
+      0.6
+    ],
+    [
+      "86441c58fffffff",
+      0.6
+    ],
+    [
+      "864411347ffffff",
+      0.6
+    ],
+    [
+      "864411357ffffff",
+      0.6
+    ],
+    [
+      "864411227ffffff",
+      0.6
+    ],
+    [
+      "864411237ffffff",
+      0.6
+    ],
+    [
+      "86441138fffffff",
+      0.6
+    ],
+    [
+      "8644112a7ffffff",
+      0.6
+    ],
+    [
+      "864411287ffffff",
+      0.6
+    ],
+    [
+      "86441129fffffff",
+      0.6
+    ],
+    [
+      "86441e937ffffff",
+      0.6
+    ],
+    [
+      "86441e907ffffff",
+      0.6
+    ],
+    [
+      "86441e90fffffff",
+      0.6
+    ],
+    [
+      "86441e957ffffff",
+      0.6
+    ],
+    [
+      "86441e95fffffff",
+      0.6
+    ],
+    [
+      "86441e94fffffff",
+      0.6
+    ],
+    [
+      "86441c4b7ffffff",
+      0.6
+    ],
+    [
+      "86441c4a7ffffff",
+      0.6
+    ],
+    [
+      "86441c417ffffff",
+      0.6
+    ],
+    [
+      "86441c437ffffff",
+      0.6
+    ],
+    [
+      "86441c51fffffff",
+      0.6
+    ],
+    [
+      "86441c507ffffff",
+      0.6
+    ],
+    [
+      "86441c527ffffff",
+      0.6
+    ],
+    [
+      "86441134fffffff",
+      0.6
+    ],
+    [
+      "864411367ffffff",
+      0.6
+    ],
+    [
+      "864411377ffffff",
+      0.6
+    ],
+    [
+      "86441130fffffff",
+      0.6
+    ],
+    [
+      "86441131fffffff",
+      0.6
+    ],
+    [
+      "8644113afffffff",
+      0.6
+    ],
+    [
+      "864411387ffffff",
+      0.6
+    ],
+    [
+      "86441139fffffff",
+      0.6
+    ],
+    [
+      "8644112b7ffffff",
+      0.6
+    ],
+    [
+      "864411297ffffff",
+      0.6
+    ],
+    [
+      "86441166fffffff",
+      0.6
+    ],
+    [
+      "86441164fffffff",
+      0.6
+    ],
+    [
+      "86441e917ffffff",
+      0.6
+    ],
+    [
+      "86441e91fffffff",
+      0.6
+    ],
+    [
+      "86441e827ffffff",
+      0.6
+    ],
+    [
+      "86441e82fffffff",
+      0.6
+    ],
+    [
+      "86441e877ffffff",
+      0.6
+    ],
+    [
+      "86441e867ffffff",
+      0.6
+    ],
+    [
+      "86441c497ffffff",
+      0.6
+    ],
+    [
+      "86441c487ffffff",
+      0.6
+    ],
+    [
+      "86441c4afffffff",
+      0.6
+    ],
+    [
+      "86441c41fffffff",
+      0.6
+    ],
+    [
+      "86441c407ffffff",
+      0.6
+    ],
+    [
+      "86441c427ffffff",
+      0.6
+    ],
+    [
+      "86441c50fffffff",
+      0.6
+    ],
+    [
+      "86441c52fffffff",
+      0.6
+    ],
+    [
+      "86441ccd7ffffff",
+      0.6
+    ],
+    [
+      "86441136fffffff",
+      0.6
+    ],
+    [
+      "86441132fffffff",
+      0.6
+    ],
+    [
+      "864411307ffffff",
+      0.6
+    ],
+    [
+      "864411317ffffff",
+      0.6
+    ],
+    [
+      "86441176fffffff",
+      0.6
+    ],
+    [
+      "86441174fffffff",
+      0.6
+    ],
+    [
+      "864411667ffffff",
+      0.6
+    ],
+    [
+      "864411647ffffff",
+      0.6
+    ],
+    [
+      "86441e9afffffff",
+      0.6
+    ],
+    [
+      "86441e837ffffff",
+      0.6
+    ],
+    [
+      "86441c557ffffff",
+      0.6
+    ],
+    [
+      "86441c577ffffff",
+      0.6
+    ],
+    [
+      "86441ccf7ffffff",
+      0.6
+    ],
+    [
+      "86441cd9fffffff",
+      0.6
+    ],
+    [
+      "85441ccbfffffff",
+      0.6
+    ],
+    [
+      "8644112cfffffff",
+      0.8
+    ],
+    [
+      "86441c5b7ffffff",
+      0.8
+    ],
+    [
+      "864411277ffffff",
+      0.8
+    ],
+    [
+      "86441120fffffff",
+      0.8
+    ],
+    [
+      "86441121fffffff",
+      0.8
+    ],
+    [
+      "8644112f7ffffff",
+      0.8
+    ],
+    [
+      "8644112d7ffffff",
+      0.8
+    ],
+    [
+      "8644112dfffffff",
+      0.8
+    ],
+    [
+      "86441e967ffffff",
+      0.8
+    ],
+    [
+      "86441c597ffffff",
+      0.8
+    ],
+    [
+      "86441c587ffffff",
+      0.8
+    ],
+    [
+      "86441c5a7ffffff",
+      0.8
+    ],
+    [
+      "86441124fffffff",
+      0.8
+    ],
+    [
+      "864411247ffffff",
+      0.8
+    ],
+    [
+      "86441135fffffff",
+      0.8
+    ],
+    [
+      "86441122fffffff",
+      0.8
+    ],
+    [
+      "864411207ffffff",
+      0.8
+    ],
+    [
+      "864411217ffffff",
+      0.8
+    ],
+    [
+      "8644112afffffff",
+      0.8
+    ],
+    [
+      "86441128fffffff",
+      0.8
+    ],
+    [
+      "86441e927ffffff",
+      0.8
+    ],
+    [
+      "86441e92fffffff",
+      0.8
+    ],
+    [
+      "86441e977ffffff",
+      0.8
+    ],
+    [
+      "86441e96fffffff",
+      0.8
+    ],
+    [
+      "86441c59fffffff",
+      0.8
+    ],
+    [
+      "86441c5afffffff",
+      0.8
+    ],
+    [
+      "86441c517ffffff",
+      0.8
+    ],
+    [
+      "86441c537ffffff",
+      0.8
+    ],
+    [
+      "86441126fffffff",
+      0.8
+    ],
+    [
+      "864411267ffffff",
+      0.8
+    ],
+    [
+      "8644112efffffff",
+      1.0
+    ],
+    [
+      "864411257ffffff",
+      1.0
+    ],
+    [
+      "8644112e7ffffff",
+      1.0
+    ],
+    [
+      "8644112c7ffffff",
+      1.0
+    ],
+    [
+      "86441125fffffff",
+      1.0
+    ]
+  ]
+}

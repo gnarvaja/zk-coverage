@@ -1,0 +1,4185 @@
+{
+  "type": "affected_areas",
+  "storm": {
+    "year": 2020,
+    "id": "AL092020",
+    "name": "ISAIAS",
+    "record_count": 36,
+    "records": [
+      {
+        "date_time": "2020-07-28T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "DB",
+          "description": "Disturbance (of any intensity)"
+        },
+        "lat": 12.5,
+        "lng": -54.0,
+        "max_sustained_wind": 35,
+        "min_pressure": 1007,
+        "ne_34kt_wind_radii": 200,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 120,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-28T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "DB",
+          "description": "Disturbance (of any intensity)"
+        },
+        "lat": 13.2,
+        "lng": -56.4,
+        "max_sustained_wind": 35,
+        "min_pressure": 1006,
+        "ne_34kt_wind_radii": 200,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 120,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-29T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "DB",
+          "description": "Disturbance (of any intensity)"
+        },
+        "lat": 14.1,
+        "lng": -58.3,
+        "max_sustained_wind": 40,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 240,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 120,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-29T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "DB",
+          "description": "Disturbance (of any intensity)"
+        },
+        "lat": 14.8,
+        "lng": -60.3,
+        "max_sustained_wind": 40,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 240,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 120,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-29T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "DB",
+          "description": "Disturbance (of any intensity)"
+        },
+        "lat": 15.2,
+        "lng": -62.2,
+        "max_sustained_wind": 40,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 240,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 120,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-29T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "DB",
+          "description": "Disturbance (of any intensity)"
+        },
+        "lat": 15.3,
+        "lng": -64.0,
+        "max_sustained_wind": 40,
+        "min_pressure": 1005,
+        "ne_34kt_wind_radii": 300,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 120,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-30T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 15.8,
+        "lng": -65.7,
+        "max_sustained_wind": 45,
+        "min_pressure": 1004,
+        "ne_34kt_wind_radii": 300,
+        "se_34kt_wind_radii": 0,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 180,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-30T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 16.7,
+        "lng": -67.2,
+        "max_sustained_wind": 50,
+        "min_pressure": 1003,
+        "ne_34kt_wind_radii": 300,
+        "se_34kt_wind_radii": 60,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 180,
+        "ne_50kt_wind_radii": 80,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-30T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 17.7,
+        "lng": -68.5,
+        "max_sustained_wind": 55,
+        "min_pressure": 1002,
+        "ne_34kt_wind_radii": 270,
+        "se_34kt_wind_radii": 90,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 180,
+        "ne_50kt_wind_radii": 80,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-30T16:15:00+00:00",
+        "record_type": {
+          "type": "L",
+          "description": "Landfall"
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 18.4,
+        "lng": -69.3,
+        "max_sustained_wind": 55,
+        "min_pressure": 1002,
+        "ne_34kt_wind_radii": 270,
+        "se_34kt_wind_radii": 90,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 180,
+        "ne_50kt_wind_radii": 80,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-30T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 18.9,
+        "lng": -69.8,
+        "max_sustained_wind": 60,
+        "min_pressure": 999,
+        "ne_34kt_wind_radii": 210,
+        "se_34kt_wind_radii": 90,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 180,
+        "ne_50kt_wind_radii": 80,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-31T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 19.9,
+        "lng": -71.2,
+        "max_sustained_wind": 65,
+        "min_pressure": 996,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 90,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 150,
+        "ne_50kt_wind_radii": 80,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 20,
+        "sw_50kt_wind_radii": 80,
+        "ne_64kt_wind_radii": 25,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-31T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 20.5,
+        "lng": -72.7,
+        "max_sustained_wind": 70,
+        "min_pressure": 990,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 90,
+        "nw_34kt_wind_radii": 50,
+        "sw_34kt_wind_radii": 150,
+        "ne_50kt_wind_radii": 80,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 80,
+        "ne_64kt_wind_radii": 40,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 10,
+        "sw_64kt_wind_radii": 30,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-31T09:00:00+00:00",
+        "record_type": {
+          "type": "L",
+          "description": "Landfall"
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 20.9,
+        "lng": -73.4,
+        "max_sustained_wind": 70,
+        "min_pressure": 990,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 90,
+        "nw_34kt_wind_radii": 50,
+        "sw_34kt_wind_radii": 150,
+        "ne_50kt_wind_radii": 80,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 80,
+        "ne_64kt_wind_radii": 40,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 10,
+        "sw_64kt_wind_radii": 30,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-31T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 21.3,
+        "lng": -74.0,
+        "max_sustained_wind": 65,
+        "min_pressure": 992,
+        "ne_34kt_wind_radii": 180,
+        "se_34kt_wind_radii": 90,
+        "nw_34kt_wind_radii": 50,
+        "sw_34kt_wind_radii": 150,
+        "ne_50kt_wind_radii": 80,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 70,
+        "ne_64kt_wind_radii": 30,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 20,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-07-31T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 22.1,
+        "lng": -75.1,
+        "max_sustained_wind": 70,
+        "min_pressure": 990,
+        "ne_34kt_wind_radii": 150,
+        "se_34kt_wind_radii": 70,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 130,
+        "ne_50kt_wind_radii": 80,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 50,
+        "ne_64kt_wind_radii": 30,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 20,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-01T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 22.9,
+        "lng": -75.9,
+        "max_sustained_wind": 75,
+        "min_pressure": 987,
+        "ne_34kt_wind_radii": 150,
+        "se_34kt_wind_radii": 70,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 130,
+        "ne_50kt_wind_radii": 80,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 50,
+        "ne_64kt_wind_radii": 30,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 20,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-01T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 23.6,
+        "lng": -76.7,
+        "max_sustained_wind": 75,
+        "min_pressure": 987,
+        "ne_34kt_wind_radii": 150,
+        "se_34kt_wind_radii": 70,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 130,
+        "ne_50kt_wind_radii": 80,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 50,
+        "ne_64kt_wind_radii": 30,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 20,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-01T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 24.3,
+        "lng": -77.5,
+        "max_sustained_wind": 70,
+        "min_pressure": 987,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 70,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 100,
+        "ne_50kt_wind_radii": 70,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 15,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 20,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-01T13:00:00+00:00",
+        "record_type": {
+          "type": "L",
+          "description": "Landfall"
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 24.4,
+        "lng": -77.7,
+        "max_sustained_wind": 70,
+        "min_pressure": 989,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 70,
+        "nw_34kt_wind_radii": 30,
+        "sw_34kt_wind_radii": 100,
+        "ne_50kt_wind_radii": 60,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 15,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 20,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-01T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 24.8,
+        "lng": -78.3,
+        "max_sustained_wind": 60,
+        "min_pressure": 993,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 70,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 90,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-02T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 25.3,
+        "lng": -78.9,
+        "max_sustained_wind": 60,
+        "min_pressure": 995,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 70,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 90,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-02T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 25.9,
+        "lng": -79.2,
+        "max_sustained_wind": 55,
+        "min_pressure": 996,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-02T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 26.6,
+        "lng": -79.5,
+        "max_sustained_wind": 55,
+        "min_pressure": 995,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-02T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 27.4,
+        "lng": -79.6,
+        "max_sustained_wind": 60,
+        "min_pressure": 995,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-03T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 28.2,
+        "lng": -79.7,
+        "max_sustained_wind": 60,
+        "min_pressure": 995,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 80,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 30,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-03T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 29.1,
+        "lng": -79.9,
+        "max_sustained_wind": 60,
+        "min_pressure": 995,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 40,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-03T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 30.1,
+        "lng": -80.0,
+        "max_sustained_wind": 60,
+        "min_pressure": 995,
+        "ne_34kt_wind_radii": 100,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 50,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-03T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 31.2,
+        "lng": -79.7,
+        "max_sustained_wind": 65,
+        "min_pressure": 991,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 40,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 50,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 20,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-04T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 32.8,
+        "lng": -79.1,
+        "max_sustained_wind": 80,
+        "min_pressure": 986,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 40,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 50,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 20,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-04T03:10:00+00:00",
+        "record_type": {
+          "type": "L",
+          "description": "Landfall"
+        },
+        "system_status": {
+          "status": "HU",
+          "description": "Tropical cyclone of hurricane intensity (> 64 knots)"
+        },
+        "lat": 33.9,
+        "lng": -78.5,
+        "max_sustained_wind": 80,
+        "min_pressure": 986,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 110,
+        "nw_34kt_wind_radii": 40,
+        "sw_34kt_wind_radii": 60,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 50,
+        "nw_50kt_wind_radii": 30,
+        "sw_50kt_wind_radii": 30,
+        "ne_64kt_wind_radii": 20,
+        "se_64kt_wind_radii": 20,
+        "nw_64kt_wind_radii": 20,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": 25
+      },
+      {
+        "date_time": "2020-08-04T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 35.0,
+        "lng": -78.1,
+        "max_sustained_wind": 60,
+        "min_pressure": 992,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 120,
+        "nw_34kt_wind_radii": 40,
+        "sw_34kt_wind_radii": 40,
+        "ne_50kt_wind_radii": 50,
+        "se_50kt_wind_radii": 50,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-04T12:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 37.7,
+        "lng": -76.8,
+        "max_sustained_wind": 60,
+        "min_pressure": 993,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 120,
+        "nw_34kt_wind_radii": 40,
+        "sw_34kt_wind_radii": 40,
+        "ne_50kt_wind_radii": 60,
+        "se_50kt_wind_radii": 60,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-04T18:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "TS",
+          "description": "Tropical cyclone of tropical storm intensity (34-63 knots)"
+        },
+        "lat": 40.9,
+        "lng": -75.1,
+        "max_sustained_wind": 55,
+        "min_pressure": 994,
+        "ne_34kt_wind_radii": 110,
+        "se_34kt_wind_radii": 150,
+        "nw_34kt_wind_radii": 40,
+        "sw_34kt_wind_radii": 40,
+        "ne_50kt_wind_radii": 60,
+        "se_50kt_wind_radii": 80,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-05T00:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 44.0,
+        "lng": -73.1,
+        "max_sustained_wind": 45,
+        "min_pressure": 998,
+        "ne_34kt_wind_radii": 60,
+        "se_34kt_wind_radii": 150,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      },
+      {
+        "date_time": "2020-08-05T06:00:00+00:00",
+        "record_type": {
+          "type": "",
+          "description": null
+        },
+        "system_status": {
+          "status": "EX",
+          "description": "Extratropical cyclone (of any intensity)"
+        },
+        "lat": 46.7,
+        "lng": -71.8,
+        "max_sustained_wind": 35,
+        "min_pressure": 1000,
+        "ne_34kt_wind_radii": 90,
+        "se_34kt_wind_radii": 90,
+        "nw_34kt_wind_radii": 0,
+        "sw_34kt_wind_radii": 0,
+        "ne_50kt_wind_radii": 0,
+        "se_50kt_wind_radii": 0,
+        "nw_50kt_wind_radii": 0,
+        "sw_50kt_wind_radii": 0,
+        "ne_64kt_wind_radii": 0,
+        "se_64kt_wind_radii": 0,
+        "nw_64kt_wind_radii": 0,
+        "sw_64kt_wind_radii": 0,
+        "max_wind_radius": -999
+      }
+    ]
+  },
+  "areas": [
+    [
+      "864489aafffffff",
+      0.2
+    ],
+    [
+      "864489087ffffff",
+      0.2
+    ],
+    [
+      "8644d6127ffffff",
+      0.2
+    ],
+    [
+      "8644d68d7ffffff",
+      0.2
+    ],
+    [
+      "8644d6b37ffffff",
+      0.2
+    ],
+    [
+      "8644d6b27ffffff",
+      0.2
+    ],
+    [
+      "8644d44d7ffffff",
+      0.2
+    ],
+    [
+      "8644d44f7ffffff",
+      0.2
+    ],
+    [
+      "8644d4cf7ffffff",
+      0.2
+    ],
+    [
+      "864489aa7ffffff",
+      0.2
+    ],
+    [
+      "864489ab7ffffff",
+      0.2
+    ],
+    [
+      "86448914fffffff",
+      0.2
+    ],
+    [
+      "86448915fffffff",
+      0.2
+    ],
+    [
+      "86448902fffffff",
+      0.2
+    ],
+    [
+      "864489007ffffff",
+      0.2
+    ],
+    [
+      "864489017ffffff",
+      0.2
+    ],
+    [
+      "8644890a7ffffff",
+      0.2
+    ],
+    [
+      "864489097ffffff",
+      0.2
+    ],
+    [
+      "86448946fffffff",
+      0.2
+    ],
+    [
+      "86448944fffffff",
+      0.2
+    ],
+    [
+      "864489697ffffff",
+      0.2
+    ],
+    [
+      "86448ba6fffffff",
+      0.2
+    ],
+    [
+      "8644d6d37ffffff",
+      0.2
+    ],
+    [
+      "8644d6c6fffffff",
+      0.2
+    ],
+    [
+      "8644d6137ffffff",
+      0.2
+    ],
+    [
+      "8644d612fffffff",
+      0.2
+    ],
+    [
+      "8644d68dfffffff",
+      0.2
+    ],
+    [
+      "8644d68cfffffff",
+      0.2
+    ],
+    [
+      "8644d6bb7ffffff",
+      0.2
+    ],
+    [
+      "8644d6ba7ffffff",
+      0.2
+    ],
+    [
+      "8644d6b17ffffff",
+      0.2
+    ],
+    [
+      "8644d6b07ffffff",
+      0.2
+    ],
+    [
+      "8644d44e7ffffff",
+      0.2
+    ],
+    [
+      "8644d440fffffff",
+      0.2
+    ],
+    [
+      "8644d442fffffff",
+      0.2
+    ],
+    [
+      "8644d4557ffffff",
+      0.2
+    ],
+    [
+      "8644d4577ffffff",
+      0.2
+    ],
+    [
+      "8644d4cdfffffff",
+      0.2
+    ],
+    [
+      "8644d4cc7ffffff",
+      0.2
+    ],
+    [
+      "8644d4ce7ffffff",
+      0.2
+    ],
+    [
+      "8644d4c1fffffff",
+      0.2
+    ],
+    [
+      "8644d4c17ffffff",
+      0.2
+    ],
+    [
+      "864489ae7ffffff",
+      0.2
+    ],
+    [
+      "864489a1fffffff",
+      0.2
+    ],
+    [
+      "864489157ffffff",
+      0.2
+    ],
+    [
+      "864489447ffffff",
+      0.2
+    ],
+    [
+      "86448945fffffff",
+      0.2
+    ],
+    [
+      "8644897b7ffffff",
+      0.2
+    ],
+    [
+      "864489797ffffff",
+      0.2
+    ],
+    [
+      "86448bb6fffffff",
+      0.2
+    ],
+    [
+      "86448bb4fffffff",
+      0.2
+    ],
+    [
+      "86448ba4fffffff",
+      0.2
+    ],
+    [
+      "8644d6d17ffffff",
+      0.2
+    ],
+    [
+      "8644d6d1fffffff",
+      0.2
+    ],
+    [
+      "8644d6c27ffffff",
+      0.2
+    ],
+    [
+      "8644d6c2fffffff",
+      0.2
+    ],
+    [
+      "8644d6c77ffffff",
+      0.2
+    ],
+    [
+      "8644d6c47ffffff",
+      0.2
+    ],
+    [
+      "8644d4c07ffffff",
+      0.2
+    ],
+    [
+      "8644d4c37ffffff",
+      0.2
+    ],
+    [
+      "8644d4dafffffff",
+      0.2
+    ],
+    [
+      "8644d4da7ffffff",
+      0.2
+    ],
+    [
+      "864489a5fffffff",
+      0.2
+    ],
+    [
+      "864489a57ffffff",
+      0.2
+    ],
+    [
+      "8644d2957ffffff",
+      0.2
+    ],
+    [
+      "8644d2827ffffff",
+      0.2
+    ],
+    [
+      "8644d2d6fffffff",
+      0.2
+    ],
+    [
+      "8644d2d47ffffff",
+      0.2
+    ],
+    [
+      "8644d2d57ffffff",
+      0.2
+    ],
+    [
+      "8644d2c27ffffff",
+      0.2
+    ],
+    [
+      "8644d2c07ffffff",
+      0.2
+    ],
+    [
+      "8644d2c1fffffff",
+      0.2
+    ],
+    [
+      "8644d2277ffffff",
+      0.2
+    ],
+    [
+      "8644d291fffffff",
+      0.2
+    ],
+    [
+      "8644d29afffffff",
+      0.2
+    ],
+    [
+      "8644d2987ffffff",
+      0.2
+    ],
+    [
+      "8644d2997ffffff",
+      0.2
+    ],
+    [
+      "8644d2d67ffffff",
+      0.2
+    ],
+    [
+      "8644d2c17ffffff",
+      0.2
+    ],
+    [
+      "8644d2cafffffff",
+      0.2
+    ],
+    [
+      "8644d2c8fffffff",
+      0.2
+    ],
+    [
+      "8644d2527ffffff",
+      0.2
+    ],
+    [
+      "8644d2507ffffff",
+      0.2
+    ],
+    [
+      "8644d251fffffff",
+      0.2
+    ],
+    [
+      "8644d2437ffffff",
+      0.2
+    ],
+    [
+      "8644d2417ffffff",
+      0.2
+    ],
+    [
+      "8644d241fffffff",
+      0.2
+    ],
+    [
+      "8644d261fffffff",
+      0.2
+    ],
+    [
+      "8644d26e7ffffff",
+      0.2
+    ],
+    [
+      "8644d2657ffffff",
+      0.2
+    ],
+    [
+      "8644d2647ffffff",
+      0.2
+    ],
+    [
+      "8644d22f7ffffff",
+      0.2
+    ],
+    [
+      "8644d22e7ffffff",
+      0.2
+    ],
+    [
+      "8644d2257ffffff",
+      0.2
+    ],
+    [
+      "8644d2267ffffff",
+      0.2
+    ],
+    [
+      "8644d234fffffff",
+      0.2
+    ],
+    [
+      "8644d2a67ffffff",
+      0.2
+    ],
+    [
+      "8644d2b4fffffff",
+      0.2
+    ],
+    [
+      "8644d2b47ffffff",
+      0.2
+    ],
+    [
+      "8644d0497ffffff",
+      0.2
+    ],
+    [
+      "8644d294fffffff",
+      0.2
+    ],
+    [
+      "8644d2947ffffff",
+      0.2
+    ],
+    [
+      "8644d2537ffffff",
+      0.2
+    ],
+    [
+      "8644d2517ffffff",
+      0.2
+    ],
+    [
+      "8644d24f7ffffff",
+      0.2
+    ],
+    [
+      "8644d24c7ffffff",
+      0.2
+    ],
+    [
+      "8644d24cfffffff",
+      0.2
+    ],
+    [
+      "8644d2797ffffff",
+      0.2
+    ],
+    [
+      "8644d279fffffff",
+      0.2
+    ],
+    [
+      "8644d26a7ffffff",
+      0.2
+    ],
+    [
+      "8644d26afffffff",
+      0.2
+    ],
+    [
+      "8644d265fffffff",
+      0.2
+    ],
+    [
+      "8644d264fffffff",
+      0.2
+    ],
+    [
+      "862ad36cfffffff",
+      0.2
+    ],
+    [
+      "862ad36dfffffff",
+      0.2
+    ],
+    [
+      "8644d22d7ffffff",
+      0.2
+    ],
+    [
+      "8644d22c7ffffff",
+      0.2
+    ],
+    [
+      "8644d3cb7ffffff",
+      0.2
+    ],
+    [
+      "8644d3d9fffffff",
+      0.2
+    ],
+    [
+      "8644d3d87ffffff",
+      0.2
+    ],
+    [
+      "8644d3da7ffffff",
+      0.2
+    ],
+    [
+      "8644d2a4fffffff",
+      0.2
+    ],
+    [
+      "8644d2a6fffffff",
+      0.2
+    ],
+    [
+      "8644d2b67ffffff",
+      0.2
+    ],
+    [
+      "8644d04dfffffff",
+      0.2
+    ],
+    [
+      "8644d04d7ffffff",
+      0.2
+    ],
+    [
+      "8644d048fffffff",
+      0.2
+    ],
+    [
+      "8644d0487ffffff",
+      0.2
+    ],
+    [
+      "8644d04b7ffffff",
+      0.2
+    ],
+    [
+      "862ade49fffffff",
+      0.2
+    ],
+    [
+      "862ade497ffffff",
+      0.2
+    ],
+    [
+      "862ad02afffffff",
+      0.2
+    ],
+    [
+      "862ad3c9fffffff",
+      0.2
+    ],
+    [
+      "862ad3b2fffffff",
+      0.2
+    ],
+    [
+      "862ad14d7ffffff",
+      0.2
+    ],
+    [
+      "862ad14f7ffffff",
+      0.2
+    ],
+    [
+      "862ad14afffffff",
+      0.2
+    ],
+    [
+      "862ad14a7ffffff",
+      0.2
+    ],
+    [
+      "862ad159fffffff",
+      0.2
+    ],
+    [
+      "862ad02f7ffffff",
+      0.2
+    ],
+    [
+      "862ad02a7ffffff",
+      0.2
+    ],
+    [
+      "862ad02b7ffffff",
+      0.2
+    ],
+    [
+      "862ad074fffffff",
+      0.2
+    ],
+    [
+      "862ad06a7ffffff",
+      0.2
+    ],
+    [
+      "862ad06b7ffffff",
+      0.2
+    ],
+    [
+      "862ad0697ffffff",
+      0.2
+    ],
+    [
+      "862ad3cb7ffffff",
+      0.2
+    ],
+    [
+      "862ad3c97ffffff",
+      0.2
+    ],
+    [
+      "862ad3537ffffff",
+      0.2
+    ],
+    [
+      "862ad3507ffffff",
+      0.2
+    ],
+    [
+      "862ad350fffffff",
+      0.2
+    ],
+    [
+      "862ad346fffffff",
+      0.2
+    ],
+    [
+      "862ad3737ffffff",
+      0.2
+    ],
+    [
+      "862ad3707ffffff",
+      0.2
+    ],
+    [
+      "862ad372fffffff",
+      0.2
+    ],
+    [
+      "862ad332fffffff",
+      0.2
+    ],
+    [
+      "862ad3adfffffff",
+      0.2
+    ],
+    [
+      "862ad3ac7ffffff",
+      0.2
+    ],
+    [
+      "862ad3ae7ffffff",
+      0.2
+    ],
+    [
+      "862ad3a0fffffff",
+      0.2
+    ],
+    [
+      "862ad3a2fffffff",
+      0.2
+    ],
+    [
+      "862ad3b57ffffff",
+      0.2
+    ],
+    [
+      "862ad3b77ffffff",
+      0.2
+    ],
+    [
+      "862ad14dfffffff",
+      0.2
+    ],
+    [
+      "862ad158fffffff",
+      0.2
+    ],
+    [
+      "862ad1587ffffff",
+      0.2
+    ],
+    [
+      "862ad15b7ffffff",
+      0.2
+    ],
+    [
+      "862ad02efffffff",
+      0.2
+    ],
+    [
+      "862ad02e7ffffff",
+      0.2
+    ],
+    [
+      "862ad076fffffff",
+      0.2
+    ],
+    [
+      "862ad0747ffffff",
+      0.2
+    ],
+    [
+      "862ad0757ffffff",
+      0.2
+    ],
+    [
+      "862ad0627ffffff",
+      0.2
+    ],
+    [
+      "862ad0637ffffff",
+      0.2
+    ],
+    [
+      "862ad078fffffff",
+      0.2
+    ],
+    [
+      "862ad2a67ffffff",
+      0.2
+    ],
+    [
+      "862ad2a47ffffff",
+      0.2
+    ],
+    [
+      "862ad2a5fffffff",
+      0.2
+    ],
+    [
+      "862ad3db7ffffff",
+      0.2
+    ],
+    [
+      "862ad3d97ffffff",
+      0.2
+    ],
+    [
+      "862ad236fffffff",
+      0.2
+    ],
+    [
+      "862ad351fffffff",
+      0.2
+    ],
+    [
+      "862ad3427ffffff",
+      0.2
+    ],
+    [
+      "862ad342fffffff",
+      0.2
+    ],
+    [
+      "862ad3477ffffff",
+      0.2
+    ],
+    [
+      "862ad3447ffffff",
+      0.2
+    ],
+    [
+      "862ad344fffffff",
+      0.2
+    ],
+    [
+      "862ad3777ffffff",
+      0.2
+    ],
+    [
+      "862ad3767ffffff",
+      0.2
+    ],
+    [
+      "862ad3397ffffff",
+      0.2
+    ],
+    [
+      "862ad3387ffffff",
+      0.2
+    ],
+    [
+      "862ad33afffffff",
+      0.2
+    ],
+    [
+      "862ad331fffffff",
+      0.2
+    ],
+    [
+      "862ad330fffffff",
+      0.2
+    ],
+    [
+      "862ad339fffffff",
+      0.2
+    ],
+    [
+      "862ad338fffffff",
+      0.2
+    ],
+    [
+      "864489327ffffff",
+      0.4
+    ],
+    [
+      "8644890c7ffffff",
+      0.4
+    ],
+    [
+      "8644890d7ffffff",
+      0.4
+    ],
+    [
+      "8644d681fffffff",
+      0.4
+    ],
+    [
+      "8644d680fffffff",
+      0.4
+    ],
+    [
+      "8644d4497ffffff",
+      0.4
+    ],
+    [
+      "8644d4487ffffff",
+      0.4
+    ],
+    [
+      "8644d44a7ffffff",
+      0.4
+    ],
+    [
+      "8644d458fffffff",
+      0.4
+    ],
+    [
+      "8644d4537ffffff",
+      0.4
+    ],
+    [
+      "8644d4c9fffffff",
+      0.4
+    ],
+    [
+      "864489a8fffffff",
+      0.4
+    ],
+    [
+      "864489a9fffffff",
+      0.4
+    ],
+    [
+      "86448906fffffff",
+      0.4
+    ],
+    [
+      "864489047ffffff",
+      0.4
+    ],
+    [
+      "864489057ffffff",
+      0.4
+    ],
+    [
+      "8644890e7ffffff",
+      0.4
+    ],
+    [
+      "8644890f7ffffff",
+      0.4
+    ],
+    [
+      "86448908fffffff",
+      0.4
+    ],
+    [
+      "864489727ffffff",
+      0.4
+    ],
+    [
+      "864489707ffffff",
+      0.4
+    ],
+    [
+      "86448971fffffff",
+      0.4
+    ],
+    [
+      "864489637ffffff",
+      0.4
+    ],
+    [
+      "864489617ffffff",
+      0.4
+    ],
+    [
+      "8644896afffffff",
+      0.4
+    ],
+    [
+      "86448968fffffff",
+      0.4
+    ],
+    [
+      "8644896d7ffffff",
+      0.4
+    ],
+    [
+      "8644896dfffffff",
+      0.4
+    ],
+    [
+      "8644d68f7ffffff",
+      0.4
+    ],
+    [
+      "8644d68e7ffffff",
+      0.4
+    ],
+    [
+      "8644d449fffffff",
+      0.4
+    ],
+    [
+      "8644d448fffffff",
+      0.4
+    ],
+    [
+      "8644d44afffffff",
+      0.4
+    ],
+    [
+      "8644d4417ffffff",
+      0.4
+    ],
+    [
+      "8644d4437ffffff",
+      0.4
+    ],
+    [
+      "8644d451fffffff",
+      0.4
+    ],
+    [
+      "8644d4507ffffff",
+      0.4
+    ],
+    [
+      "8644d4527ffffff",
+      0.4
+    ],
+    [
+      "8644d4c8fffffff",
+      0.4
+    ],
+    [
+      "8644d4c87ffffff",
+      0.4
+    ],
+    [
+      "8644d4cb7ffffff",
+      0.4
+    ],
+    [
+      "86448936fffffff",
+      0.4
+    ],
+    [
+      "864489367ffffff",
+      0.4
+    ],
+    [
+      "864489adfffffff",
+      0.4
+    ],
+    [
+      "864489ad7ffffff",
+      0.4
+    ],
+    [
+      "864489a87ffffff",
+      0.4
+    ],
+    [
+      "864489a97ffffff",
+      0.4
+    ],
+    [
+      "864489067ffffff",
+      0.4
+    ],
+    [
+      "864489077ffffff",
+      0.4
+    ],
+    [
+      "86448900fffffff",
+      0.4
+    ],
+    [
+      "86448901fffffff",
+      0.4
+    ],
+    [
+      "8644890afffffff",
+      0.4
+    ],
+    [
+      "86448909fffffff",
+      0.4
+    ],
+    [
+      "864489737ffffff",
+      0.4
+    ],
+    [
+      "864489717ffffff",
+      0.4
+    ],
+    [
+      "8644897afffffff",
+      0.4
+    ],
+    [
+      "86448978fffffff",
+      0.4
+    ],
+    [
+      "8644896a7ffffff",
+      0.4
+    ],
+    [
+      "864489687ffffff",
+      0.4
+    ],
+    [
+      "86448969fffffff",
+      0.4
+    ],
+    [
+      "8644d6d27ffffff",
+      0.4
+    ],
+    [
+      "8644d6d2fffffff",
+      0.4
+    ],
+    [
+      "8644d68c7ffffff",
+      0.4
+    ],
+    [
+      "8644d68efffffff",
+      0.4
+    ],
+    [
+      "8644d441fffffff",
+      0.4
+    ],
+    [
+      "8644d4407ffffff",
+      0.4
+    ],
+    [
+      "8644d4427ffffff",
+      0.4
+    ],
+    [
+      "8644d450fffffff",
+      0.4
+    ],
+    [
+      "8644d452fffffff",
+      0.4
+    ],
+    [
+      "8644d4cd7ffffff",
+      0.4
+    ],
+    [
+      "8644d4cafffffff",
+      0.4
+    ],
+    [
+      "8644d4ca7ffffff",
+      0.4
+    ],
+    [
+      "8644d4d9fffffff",
+      0.4
+    ],
+    [
+      "8644d4d97ffffff",
+      0.4
+    ],
+    [
+      "864489acfffffff",
+      0.4
+    ],
+    [
+      "864489ac7ffffff",
+      0.4
+    ],
+    [
+      "864489af7ffffff",
+      0.4
+    ],
+    [
+      "8644897a7ffffff",
+      0.4
+    ],
+    [
+      "864489787ffffff",
+      0.4
+    ],
+    [
+      "86448979fffffff",
+      0.4
+    ],
+    [
+      "8644896b7ffffff",
+      0.4
+    ],
+    [
+      "8644d6d07ffffff",
+      0.4
+    ],
+    [
+      "8644d6d0fffffff",
+      0.4
+    ],
+    [
+      "8644d6c67ffffff",
+      0.4
+    ],
+    [
+      "8644d4d8fffffff",
+      0.4
+    ],
+    [
+      "8644d4d87ffffff",
+      0.4
+    ],
+    [
+      "8644d4db7ffffff",
+      0.4
+    ],
+    [
+      "864489aefffffff",
+      0.4
+    ],
+    [
+      "8644d2c47ffffff",
+      0.4
+    ],
+    [
+      "8644d280fffffff",
+      0.4
+    ],
+    [
+      "8644d281fffffff",
+      0.4
+    ],
+    [
+      "8644d28afffffff",
+      0.4
+    ],
+    [
+      "8644d2887ffffff",
+      0.4
+    ],
+    [
+      "8644d2897ffffff",
+      0.4
+    ],
+    [
+      "8644d2c67ffffff",
+      0.4
+    ],
+    [
+      "8644d2c77ffffff",
+      0.4
+    ],
+    [
+      "8644d2c57ffffff",
+      0.4
+    ],
+    [
+      "8644d2cefffffff",
+      0.4
+    ],
+    [
+      "8644d255fffffff",
+      0.4
+    ],
+    [
+      "8644d2227ffffff",
+      0.4
+    ],
+    [
+      "8644d2a07ffffff",
+      0.4
+    ],
+    [
+      "8644d2857ffffff",
+      0.4
+    ],
+    [
+      "8644d282fffffff",
+      0.4
+    ],
+    [
+      "8644d2807ffffff",
+      0.4
+    ],
+    [
+      "8644d2817ffffff",
+      0.4
+    ],
+    [
+      "8644d28a7ffffff",
+      0.4
+    ],
+    [
+      "8644d28b7ffffff",
+      0.4
+    ],
+    [
+      "8644d2d4fffffff",
+      0.4
+    ],
+    [
+      "8644d2d5fffffff",
+      0.4
+    ],
+    [
+      "8644d2c2fffffff",
+      0.4
+    ],
+    [
+      "8644d2c0fffffff",
+      0.4
+    ],
+    [
+      "8644d2ce7ffffff",
+      0.4
+    ],
+    [
+      "8644d2cc7ffffff",
+      0.4
+    ],
+    [
+      "8644d2cdfffffff",
+      0.4
+    ],
+    [
+      "8644d2577ffffff",
+      0.4
+    ],
+    [
+      "8644d2557ffffff",
+      0.4
+    ],
+    [
+      "8644d242fffffff",
+      0.4
+    ],
+    [
+      "8644d2477ffffff",
+      0.4
+    ],
+    [
+      "8644d2447ffffff",
+      0.4
+    ],
+    [
+      "8644d244fffffff",
+      0.4
+    ],
+    [
+      "8644d271fffffff",
+      0.4
+    ],
+    [
+      "8644d2627ffffff",
+      0.4
+    ],
+    [
+      "8644d262fffffff",
+      0.4
+    ],
+    [
+      "8644d275fffffff",
+      0.4
+    ],
+    [
+      "8644d274fffffff",
+      0.4
+    ],
+    [
+      "8644d2217ffffff",
+      0.4
+    ],
+    [
+      "8644d2207ffffff",
+      0.4
+    ],
+    [
+      "8644d222fffffff",
+      0.4
+    ],
+    [
+      "8644d2357ffffff",
+      0.4
+    ],
+    [
+      "8644d2377ffffff",
+      0.4
+    ],
+    [
+      "8644d2adfffffff",
+      0.4
+    ],
+    [
+      "8644d2ac7ffffff",
+      0.4
+    ],
+    [
+      "8644d2ae7ffffff",
+      0.4
+    ],
+    [
+      "8644d2a0fffffff",
+      0.4
+    ],
+    [
+      "8644d2a2fffffff",
+      0.4
+    ],
+    [
+      "8644d2a27ffffff",
+      0.4
+    ],
+    [
+      "8644d284fffffff",
+      0.4
+    ],
+    [
+      "8644d2847ffffff",
+      0.4
+    ],
+    [
+      "8644d2877ffffff",
+      0.4
+    ],
+    [
+      "8644d2837ffffff",
+      0.4
+    ],
+    [
+      "8644d298fffffff",
+      0.4
+    ],
+    [
+      "8644d299fffffff",
+      0.4
+    ],
+    [
+      "8644d2cf7ffffff",
+      0.4
+    ],
+    [
+      "8644d2cd7ffffff",
+      0.4
+    ],
+    [
+      "8644d252fffffff",
+      0.4
+    ],
+    [
+      "8644d250fffffff",
+      0.4
+    ],
+    [
+      "8644d2427ffffff",
+      0.4
+    ],
+    [
+      "8644d2407ffffff",
+      0.4
+    ],
+    [
+      "8644d240fffffff",
+      0.4
+    ],
+    [
+      "8644d2457ffffff",
+      0.4
+    ],
+    [
+      "8644d245fffffff",
+      0.4
+    ],
+    [
+      "8644d27a7ffffff",
+      0.4
+    ],
+    [
+      "8644d27afffffff",
+      0.4
+    ],
+    [
+      "8644d2637ffffff",
+      0.4
+    ],
+    [
+      "8644d2607ffffff",
+      0.4
+    ],
+    [
+      "8644d260fffffff",
+      0.4
+    ],
+    [
+      "8644d2677ffffff",
+      0.4
+    ],
+    [
+      "8644d2667ffffff",
+      0.4
+    ],
+    [
+      "8644d221fffffff",
+      0.4
+    ],
+    [
+      "8644d220fffffff",
+      0.4
+    ],
+    [
+      "8644d235fffffff",
+      0.4
+    ],
+    [
+      "8644d2347ffffff",
+      0.4
+    ],
+    [
+      "8644d2367ffffff",
+      0.4
+    ],
+    [
+      "8644d2acfffffff",
+      0.4
+    ],
+    [
+      "8644d2aefffffff",
+      0.4
+    ],
+    [
+      "8644d2a57ffffff",
+      0.4
+    ],
+    [
+      "8644d2a77ffffff",
+      0.4
+    ],
+    [
+      "8644d2b5fffffff",
+      0.4
+    ],
+    [
+      "8644d2b57ffffff",
+      0.4
+    ],
+    [
+      "8644d286fffffff",
+      0.4
+    ],
+    [
+      "8644d2867ffffff",
+      0.4
+    ],
+    [
+      "8644d295fffffff",
+      0.4
+    ],
+    [
+      "8644d24e7ffffff",
+      0.4
+    ],
+    [
+      "8644d24efffffff",
+      0.4
+    ],
+    [
+      "8644d27b7ffffff",
+      0.4
+    ],
+    [
+      "8644d2787ffffff",
+      0.4
+    ],
+    [
+      "8644d278fffffff",
+      0.4
+    ],
+    [
+      "8644d2617ffffff",
+      0.4
+    ],
+    [
+      "8644d266fffffff",
+      0.4
+    ],
+    [
+      "8644d236fffffff",
+      0.4
+    ],
+    [
+      "8644d3d97ffffff",
+      0.4
+    ],
+    [
+      "8644d3db7ffffff",
+      0.4
+    ],
+    [
+      "8644d2a5fffffff",
+      0.4
+    ],
+    [
+      "8644d2a47ffffff",
+      0.4
+    ],
+    [
+      "8644d2b77ffffff",
+      0.4
+    ],
+    [
+      "8644d049fffffff",
+      0.4
+    ],
+    [
+      "862ad386fffffff",
+      0.4
+    ],
+    [
+      "862ad3927ffffff",
+      0.4
+    ],
+    [
+      "862ad3937ffffff",
+      0.4
+    ],
+    [
+      "862ad06d7ffffff",
+      0.4
+    ],
+    [
+      "862ad3cf7ffffff",
+      0.4
+    ],
+    [
+      "862ad30afffffff",
+      0.4
+    ],
+    [
+      "862ad3a87ffffff",
+      0.4
+    ],
+    [
+      "862ad3aa7ffffff",
+      0.4
+    ],
+    [
+      "862ad3b17ffffff",
+      0.4
+    ],
+    [
+      "862ad3b37ffffff",
+      0.4
+    ],
+    [
+      "862ad149fffffff",
+      0.4
+    ],
+    [
+      "862ad1497ffffff",
+      0.4
+    ],
+    [
+      "862ad394fffffff",
+      0.4
+    ],
+    [
+      "862ad3947ffffff",
+      0.4
+    ],
+    [
+      "862ad3977ffffff",
+      0.4
+    ],
+    [
+      "862ad392fffffff",
+      0.4
+    ],
+    [
+      "862ad028fffffff",
+      0.4
+    ],
+    [
+      "862ad029fffffff",
+      0.4
+    ],
+    [
+      "862ad066fffffff",
+      0.4
+    ],
+    [
+      "862ad0647ffffff",
+      0.4
+    ],
+    [
+      "862ad0657ffffff",
+      0.4
+    ],
+    [
+      "862ad06e7ffffff",
+      0.4
+    ],
+    [
+      "862ad06f7ffffff",
+      0.4
+    ],
+    [
+      "862ad068fffffff",
+      0.4
+    ],
+    [
+      "862ad3d27ffffff",
+      0.4
+    ],
+    [
+      "862ad3d07ffffff",
+      0.4
+    ],
+    [
+      "862ad3d1fffffff",
+      0.4
+    ],
+    [
+      "862ad3c37ffffff",
+      0.4
+    ],
+    [
+      "862ad3c17ffffff",
+      0.4
+    ],
+    [
+      "862ad3cafffffff",
+      0.4
+    ],
+    [
+      "862ad3c8fffffff",
+      0.4
+    ],
+    [
+      "862ad3cd7ffffff",
+      0.4
+    ],
+    [
+      "862ad3cdfffffff",
+      0.4
+    ],
+    [
+      "862ad30b7ffffff",
+      0.4
+    ],
+    [
+      "862ad3087ffffff",
+      0.4
+    ],
+    [
+      "862ad308fffffff",
+      0.4
+    ],
+    [
+      "862ad3057ffffff",
+      0.4
+    ],
+    [
+      "862ad3047ffffff",
+      0.4
+    ],
+    [
+      "862ad306fffffff",
+      0.4
+    ],
+    [
+      "862ad3a9fffffff",
+      0.4
+    ],
+    [
+      "862ad3a8fffffff",
+      0.4
+    ],
+    [
+      "862ad3aafffffff",
+      0.4
+    ],
+    [
+      "862ad3a17ffffff",
+      0.4
+    ],
+    [
+      "862ad3a37ffffff",
+      0.4
+    ],
+    [
+      "862ad3b1fffffff",
+      0.4
+    ],
+    [
+      "862ad3b07ffffff",
+      0.4
+    ],
+    [
+      "862ad3b27ffffff",
+      0.4
+    ],
+    [
+      "862ad148fffffff",
+      0.4
+    ],
+    [
+      "862ad1487ffffff",
+      0.4
+    ],
+    [
+      "862ad14b7ffffff",
+      0.4
+    ],
+    [
+      "862ad396fffffff",
+      0.4
+    ],
+    [
+      "862ad3967ffffff",
+      0.4
+    ],
+    [
+      "862ad02dfffffff",
+      0.4
+    ],
+    [
+      "862ad02d7ffffff",
+      0.4
+    ],
+    [
+      "862ad0287ffffff",
+      0.4
+    ],
+    [
+      "862ad0297ffffff",
+      0.4
+    ],
+    [
+      "862ad0667ffffff",
+      0.4
+    ],
+    [
+      "862ad0677ffffff",
+      0.4
+    ],
+    [
+      "862ad060fffffff",
+      0.4
+    ],
+    [
+      "862ad061fffffff",
+      0.4
+    ],
+    [
+      "862ad06afffffff",
+      0.4
+    ],
+    [
+      "862ad0687ffffff",
+      0.4
+    ],
+    [
+      "862ad069fffffff",
+      0.4
+    ],
+    [
+      "862ad3d37ffffff",
+      0.4
+    ],
+    [
+      "862ad3d17ffffff",
+      0.4
+    ],
+    [
+      "862ad3dafffffff",
+      0.4
+    ],
+    [
+      "862ad3d8fffffff",
+      0.4
+    ],
+    [
+      "862ad3ca7ffffff",
+      0.4
+    ],
+    [
+      "862ad3c87ffffff",
+      0.4
+    ],
+    [
+      "862ad3527ffffff",
+      0.4
+    ],
+    [
+      "862ad352fffffff",
+      0.4
+    ],
+    [
+      "862ad3097ffffff",
+      0.4
+    ],
+    [
+      "862ad309fffffff",
+      0.4
+    ],
+    [
+      "862ad3727ffffff",
+      0.4
+    ],
+    [
+      "862ad305fffffff",
+      0.4
+    ],
+    [
+      "862ad304fffffff",
+      0.4
+    ],
+    [
+      "862ad3337ffffff",
+      0.4
+    ],
+    [
+      "862ad3327ffffff",
+      0.4
+    ],
+    [
+      "862ad3ad7ffffff",
+      0.4
+    ],
+    [
+      "862ad3af7ffffff",
+      0.4
+    ],
+    [
+      "862ad3a1fffffff",
+      0.4
+    ],
+    [
+      "862ad3a07ffffff",
+      0.4
+    ],
+    [
+      "862ad3a27ffffff",
+      0.4
+    ],
+    [
+      "862ad3b0fffffff",
+      0.4
+    ],
+    [
+      "862ad1597ffffff",
+      0.4
+    ],
+    [
+      "862ad02cfffffff",
+      0.4
+    ],
+    [
+      "862ad02c7ffffff",
+      0.4
+    ],
+    [
+      "862ad075fffffff",
+      0.4
+    ],
+    [
+      "862ad062fffffff",
+      0.4
+    ],
+    [
+      "862ad0607ffffff",
+      0.4
+    ],
+    [
+      "862ad0617ffffff",
+      0.4
+    ],
+    [
+      "862ad2a6fffffff",
+      0.4
+    ],
+    [
+      "862ad2a4fffffff",
+      0.4
+    ],
+    [
+      "862ad3da7ffffff",
+      0.4
+    ],
+    [
+      "862ad3d87ffffff",
+      0.4
+    ],
+    [
+      "862ad3d9fffffff",
+      0.4
+    ],
+    [
+      "862ad3467ffffff",
+      0.4
+    ],
+    [
+      "862ad33b7ffffff",
+      0.4
+    ],
+    [
+      "862ad33a7ffffff",
+      0.4
+    ],
+    [
+      "862ad3317ffffff",
+      0.4
+    ],
+    [
+      "862ad3307ffffff",
+      0.4
+    ],
+    [
+      "8544d6d7fffffff",
+      0.4
+    ],
+    [
+      "8544d22bfffffff",
+      0.4
+    ],
+    [
+      "852ad30ffffffff",
+      0.4
+    ],
+    [
+      "8544d687fffffff",
+      0.4
+    ],
+    [
+      "8544d68bfffffff",
+      0.4
+    ],
+    [
+      "8544d2b3fffffff",
+      0.4
+    ],
+    [
+      "852ad357fffffff",
+      0.4
+    ],
+    [
+      "8644d6967ffffff",
+      0.6
+    ],
+    [
+      "86448931fffffff",
+      0.6
+    ],
+    [
+      "8644893afffffff",
+      0.6
+    ],
+    [
+      "864489387ffffff",
+      0.6
+    ],
+    [
+      "864489397ffffff",
+      0.6
+    ],
+    [
+      "864489767ffffff",
+      0.6
+    ],
+    [
+      "864489747ffffff",
+      0.6
+    ],
+    [
+      "864489657ffffff",
+      0.6
+    ],
+    [
+      "8644d69afffffff",
+      0.6
+    ],
+    [
+      "8644d6837ffffff",
+      0.6
+    ],
+    [
+      "8644d6827ffffff",
+      0.6
+    ],
+    [
+      "8644d6957ffffff",
+      0.6
+    ],
+    [
+      "8644d6947ffffff",
+      0.6
+    ],
+    [
+      "8644d696fffffff",
+      0.6
+    ],
+    [
+      "8644d4597ffffff",
+      0.6
+    ],
+    [
+      "8644d45b7ffffff",
+      0.6
+    ],
+    [
+      "86448925fffffff",
+      0.6
+    ],
+    [
+      "864489247ffffff",
+      0.6
+    ],
+    [
+      "864489277ffffff",
+      0.6
+    ],
+    [
+      "86448922fffffff",
+      0.6
+    ],
+    [
+      "864489227ffffff",
+      0.6
+    ],
+    [
+      "864489307ffffff",
+      0.6
+    ],
+    [
+      "864489317ffffff",
+      0.6
+    ],
+    [
+      "8644893a7ffffff",
+      0.6
+    ],
+    [
+      "8644893b7ffffff",
+      0.6
+    ],
+    [
+      "8644890cfffffff",
+      0.6
+    ],
+    [
+      "8644890dfffffff",
+      0.6
+    ],
+    [
+      "864489777ffffff",
+      0.6
+    ],
+    [
+      "864489757ffffff",
+      0.6
+    ],
+    [
+      "86448962fffffff",
+      0.6
+    ],
+    [
+      "86448960fffffff",
+      0.6
+    ],
+    [
+      "8644896e7ffffff",
+      0.6
+    ],
+    [
+      "8644896efffffff",
+      0.6
+    ],
+    [
+      "8644d69b7ffffff",
+      0.6
+    ],
+    [
+      "8644d6987ffffff",
+      0.6
+    ],
+    [
+      "8644d698fffffff",
+      0.6
+    ],
+    [
+      "8644d6817ffffff",
+      0.6
+    ],
+    [
+      "8644d6807ffffff",
+      0.6
+    ],
+    [
+      "8644d682fffffff",
+      0.6
+    ],
+    [
+      "8644d695fffffff",
+      0.6
+    ],
+    [
+      "8644d694fffffff",
+      0.6
+    ],
+    [
+      "8644d44b7ffffff",
+      0.6
+    ],
+    [
+      "8644d459fffffff",
+      0.6
+    ],
+    [
+      "8644d4587ffffff",
+      0.6
+    ],
+    [
+      "8644d45a7ffffff",
+      0.6
+    ],
+    [
+      "86448924fffffff",
+      0.6
+    ],
+    [
+      "86448926fffffff",
+      0.6
+    ],
+    [
+      "864489267ffffff",
+      0.6
+    ],
+    [
+      "86448935fffffff",
+      0.6
+    ],
+    [
+      "864489357ffffff",
+      0.6
+    ],
+    [
+      "86448930fffffff",
+      0.6
+    ],
+    [
+      "864489337ffffff",
+      0.6
+    ],
+    [
+      "86448904fffffff",
+      0.6
+    ],
+    [
+      "86448905fffffff",
+      0.6
+    ],
+    [
+      "8644890efffffff",
+      0.6
+    ],
+    [
+      "86448972fffffff",
+      0.6
+    ],
+    [
+      "86448970fffffff",
+      0.6
+    ],
+    [
+      "864489627ffffff",
+      0.6
+    ],
+    [
+      "864489607ffffff",
+      0.6
+    ],
+    [
+      "86448961fffffff",
+      0.6
+    ],
+    [
+      "8644896f7ffffff",
+      0.6
+    ],
+    [
+      "8644896c7ffffff",
+      0.6
+    ],
+    [
+      "8644896cfffffff",
+      0.6
+    ],
+    [
+      "8644d6997ffffff",
+      0.6
+    ],
+    [
+      "8644d699fffffff",
+      0.6
+    ],
+    [
+      "8644d45afffffff",
+      0.6
+    ],
+    [
+      "8644d4517ffffff",
+      0.6
+    ],
+    [
+      "8644d4c97ffffff",
+      0.6
+    ],
+    [
+      "86448934fffffff",
+      0.6
+    ],
+    [
+      "864489347ffffff",
+      0.6
+    ],
+    [
+      "864489377ffffff",
+      0.6
+    ],
+    [
+      "86448932fffffff",
+      0.6
+    ],
+    [
+      "8644d2117ffffff",
+      0.6
+    ],
+    [
+      "8644d2127ffffff",
+      0.6
+    ],
+    [
+      "8644d2137ffffff",
+      0.6
+    ],
+    [
+      "8644d2c4fffffff",
+      0.6
+    ],
+    [
+      "8644d21a7ffffff",
+      0.6
+    ],
+    [
+      "8644d2187ffffff",
+      0.6
+    ],
+    [
+      "8644d219fffffff",
+      0.6
+    ],
+    [
+      "8644d20b7ffffff",
+      0.6
+    ],
+    [
+      "8644d2087ffffff",
+      0.6
+    ],
+    [
+      "8644d20dfffffff",
+      0.6
+    ],
+    [
+      "8644d2317ffffff",
+      0.6
+    ],
+    [
+      "8644d2aa7ffffff",
+      0.6
+    ],
+    [
+      "8644d288fffffff",
+      0.6
+    ],
+    [
+      "8644d289fffffff",
+      0.6
+    ],
+    [
+      "8644d2c6fffffff",
+      0.6
+    ],
+    [
+      "8644d2c5fffffff",
+      0.6
+    ],
+    [
+      "8644d21b7ffffff",
+      0.6
+    ],
+    [
+      "8644d2197ffffff",
+      0.6
+    ],
+    [
+      "8644d256fffffff",
+      0.6
+    ],
+    [
+      "8644d254fffffff",
+      0.6
+    ],
+    [
+      "8644d2097ffffff",
+      0.6
+    ],
+    [
+      "8644d209fffffff",
+      0.6
+    ],
+    [
+      "8644d2727ffffff",
+      0.6
+    ],
+    [
+      "8644d272fffffff",
+      0.6
+    ],
+    [
+      "8644d2777ffffff",
+      0.6
+    ],
+    [
+      "8644d2767ffffff",
+      0.6
+    ],
+    [
+      "8644d2397ffffff",
+      0.6
+    ],
+    [
+      "8644d2387ffffff",
+      0.6
+    ],
+    [
+      "8644d23afffffff",
+      0.6
+    ],
+    [
+      "8644d231fffffff",
+      0.6
+    ],
+    [
+      "8644d2307ffffff",
+      0.6
+    ],
+    [
+      "8644d2327ffffff",
+      0.6
+    ],
+    [
+      "8644d2a8fffffff",
+      0.6
+    ],
+    [
+      "8644d2aafffffff",
+      0.6
+    ],
+    [
+      "8644d2a17ffffff",
+      0.6
+    ],
+    [
+      "8644d2ccfffffff",
+      0.6
+    ],
+    [
+      "8644d2567ffffff",
+      0.6
+    ],
+    [
+      "8644d2547ffffff",
+      0.6
+    ],
+    [
+      "8644d2467ffffff",
+      0.6
+    ],
+    [
+      "8644d246fffffff",
+      0.6
+    ],
+    [
+      "8644d2737ffffff",
+      0.6
+    ],
+    [
+      "8644d2707ffffff",
+      0.6
+    ],
+    [
+      "8644d270fffffff",
+      0.6
+    ],
+    [
+      "8644d2757ffffff",
+      0.6
+    ],
+    [
+      "8644d2747ffffff",
+      0.6
+    ],
+    [
+      "8644d276fffffff",
+      0.6
+    ],
+    [
+      "8644d239fffffff",
+      0.6
+    ],
+    [
+      "8644d238fffffff",
+      0.6
+    ],
+    [
+      "8644d2237ffffff",
+      0.6
+    ],
+    [
+      "8644d230fffffff",
+      0.6
+    ],
+    [
+      "8644d232fffffff",
+      0.6
+    ],
+    [
+      "8644d2ad7ffffff",
+      0.6
+    ],
+    [
+      "8644d2af7ffffff",
+      0.6
+    ],
+    [
+      "8644d2a1fffffff",
+      0.6
+    ],
+    [
+      "8644d2a37ffffff",
+      0.6
+    ],
+    [
+      "8644d285fffffff",
+      0.6
+    ],
+    [
+      "8644d2717ffffff",
+      0.6
+    ],
+    [
+      "862ad3857ffffff",
+      0.6
+    ],
+    [
+      "862ad391fffffff",
+      0.6
+    ],
+    [
+      "862ad39afffffff",
+      0.6
+    ],
+    [
+      "862ad3987ffffff",
+      0.6
+    ],
+    [
+      "862ad3997ffffff",
+      0.6
+    ],
+    [
+      "862ad3d67ffffff",
+      0.6
+    ],
+    [
+      "862ad3c57ffffff",
+      0.6
+    ],
+    [
+      "862ad3037ffffff",
+      0.6
+    ],
+    [
+      "862ad3147ffffff",
+      0.6
+    ],
+    [
+      "862ad316fffffff",
+      0.6
+    ],
+    [
+      "862ad385fffffff",
+      0.6
+    ],
+    [
+      "862ad3847ffffff",
+      0.6
+    ],
+    [
+      "862ad3877ffffff",
+      0.6
+    ],
+    [
+      "862ad382fffffff",
+      0.6
+    ],
+    [
+      "862ad3827ffffff",
+      0.6
+    ],
+    [
+      "862ad3907ffffff",
+      0.6
+    ],
+    [
+      "862ad3917ffffff",
+      0.6
+    ],
+    [
+      "862ad39a7ffffff",
+      0.6
+    ],
+    [
+      "862ad39b7ffffff",
+      0.6
+    ],
+    [
+      "862ad06cfffffff",
+      0.6
+    ],
+    [
+      "862ad06dfffffff",
+      0.6
+    ],
+    [
+      "862ad3d77ffffff",
+      0.6
+    ],
+    [
+      "862ad3d57ffffff",
+      0.6
+    ],
+    [
+      "862ad3c2fffffff",
+      0.6
+    ],
+    [
+      "862ad3c0fffffff",
+      0.6
+    ],
+    [
+      "862ad3ce7ffffff",
+      0.6
+    ],
+    [
+      "862ad3cefffffff",
+      0.6
+    ],
+    [
+      "862ad31b7ffffff",
+      0.6
+    ],
+    [
+      "862ad3187ffffff",
+      0.6
+    ],
+    [
+      "862ad318fffffff",
+      0.6
+    ],
+    [
+      "862ad3017ffffff",
+      0.6
+    ],
+    [
+      "862ad3007ffffff",
+      0.6
+    ],
+    [
+      "862ad302fffffff",
+      0.6
+    ],
+    [
+      "862ad315fffffff",
+      0.6
+    ],
+    [
+      "862ad314fffffff",
+      0.6
+    ],
+    [
+      "862ad3ab7ffffff",
+      0.6
+    ],
+    [
+      "862ad384fffffff",
+      0.6
+    ],
+    [
+      "862ad3867ffffff",
+      0.6
+    ],
+    [
+      "862ad395fffffff",
+      0.6
+    ],
+    [
+      "862ad3957ffffff",
+      0.6
+    ],
+    [
+      "862ad390fffffff",
+      0.6
+    ],
+    [
+      "862ad064fffffff",
+      0.6
+    ],
+    [
+      "862ad065fffffff",
+      0.6
+    ],
+    [
+      "862ad06efffffff",
+      0.6
+    ],
+    [
+      "862ad06c7ffffff",
+      0.6
+    ],
+    [
+      "862ad3d2fffffff",
+      0.6
+    ],
+    [
+      "862ad3d0fffffff",
+      0.6
+    ],
+    [
+      "862ad3c27ffffff",
+      0.6
+    ],
+    [
+      "862ad3c07ffffff",
+      0.6
+    ],
+    [
+      "862ad3c1fffffff",
+      0.6
+    ],
+    [
+      "862ad3cc7ffffff",
+      0.6
+    ],
+    [
+      "862ad3ccfffffff",
+      0.6
+    ],
+    [
+      "862ad3197ffffff",
+      0.6
+    ],
+    [
+      "862ad319fffffff",
+      0.6
+    ],
+    [
+      "862ad30a7ffffff",
+      0.6
+    ],
+    [
+      "862ad301fffffff",
+      0.6
+    ],
+    [
+      "862ad300fffffff",
+      0.6
+    ],
+    [
+      "862ad3077ffffff",
+      0.6
+    ],
+    [
+      "862ad3067ffffff",
+      0.6
+    ],
+    [
+      "862ad3a97ffffff",
+      0.6
+    ],
+    [
+      "852ad3bbfffffff",
+      0.6
+    ],
+    [
+      "8544d2bbfffffff",
+      0.6
+    ],
+    [
+      "8544d28ffffffff",
+      0.6
+    ],
+    [
+      "864489217ffffff",
+      0.8
+    ],
+    [
+      "8644892a7ffffff",
+      0.8
+    ],
+    [
+      "8644892b7ffffff",
+      0.8
+    ],
+    [
+      "864489297ffffff",
+      0.8
+    ],
+    [
+      "86448966fffffff",
+      0.8
+    ],
+    [
+      "86448921fffffff",
+      0.8
+    ],
+    [
+      "864489237ffffff",
+      0.8
+    ],
+    [
+      "86448938fffffff",
+      0.8
+    ],
+    [
+      "86448939fffffff",
+      0.8
+    ],
+    [
+      "86448976fffffff",
+      0.8
+    ],
+    [
+      "86448974fffffff",
+      0.8
+    ],
+    [
+      "864489667ffffff",
+      0.8
+    ],
+    [
+      "864489647ffffff",
+      0.8
+    ],
+    [
+      "86448964fffffff",
+      0.8
+    ],
+    [
+      "8644d6977ffffff",
+      0.8
+    ],
+    [
+      "864489257ffffff",
+      0.8
+    ],
+    [
+      "86448920fffffff",
+      0.8
+    ],
+    [
+      "864489207ffffff",
+      0.8
+    ],
+    [
+      "86448975fffffff",
+      0.8
+    ],
+    [
+      "864489677ffffff",
+      0.8
+    ],
+    [
+      "86448965fffffff",
+      0.8
+    ],
+    [
+      "8644d69a7ffffff",
+      0.8
+    ],
+    [
+      "8644d2157ffffff",
+      0.8
+    ],
+    [
+      "8644d2027ffffff",
+      0.8
+    ],
+    [
+      "8644d2007ffffff",
+      0.8
+    ],
+    [
+      "8644d2177ffffff",
+      0.8
+    ],
+    [
+      "8644d210fffffff",
+      0.8
+    ],
+    [
+      "8644d211fffffff",
+      0.8
+    ],
+    [
+      "8644d2037ffffff",
+      0.8
+    ],
+    [
+      "8644d2017ffffff",
+      0.8
+    ],
+    [
+      "8644d201fffffff",
+      0.8
+    ],
+    [
+      "8644d20e7ffffff",
+      0.8
+    ],
+    [
+      "8644d2057ffffff",
+      0.8
+    ],
+    [
+      "8644d2047ffffff",
+      0.8
+    ],
+    [
+      "8644d2067ffffff",
+      0.8
+    ],
+    [
+      "8644d214fffffff",
+      0.8
+    ],
+    [
+      "8644d2147ffffff",
+      0.8
+    ],
+    [
+      "8644d212fffffff",
+      0.8
+    ],
+    [
+      "8644d2107ffffff",
+      0.8
+    ],
+    [
+      "8644d21afffffff",
+      0.8
+    ],
+    [
+      "8644d218fffffff",
+      0.8
+    ],
+    [
+      "8644d20a7ffffff",
+      0.8
+    ],
+    [
+      "8644d20afffffff",
+      0.8
+    ],
+    [
+      "8644d20f7ffffff",
+      0.8
+    ],
+    [
+      "8644d20c7ffffff",
+      0.8
+    ],
+    [
+      "8644d20efffffff",
+      0.8
+    ],
+    [
+      "8644d205fffffff",
+      0.8
+    ],
+    [
+      "8644d204fffffff",
+      0.8
+    ],
+    [
+      "8644d206fffffff",
+      0.8
+    ],
+    [
+      "8644d2a97ffffff",
+      0.8
+    ],
+    [
+      "8644d2ab7ffffff",
+      0.8
+    ],
+    [
+      "8644d216fffffff",
+      0.8
+    ],
+    [
+      "8644d2167ffffff",
+      0.8
+    ],
+    [
+      "8644d208fffffff",
+      0.8
+    ],
+    [
+      "8644d20d7ffffff",
+      0.8
+    ],
+    [
+      "8644d20cfffffff",
+      0.8
+    ],
+    [
+      "8644d23b7ffffff",
+      0.8
+    ],
+    [
+      "8644d23a7ffffff",
+      0.8
+    ],
+    [
+      "8644d2337ffffff",
+      0.8
+    ],
+    [
+      "8644d2a9fffffff",
+      0.8
+    ],
+    [
+      "8644d2a87ffffff",
+      0.8
+    ],
+    [
+      "862ad38afffffff",
+      0.8
+    ],
+    [
+      "862ad3817ffffff",
+      0.8
+    ],
+    [
+      "862ad38a7ffffff",
+      0.8
+    ],
+    [
+      "862ad38b7ffffff",
+      0.8
+    ],
+    [
+      "862ad3897ffffff",
+      0.8
+    ],
+    [
+      "862ad3c6fffffff",
+      0.8
+    ],
+    [
+      "862ad3137ffffff",
+      0.8
+    ],
+    [
+      "862ad3107ffffff",
+      0.8
+    ],
+    [
+      "862ad312fffffff",
+      0.8
+    ],
+    [
+      "862ad381fffffff",
+      0.8
+    ],
+    [
+      "862ad3837ffffff",
+      0.8
+    ],
+    [
+      "862ad398fffffff",
+      0.8
+    ],
+    [
+      "862ad399fffffff",
+      0.8
+    ],
+    [
+      "862ad3d6fffffff",
+      0.8
+    ],
+    [
+      "862ad3d4fffffff",
+      0.8
+    ],
+    [
+      "862ad3c67ffffff",
+      0.8
+    ],
+    [
+      "862ad3c47ffffff",
+      0.8
+    ],
+    [
+      "862ad3c4fffffff",
+      0.8
+    ],
+    [
+      "862ad3117ffffff",
+      0.8
+    ],
+    [
+      "862ad311fffffff",
+      0.8
+    ],
+    [
+      "862ad310fffffff",
+      0.8
+    ],
+    [
+      "862ad3177ffffff",
+      0.8
+    ],
+    [
+      "862ad3167ffffff",
+      0.8
+    ],
+    [
+      "862ad380fffffff",
+      0.8
+    ],
+    [
+      "862ad3807ffffff",
+      0.8
+    ],
+    [
+      "862ad3d47ffffff",
+      0.8
+    ],
+    [
+      "862ad3d5fffffff",
+      0.8
+    ],
+    [
+      "862ad3c77ffffff",
+      0.8
+    ],
+    [
+      "862ad3c5fffffff",
+      0.8
+    ],
+    [
+      "862ad31a7ffffff",
+      0.8
+    ],
+    [
+      "862ad31afffffff",
+      0.8
+    ],
+    [
+      "862ad3027ffffff",
+      0.8
+    ],
+    [
+      "862ad3157ffffff",
+      0.8
+    ],
+    [
+      "8544d693fffffff",
+      0.8
+    ],
+    [
+      "852ad38ffffffff",
+      0.8
+    ],
+    [
+      "8544892ffffffff",
+      0.8
+    ],
+    [
+      "86448928fffffff",
+      1.0
+    ],
+    [
+      "8644892afffffff",
+      1.0
+    ],
+    [
+      "864489287ffffff",
+      1.0
+    ],
+    [
+      "86448929fffffff",
+      1.0
+    ],
+    [
+      "8644d202fffffff",
+      1.0
+    ],
+    [
+      "8644d200fffffff",
+      1.0
+    ],
+    [
+      "8644d2077ffffff",
+      1.0
+    ],
+    [
+      "8644d215fffffff",
+      1.0
+    ],
+    [
+      "862ad388fffffff",
+      1.0
+    ],
+    [
+      "862ad3887ffffff",
+      1.0
+    ],
+    [
+      "862ad389fffffff",
+      1.0
+    ],
+    [
+      "862ad3127ffffff",
+      1.0
+    ]
+  ]
+}

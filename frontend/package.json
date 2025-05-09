@@ -1,0 +1,39 @@
+{
+  "name": "zkcf",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@aztec/bb.js": "^0.72.1",
+    "@noir-lang/noir_js": "^1.0.0-beta.2",
+    "@rainbow-me/rainbowkit": "^2.2.4",
+    "@react-google-maps/api": "^2.20.6",
+    "@tanstack/react-query": "^5.75.4",
+    "@zk-kit/lean-imt": "^2.2.3",
+    "ethers": "^6.14.0",
+    "h3-js": "^4.2.1",
+    "lodash-es": "^4.17.21",
+    "poseidon-lite": "^0.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "viem": "^2.29.0",
+    "wagmi": "^2.15.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "vite": "^6.3.5"
+  }
+}

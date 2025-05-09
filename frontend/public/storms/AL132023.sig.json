@@ -1,0 +1,13 @@
+{
+  "signature": {
+    "_type": "signature",
+    "networkV": null,
+    "r": "0xbed1d8c493161aae5c343ae3db38a215853e4b39f586e25b5e8f8490ad70ad2a",
+    "s": "0x584b452d0ca2720520f9649f0e3281223d138ceb95dd68771f97ede5a9033fb8",
+    "v": 28
+  },
+  "merkleRoot": "8784994738876494751496414917193919502229434155219272540963348978130571628421",
+  "validFrom": 1744184937,
+  "validTo": 1749368937,
+  "signer": "0xF9341f8cB3c0476E97C7129d9FC66D41ad58366c"
+}
