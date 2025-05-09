@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import { WalletButton } from './components/WalletButton'
 import Sidebar from './components/Sidebar'
 import PolicyForm from './components/PolicyForm'
+import { loadStormAreas, loadPriceAreas } from './utils'
 
 import { LeanIMT } from "@zk-kit/lean-imt"
 import { poseidon2 } from "poseidon-lite"
@@ -30,24 +31,38 @@ function generateMerkleProof(index, h3Array, SeverityArray) {
     leafs.push(poseidon2([h3Index, severity]))
   }
   for (; i < 256; i++) {
-    leafs.push(0)
+    leafs.push(poseidon2([0, 0]))
   }
-  //if (length % 2 == 1) {
-  //  leafs.push(poseidon2([0]))
-  //}
   const hash = (a, b) => poseidon2([a, b])
   const tree = new LeanIMT(hash)
   tree.insertMany(leafs)
   const proof = tree.generateProof(0)
-  //console.log(proof)
   return proof
+}
+
+function getTreeIndices(n, maxDepth) {
+  const indices = []
+  for (var i=0; i < maxDepth; i++) {
+    var idx = i % 2
+    n = Math.floor(n / 2)
+    indices.push(n)
+  }
+  return indices
+}
+
+function h3ArraytoHexArray(array) {
+  var tmp = []
+  array.forEach(h3 => {
+    tmp.push("0x" + h3);
+  })
+  return tmp
 }
 
 const bigIntArraytoStringArray = (array) => {
   return array.map(bigInt => bigInt.toString())
 }
 
-const validatePolicyData = (data) => {
+const validatePolicyData = (data, stormAreas, priceAreas) => {
   try {
     // Check if all required fields exist
     if (!data.name || typeof data.name !== 'string') {
@@ -70,25 +85,34 @@ const validatePolicyData = (data) => {
       throw new Error('Invalid or missing salt value')
     }
 
-    // The merkleLeaf field is optional, but if present must be non-null
-    //if ('merkleLeaf' in data && data.merkleLeaf === null) {
-    //  throw new Error('merkleLeaf field cannot be null if present')
-    //}
+    const locationHash = generateLocationHash(data.h3Index.h3Index, data.salt)
+    data.locationHash = locationHash
 
-    const affected = ["0x862640007ffffff", "0x866a00007ffffff"];
-    const severity = [1, 1];
-    const parent = "0x" + cellToParent(data.h3Index.h3Index.substring(2), 6)
-    console.log("PARENT:", parent)
-    const index = affected.indexOf(parent)
-    if (index != -1) {
-      //console.log("Included")
-      const proof = generateMerkleProof(index, affected, severity)
-      //console.log(proof)
-      data.proof = proof
-      const locationHash = generateLocationHash(data.h3Index.h3Index, data.salt)
-      data.locationHash = locationHash
+    if (data.acquired == false) {
+      const priceArea = h3ArraytoHexArray(priceAreas.price)
+      const parent_l6 = cellToParent(data.h3Index.h3Index.substring(2), 6)
+      const parent_l2 = cellToParent(data.h3Index.h3Index.substring(2), 2)
+      const index = priceAreas.price.indexOf(parent_l6)
+      if (index != -1) {
+        const proof = generateMerkleProof(index, priceArea, priceAreas.risk)
+        data.acquisitionProof = proof
+        data.riskBucket = priceAreas.risk[index]
+        data.riskLimitArea = "0x" + parent_l2
+        data.merkleIndices = getTreeIndices(index, 8)
+      }
     }
-    //console.log(data)
+
+    const affectedAreas = h3ArraytoHexArray(stormAreas.affected)
+    const parent_l6 = cellToParent(data.h3Index.h3Index.substring(2), 6)
+    const index = stormAreas.affected.indexOf(parent_l6)
+    
+    // If area is affected, generate the claim proof
+    if (index !== -1) {
+      const proof = generateMerkleProof(index, affectedAreas, stormAreas.severity)
+      data.claimProof = proof
+      data.severity = stormAreas.severity[index]
+      data.merkleIndices = getTreeIndices(index, 8)
+    }
 
     return { isValid: true, data }
   } catch (error) {
@@ -103,6 +127,20 @@ function App() {
   const [isGeneratingClaimProof, setIsGeneratingClaimProof] = useState(false)
   const [isGeneratingAcquisitionProof, setIsGeneratingAcquisitionProof] = useState(false)
   const [isCreatingPolicy, setIsCreatingPolicy] = useState(false)
+  const [stormAreas, setStormAreas] = useState({ affected: [], severity: [] })
+  const [priceAreas, setPriceAreas] = useState({ price: [], risk: [] })
+
+  useEffect(() => {
+    loadStormAreas().then(setStormAreas).catch(error => {
+      setError('Failed to load storm areas: ' + error.message);
+    });
+  }, [])
+
+  useEffect(() => {
+    loadPriceAreas().then(setPriceAreas).catch(error => {
+      setError('Failed to load storm areas: ' + error.message);
+    });
+  }, [])
 
   const handleCreatePolicy = () => {
     setSelectedPolicy(null)
@@ -117,7 +155,7 @@ function App() {
   }
 
   const handleSubmitPolicy = (newPolicy) => {
-    const validation = validatePolicyData(newPolicy)
+    const validation = validatePolicyData(newPolicy, stormAreas, priceAreas)
     if (validation.isValid) {
       const updatedPolicies = [...policies, validation.data]
       setPolicies(updatedPolicies)
@@ -138,30 +176,29 @@ function App() {
       console.log(salt)
       const locationHash = data.locationHash
       console.log(locationHash)
-      const merkleRoot = data.proof.root
+      const merkleRoot = data.claimProof.root
       console.log(merkleRoot)
-      const merkleIndices = [0, 0, 0, 0, 0, 0, 0, 0] //TODO generate this per input
+      const merkleIndices = data.merkleIndices
       console.log(merkleIndices)
-      const merkleSiblings = data.proof.siblings
+      const merkleSiblings = data.claimProof.siblings
       console.log(merkleSiblings)
-      //console.log(bigIntArraytoStringArray(merkleSiblings))
+      const severity = data.severity
 
 		  const noir = new Noir(claimCircuit);
 		  const backend = new UltraHonkBackend(claimCircuit.bytecode);
-      //const { witness } = await noir.execute({ "x" : merkleRoot.toString()})
       const { witness } = await noir.execute({
          "user_location_l12": user_location_l12.toString(),
          "salt": salt,
          "commited_location_hash": locationHash.toString(),
          "affected_merkle_root": merkleRoot.toString(),
-         "merkle_proof_depth": 1,
+         "merkle_proof_depth": 8,
          "merkle_proof_indices": bigIntArraytoStringArray(merkleIndices),
          "merkle_proof_siblings": bigIntArraytoStringArray(merkleSiblings),
-         "severity": 1
+         "severity": severity.toString()
       });
-      console.log('Generated witness:', witness);
+      console.log('Generated claim witness:', witness);
       const proof = await backend.generateProof(witness);
-      console.log('Generated proof:', proof);
+      console.log('Generated claim proof:', proof);
     } catch (err) {
       setError('Failed to generate claim proof: ' + err.message)
     } finally {
@@ -173,29 +210,32 @@ function App() {
     try {
       setIsGeneratingAcquisitionProof(true)
       const user_location_l12 = data.h3Index.h3Index
-      console.log(user_location_l12)
+      console.log("l12:", user_location_l12)
       const salt = data.salt
-      console.log(salt)
+      console.log("salt:", salt)
       const locationHash = data.locationHash
-      console.log(locationHash)
-      const merkleRoot = data.proof.root
-      console.log(merkleRoot)
-      const merkleIndices = [0, 0, 0, 0, 0, 0, 0, 0] //TODO generate this per input
-      console.log(merkleIndices)
-      const merkleSiblings = data.proof.siblings
-      console.log(merkleSiblings)
+      console.log("locationHash:", locationHash)
+      const merkleRoot = data.acquisitionProof.root
+      console.log("roor:", merkleRoot)
+      const merkleIndices = data.merkleIndices
+      console.log("indices:", merkleIndices)
+      const merkleSiblings = data.acquisitionProof.siblings
+      console.log("siblings:", merkleSiblings)
+      const riskBucket = data.riskBucket
+      const riskLimitArea = data.riskLimitArea
 
 		  const noir = new Noir(acquisitionCircuit);
 		  const backend = new UltraHonkBackend(acquisitionCircuit.bytecode);
       const { witness } = await noir.execute({
          "user_location_l12": user_location_l12.toString(),
          "salt": salt,
-         "commited_location_hash": locationHash.toString(),
-         "affected_merkle_root": merkleRoot.toString(),
-         "merkle_proof_depth": 1,
+         "user_location_hash": locationHash.toString(),
+         "price_merkle_root": merkleRoot.toString(),
+         "merkle_proof_depth": 8,
          "merkle_proof_indices": bigIntArraytoStringArray(merkleIndices),
          "merkle_proof_siblings": bigIntArraytoStringArray(merkleSiblings),
-         "severity": 1
+         "risk_bucket": riskBucket.toString(),
+         "risk_limit_area_l2": riskLimitArea
       });
       console.log('Generated acquisition witness:', witness);
       const proof = await backend.generateProof(witness);
@@ -246,7 +286,7 @@ function App() {
 
         // Validate each policy
         const validatedPolicies = jsonData.policies.map(policy => {
-          const validation = validatePolicyData(policy)
+          const validation = validatePolicyData(policy, stormAreas, priceAreas)
           if (!validation.isValid) {
             throw new Error(`Invalid policy ${policy.name}: ${validation.error}`)
           }
@@ -307,7 +347,7 @@ function App() {
               <p>Salt: {selectedPolicy.salt}</p>
             </div>
             
-            {selectedPolicy.proof && (
+            {selectedPolicy.claimProof && (
               <div className="proof-section">
                 <button
                   className="generate-acquisition-proof-button"
