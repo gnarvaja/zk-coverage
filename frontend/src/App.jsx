@@ -26,7 +26,7 @@ function generateLocationHash(h3Index, salt) {
   return poseidon2([h3Index, salt])
 }
 
-function generateMerkleProof(index, h3Array, SeverityArray) {
+function generateMerkleProof(index, h3Array, SeverityArray, nLeaves) {
   var leafs = []
   const length = h3Array.length
   for (var i=0; i < length; i++) {
@@ -34,7 +34,7 @@ function generateMerkleProof(index, h3Array, SeverityArray) {
     var severity = SeverityArray[i]
     leafs.push(poseidon2([h3Index, severity]))
   }
-  for (; i < 256; i++) {
+  for (; i < nLeaves; i++) {
     leafs.push(poseidon2([0, 0]))
   }
   const hash = (a, b) => poseidon2([a, b])
@@ -94,15 +94,15 @@ const validatePolicyData = (data, stormAreas, priceAreas) => {
 
     if (data.acquired == false) {
       const priceArea = h3ArraytoHexArray(priceAreas.price)
-      const parent_l6 = cellToParent(data.h3Index.h3Index.substring(2), 6)
+      const parent_l6 = cellToParent(data.h3Index.h3Index.substring(2), 3)
       const parent_l2 = cellToParent(data.h3Index.h3Index.substring(2), 2)
       const index = priceAreas.price.indexOf(parent_l6)
       if (index != -1) {
-        const proof = generateMerkleProof(index, priceArea, priceAreas.risk)
+        const proof = generateMerkleProof(index, priceArea, priceAreas.risk, 512)
         data.acquisitionProof = proof
         data.riskBucket = priceAreas.risk[index]
         data.riskLimitArea = "0x" + parent_l2
-        data.merkleIndices = getTreeIndices(index, 8)
+        data.merkleIndicesAcq = getTreeIndices(index, 9)
       }
     }
 
@@ -112,10 +112,10 @@ const validatePolicyData = (data, stormAreas, priceAreas) => {
     
     // If area is affected, generate the claim proof
     if (index !== -1) {
-      const proof = generateMerkleProof(index, affectedAreas, stormAreas.severity)
+      const proof = generateMerkleProof(index, affectedAreas, stormAreas.severity, 256)
       data.claimProof = proof
       data.severity = stormAreas.severity[index]
-      data.merkleIndices = getTreeIndices(index, 8)
+      data.merkleIndicesClaim = getTreeIndices(index, 8)
     }
 
     return { isValid: true, data }
@@ -240,7 +240,7 @@ function App() {
       console.log(locationHash)
       const merkleRoot = data.claimProof.root
       console.log(merkleRoot)
-      const merkleIndices = data.merkleIndices
+      const merkleIndices = data.merkleIndicesClaim
       console.log(merkleIndices)
       const merkleSiblings = data.claimProof.siblings
       console.log(merkleSiblings)
@@ -281,7 +281,7 @@ function App() {
       console.log("locationHash:", locationHash)
       const merkleRoot = data.acquisitionProof.root
       console.log("roor:", merkleRoot)
-      const merkleIndices = data.merkleIndices
+      const merkleIndices = data.merkleIndicesAcq
       console.log("indices:", merkleIndices)
       const merkleSiblings = data.acquisitionProof.siblings
       console.log("siblings:", merkleSiblings)
@@ -295,7 +295,7 @@ function App() {
          "salt": salt,
          "user_location_hash": locationHash.toString(),
          "price_merkle_root": merkleRoot.toString(),
-         "merkle_proof_depth": 8,
+         "merkle_proof_depth": 9,
          "merkle_proof_indices": bigIntArraytoStringArray(merkleIndices),
          "merkle_proof_siblings": bigIntArraytoStringArray(merkleSiblings),
          "risk_bucket": riskBucket.toString(),

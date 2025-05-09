@@ -4,7 +4,7 @@ export const STORM_CONFIG = {
 };
 
 export const PRICE_CONFIG = {
-  defaultStorm: 'price',
+  defaultStorm: 'pricelist',
   stormsPath: '/priceList'
 };
 
