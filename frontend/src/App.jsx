@@ -3,7 +3,11 @@ import './App.css'
 import { WalletButton } from './components/WalletButton'
 import Sidebar from './components/Sidebar'
 import PolicyForm from './components/PolicyForm'
+import { useWaitForTransactionReceipt, useWriteContract } from 'wagmi'
+import { useSendTransaction } from 'wagmi'
+import { parseEther } from 'viem'
 import { loadStormAreas, loadPriceAreas } from './utils'
+import { ZKCOVERAGE_ADDRESS } from './config/config'
 
 import { LeanIMT } from "@zk-kit/lean-imt"
 import { poseidon2 } from "poseidon-lite"
@@ -125,10 +129,68 @@ function App() {
   const [selectedPolicy, setSelectedPolicy] = useState(null)
   const [error, setError] = useState(null)
   const [isGeneratingClaimProof, setIsGeneratingClaimProof] = useState(false)
+  const [AcquisitionProof, setAquisitionProof] = useState("")
+  const [claimTxConfirmed, setClaimTxConfirmed] = useState(false)
   const [isGeneratingAcquisitionProof, setIsGeneratingAcquisitionProof] = useState(false)
+  const [ClaimProof, setClaimProof] = useState("")
   const [isCreatingPolicy, setIsCreatingPolicy] = useState(false)
   const [stormAreas, setStormAreas] = useState({ affected: [], severity: [] })
   const [priceAreas, setPriceAreas] = useState({ price: [], risk: [] })
+  const [isSendingTx, setIsSendingTx] = useState(false)
+
+  //const { writeContract, data: hash } = useWriteContract()
+  const { data: hash, sendTransaction } = useSendTransaction()
+  const { isLoading: isConfirming } = useWaitForTransactionReceipt({
+    hash,
+  })
+
+  const handleSendAcquisitionTransaction = async () => {
+    try {
+      setIsSendingTx(true)
+      /*await writeContract({
+        address: ZKCOVERAGE_ADDRESS,
+        abi: [{ TODO: Fix this
+          name: 'claim',
+          type: 'function',
+          stateMutability: 'nonpayable',
+          inputs: [{ name: 'proof', type: 'bytes' }],
+          outputs: []
+        }],
+        functionName: 'claim',
+        args: [TODO: Fill this],
+      })*/
+      await sendTransaction({to:ZKCOVERAGE_ADDRESS, value:parseEther("0.0000000000003")}) // Only for testing
+      //setClaimTxConfirmed(true) Comment for testing
+    } catch (err) {
+      setError('Failed to send transaction: ' + err.message)
+    } finally {
+      setIsSendingTx(false)
+    }
+  }
+
+  const handleSendClaimTransaction = async () => {
+    try {
+      setIsSendingTx(true)
+      /*await writeContract({
+        address: ZKCOVERAGE_ADDRESS,
+        abi: [{ TODO: Fix this
+          name: 'claim',
+          type: 'function',
+          stateMutability: 'nonpayable',
+          inputs: [{ name: 'proof', type: 'bytes' }],
+          outputs: []
+        }],
+        functionName: 'claim',
+        args: [TODO: Fill this],
+      })*/
+      await sendTransaction({to:"0x179aef8d2957e4cbe652dc0e94614a5ded6b8e21", value:parseEther("0.0000000000003")}) // Only for testing
+      //setClaimTxConfirmed(true) Comment for testing
+    } catch (err) {
+      setError('Failed to send transaction: ' + err.message)
+    } finally {
+      setIsSendingTx(false)
+    }
+  }
 
   useEffect(() => {
     loadStormAreas().then(setStormAreas).catch(error => {
@@ -199,6 +261,8 @@ function App() {
       console.log('Generated claim witness:', witness);
       const proof = await backend.generateProof(witness);
       console.log('Generated claim proof:', proof);
+      //TODO: Convert proof to right encoding and update below
+      setClaimProof("Proof encoded here")
     } catch (err) {
       setError('Failed to generate claim proof: ' + err.message)
     } finally {
@@ -240,6 +304,8 @@ function App() {
       console.log('Generated acquisition witness:', witness);
       const proof = await backend.generateProof(witness);
       console.log('Generated acquisition proof:', proof);
+      //TODO: Convert proof to right encoding and update below
+      setAquisitionProof("Proof encoded here")
     } catch (err) {
       setError('Failed to generate acquisition proof: ' + err.message)
     } finally {
@@ -347,24 +413,39 @@ function App() {
               <p>Salt: {selectedPolicy.salt}</p>
             </div>
             
-            {selectedPolicy.claimProof && (
               <div className="proof-section">
-                <button
-                  className="generate-acquisition-proof-button"
-                  onClick={() => generateAcquisitionProof(selectedPolicy)}
-                  disabled={isGeneratingAcquisitionProof}
-                >
-                  {isGeneratingAcquisitionProof ? 'Generating...' : 'Generate Acquisition Proof'}
-                </button>
-                <button
-                  className="generate-claim-proof-button"
+                {!AcquisitionProof ? (
+                  <button
+                    className="generate-acquisition-proof-button"
+                    onClick={() => generateAcquisitionProof(selectedPolicy)}
+                    disabled={isGeneratingAcquisitionProof}
+                  >
+                    {isGeneratingAcquisitionProof ? 'Generating...' : 'Generate Acquisition Proof'}
+                  </button>
+                ) : (
+                  <button
+                    className="generate-acquisition-proof-button"
+                    onClick={handleSendAcquisitionTransaction}
+                    disabled={isSendingTx || isConfirming}
+                  >
+                    {isSendingTx ? 'Preparing...' : isConfirming ? 'Confirming...' : 'Send Transaction'}
+                  </button>
+                )}
+                {!ClaimProof ? (                <button
+                  className={`generate-claim-proof-button ${!AcquisitionProof ? "disabled" : ""}`}
                   onClick={() => generateClaimProof(selectedPolicy)}
-                  disabled={isGeneratingClaimProof}
+                  disabled={isGeneratingClaimProof || !AcquisitionProof}
                 >
                   {isGeneratingClaimProof ? 'Generating...' : 'Generate Claim Proof'}
-                </button>
+                </button>) : (                <button
+                  className={"generate-claim-proof-button"}
+                  onClick={handleSendClaimTransaction}
+                  disabled={isSendingTx || isConfirming}
+                >
+                  {isSendingTx ? 'Preparing...' : isConfirming ? 'Confirming...' : 'Send Transaction'}
+                </button>)}
+
               </div>
-            )}
           </div>
         )}
       </div>
