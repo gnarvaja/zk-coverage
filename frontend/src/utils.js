@@ -6,7 +6,7 @@ function floatToWad(floatValue) {
 }
 
 export function wadToFloat(lossProbAsWad) {
-  return parseInt(lossProbAsWad / 10n ** 12n) / 1e8;
+  return parseInt(lossProbAsWad / 10n ** 10n) / 1e8;
 }
 
 export function formatLossProb(lossProbAsWad) {
