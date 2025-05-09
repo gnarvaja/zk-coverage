@@ -1,4 +1,4 @@
-import { STORM_CONFIG, PRICE_CONFIG } from './config/dataConfig'
+import { STORM_CONFIG, PRICE_CONFIG } from './config/config'
 
 function floatToWad(floatValue) {
   return BigInt(Math.round(floatValue * (10 ** 18)));

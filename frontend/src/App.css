@@ -111,6 +111,18 @@ h1 {
   transform: none;
 }
 
+.generate-claim-proof-button:hover {
+  background-color: #38a169;
+  transform: translateY(-1px);
+}
+
+.generate-claim-proof-button:disabled {
+  background-color: #9ae6b4;
+  cursor: not-allowed;
+  transform: none;
+  opacity: 0.6;
+}
+
 .generate-proof-button:hover {
   background-color: #38a169;
   transform: translateY(-1px);
