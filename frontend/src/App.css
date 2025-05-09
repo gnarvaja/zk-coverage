@@ -133,3 +133,29 @@ h1 {
   cursor: not-allowed;
   transform: none;
 }
+
+.proof-details {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.proof-label {
+  color: #1a202c;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.proof-value {
+  font-family: monospace;
+  background-color: #edf2f7;
+  color: #1a202c;
+  padding: 0.5rem;
+  border-radius: 4px;
+  word-break: break-all;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}

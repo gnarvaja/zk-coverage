@@ -302,9 +302,9 @@ function App() {
       });
       console.log('Generated acquisition witness:', witness);
       const proof = await backend.generateProof(witness);
-      console.log('Generated acquisition proof:', proof);
+      console.log('Generated acquisition proof:', proof.proof.toHex().toString());
       //TODO: Convert proof to right encoding and update below
-      setAquisitionProof("Proof encoded here")
+      setAquisitionProof(proof.proof.toHex().toString())
     } catch (err) {
       setError('Failed to generate acquisition proof: ' + err.message)
     } finally {
@@ -446,6 +446,38 @@ function App() {
                 </button>)}
 
               </div>
+              
+              {AcquisitionProof && (
+                <div className="proof-details">
+                  <h3>Acquisition Proof Details</h3>
+                  <div>
+                    <div className="proof-label">Location Hash:</div>
+                    <div className="proof-value">{selectedPolicy.locationHash}</div>
+                  </div>
+                  <div>
+                    <div className="proof-label">Merkle Root:</div>
+                    <div className="proof-value">{selectedPolicy.acquisitionProof.root}</div>
+                  </div>
+                  <div>
+                    <div className="proof-label">Risk Bucket:</div>
+                    <div className="proof-value">{selectedPolicy.riskBucket}</div>
+                  </div>
+                  <div>
+                    <div className="proof-label">Risk Limit Area:</div>
+                    <div className="proof-value">{selectedPolicy.riskLimitArea}</div>
+                  </div>
+                  <div>
+                    <div className="proof-label">Public Inputs:</div>
+                    <div className="proof-value">
+                      [{selectedPolicy.locationHash}, {selectedPolicy.acquisitionProof.root}, {selectedPolicy.riskBucket}, {selectedPolicy.riskLimitArea}]
+                    </div>
+                  </div>
+                  <div>
+                    <div className="proof-label">Proof:</div>
+                    <div className="proof-value">{AcquisitionProof}</div>
+                  </div>
+                </div>
+              )}
           </div>
         )}
       </div>
