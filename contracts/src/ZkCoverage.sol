@@ -20,6 +20,14 @@ contract ZkCoverage is AccessControl {
     TrustfulRiskModule public riskModule;
     uint96 internal internalId;
 
+    struct SignedMT {
+        bytes32 merkleRoot;
+        uint40 validFrom;
+        uint40 validTo;
+        bytes32 signatureR;
+        bytes32 signatureVS;
+    }
+
     error InvalidProof();
     error PriceExpired();
     error ClaimNotValid();
@@ -37,25 +45,20 @@ contract ZkCoverage is AccessControl {
     function newPolicy(
         uint256 insuredValue,
         bytes32 userLocationHash,
-        bytes32 priceMerkleRoot,
-        uint40 priceValidFrom,
-        uint40 priceValidTo,
-        bytes32 priceSignatureR,
-        bytes32 priceSignatureVS,
+        SignedMT memory priceList,
         uint256 lossProb,
         uint64 riskArea,
         uint40 expiration,
         address onBehalfOf,
         bytes calldata proof
     ) external {
-        require(_checkAcquisitionProof(userLocationHash, priceMerkleRoot, lossProb, riskArea, proof), InvalidProof());
-        // Check price list is active
-        require(priceValidFrom <= block.timestamp && priceValidTo >= block.timestamp, PriceExpired());
-        // Check price list signature
-        _checkRole(
-            PRICER_ROLE,
-            _recoverSigner(priceMerkleRoot, priceValidFrom, priceValidTo, priceSignatureR, priceSignatureVS)
+        require(
+            _checkAcquisitionProof(userLocationHash, priceList.merkleRoot, lossProb, riskArea, proof), InvalidProof()
         );
+        // Check price list is active
+        require(priceList.validFrom <= block.timestamp && priceList.validTo >= block.timestamp, PriceExpired());
+        // Check price list signature
+        _checkRole(PRICER_ROLE, _recoverSigner(priceList));
 
         uint256 policyId =
             riskModule.newPolicy(insuredValue, type(uint256).max, lossProb, expiration, onBehalfOf, ++internalId);
@@ -77,36 +80,24 @@ contract ZkCoverage is AccessControl {
         return acquisitionVerifier.verify(proof, publicInputs);
     }
 
-    function _recoverSigner(
-        bytes32 merkleRoot,
-        uint40 validFrom,
-        uint40 validTo,
-        bytes32 signatureR,
-        bytes32 signatureVS
-    ) internal pure returns (address) {
-        bytes32 message = ECDSA.toEthSignedMessageHash(abi.encodePacked(merkleRoot, validFrom, validTo));
-        return ECDSA.recover(message, signatureR, signatureVS);
+    function _recoverSigner(SignedMT memory signedMT) internal pure returns (address) {
+        bytes32 message =
+            ECDSA.toEthSignedMessageHash(abi.encodePacked(signedMT.merkleRoot, signedMT.validFrom, signedMT.validTo));
+        return ECDSA.recover(message, signedMT.signatureR, signedMT.signatureVS);
     }
 
     function claim(
         Policy.PolicyData calldata policyData,
         bytes32 userLocationHash,
         uint256 severity,
-        bytes32 stormMerkleRoot,
-        uint40 stormValidFrom,
-        uint40 stormValidTo,
-        bytes32 stormSignatureR,
-        bytes32 stormSignatureVS,
+        SignedMT memory storm,
         bytes calldata proof
     ) external {
-        require(_checkClaimProof(userLocationHash, stormMerkleRoot, severity, proof), InvalidProof());
+        require(_checkClaimProof(userLocationHash, storm.merkleRoot, severity, proof), InvalidProof());
         // Check claim is active (policy was created before valid claim date and claim period not expired)
-        require(policyData.start < stormValidFrom && block.timestamp <= stormValidTo, ClaimNotValid());
+        require(policyData.start < storm.validFrom && block.timestamp <= storm.validTo, ClaimNotValid());
         // Check price list signature
-        _checkRole(
-            CLAIM_AREAS_ROLE,
-            _recoverSigner(stormMerkleRoot, stormValidFrom, stormValidTo, stormSignatureR, stormSignatureVS)
-        );
+        _checkRole(CLAIM_AREAS_ROLE, _recoverSigner(storm));
 
         uint256 payout = Math.mulDiv(policyData.payout, severity, WAD);
 

@@ -18,7 +18,7 @@ contract ZkCoverageHarness is ZkCoverage {
         uint64 riskArea,
         bytes calldata proof
     ) external view returns (bool) {
-        super._checkAcquisitionProof(userLocationHash, priceMerkleRoot, lossProb, riskArea, proof);
+        return super._checkAcquisitionProof(userLocationHash, priceMerkleRoot, lossProb, riskArea, proof);
     }
 
     function checkClaimProof(bytes32 userLocationHash, bytes32 stormMerkleRoot, uint256 severity, bytes calldata proof)
@@ -29,13 +29,7 @@ contract ZkCoverageHarness is ZkCoverage {
         return super._checkClaimProof(userLocationHash, stormMerkleRoot, severity, proof);
     }
 
-    function recoverSigner(
-        bytes32 merkleRoot,
-        uint40 validFrom,
-        uint40 validTo,
-        bytes32 signatureR,
-        bytes32 signatureVS
-    ) external pure returns (address) {
-        return _recoverSigner(merkleRoot, validFrom, validTo, signatureR, signatureVS);
+    function recoverSigner(SignedMT memory signedMT) external pure returns (address) {
+        return _recoverSigner(signedMT);
     }
 }
