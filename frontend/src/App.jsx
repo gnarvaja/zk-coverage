@@ -97,11 +97,11 @@ const validatePolicyData = (data, stormAreas, priceAreas) => {
     const parent_l2 = cellToParent(data.h3Index.h3Index.substring(2), 2)
     const priceIndex = priceAreas.price.indexOf(parent_l3)
     if (priceIndex != -1) {
-      const proof = generateMerkleProof(priceIndex, priceArea, priceAreas.risk, 512)
+      const proof = generateMerkleProof(priceIndex, priceArea, priceAreas.risk, 1024)
       data.acquisitionProof = proof
       data.riskBucket = priceAreas.risk[priceIndex]
       data.riskLimitArea = "0x" + parent_l2
-      data.merkleIndicesAcq = getTreeIndices(priceIndex, 9)
+      data.merkleIndicesAcq = getTreeIndices(priceIndex, 10)
     }
 
     const affectedAreas = h3ArraytoHexArray(stormAreas.affected)
@@ -293,9 +293,10 @@ function App() {
          "salt": salt,
          "user_location_hash": locationHash.toString(),
          "price_merkle_root": merkleRoot.toString(),
-         "merkle_proof_depth": 9,
+         "merkle_proof_depth": 10,
          "merkle_proof_indices": bigIntArraytoStringArray(merkleIndices),
          "merkle_proof_siblings": bigIntArraytoStringArray(merkleSiblings),
+         "price_area_level": 3,
          "risk_bucket": riskBucket.toString(),
          "risk_limit_area_l2": riskLimitArea
       });
