@@ -40,16 +40,16 @@ function generateMerkleProof(index, h3Array, SeverityArray, nLeaves) {
   const hash = (a, b) => poseidon2([a, b])
   const tree = new LeanIMT(hash)
   tree.insertMany(leafs)
-  const proof = tree.generateProof(0)
+  const proof = tree.generateProof(index)
   return proof
 }
 
 function getTreeIndices(n, maxDepth) {
   const indices = []
   for (var i=0; i < maxDepth; i++) {
-    var idx = i % 2
+    var idx = n % 2
     n = Math.floor(n / 2)
-    indices.push(n)
+    indices.push(idx)
   }
   return indices
 }
@@ -92,18 +92,16 @@ const validatePolicyData = (data, stormAreas, priceAreas) => {
     const locationHash = generateLocationHash(data.h3Index.h3Index, data.salt)
     data.locationHash = locationHash
 
-    if (data.acquired == false) {
-      const priceArea = h3ArraytoHexArray(priceAreas.price)
-      const parent_l6 = cellToParent(data.h3Index.h3Index.substring(2), 3)
-      const parent_l2 = cellToParent(data.h3Index.h3Index.substring(2), 2)
-      const index = priceAreas.price.indexOf(parent_l6)
-      if (index != -1) {
-        const proof = generateMerkleProof(index, priceArea, priceAreas.risk, 512)
-        data.acquisitionProof = proof
-        data.riskBucket = priceAreas.risk[index]
-        data.riskLimitArea = "0x" + parent_l2
-        data.merkleIndicesAcq = getTreeIndices(index, 9)
-      }
+    const priceArea = h3ArraytoHexArray(priceAreas.price)
+    const parent_l3 = cellToParent(data.h3Index.h3Index.substring(2), 3)
+    const parent_l2 = cellToParent(data.h3Index.h3Index.substring(2), 2)
+    const priceIndex = priceAreas.price.indexOf(parent_l3)
+    if (priceIndex != -1) {
+      const proof = generateMerkleProof(priceIndex, priceArea, priceAreas.risk, 512)
+      data.acquisitionProof = proof
+      data.riskBucket = priceAreas.risk[priceIndex]
+      data.riskLimitArea = "0x" + parent_l2
+      data.merkleIndicesAcq = getTreeIndices(priceIndex, 9)
     }
 
     const affectedAreas = h3ArraytoHexArray(stormAreas.affected)
