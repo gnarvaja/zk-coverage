@@ -257,7 +257,7 @@ function App() {
          "severity": severity.toString()
       });
       console.log('Generated claim witness:', witness);
-      const proof = await backend.generateProof(witness);
+      const proof = await backend.generateProof(witness, { keccak: true });
       console.log('Generated claim proof:', proof);
       //TODO: Convert proof to right encoding and update below
       setClaimProof("Proof encoded here")
@@ -301,7 +301,7 @@ function App() {
          "risk_limit_area_l2": riskLimitArea
       });
       console.log('Generated acquisition witness:', witness);
-      const proof = await backend.generateProof(witness);
+      const proof = await backend.generateProof(witness, { keccak: true });
       console.log('Generated acquisition proof:', toHex(proof.proof));
       //TODO: Convert proof to right encoding and update below
       setAquisitionProof(toHex(proof.proof))
